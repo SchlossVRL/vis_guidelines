@@ -70,3 +70,11 @@ yarn-error.log*
 # Data (uncomment if data should not be tracked)
 # data/
 # results/
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*-firebase-adminsdk-*.json
+serviceAccount*.json

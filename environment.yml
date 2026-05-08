@@ -1,0 +1,15 @@
+name: vis-guidelines
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - pyyaml
+  - jupyter
+  - pip:
+      - salmon-triplets
+      - firebase-admin

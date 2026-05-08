@@ -1,0 +1,128 @@
+{
+  "words": [
+    "design pattern",
+    "justification",
+    "heuristic",
+    "requirement",
+    "implication",
+    "principle",
+    "rule of thumb",
+    "consideration",
+    "common practice",
+    "convention",
+    "recommendation",
+    "best practice",
+    "standard",
+    "norm",
+    "guardrail",
+    "paradigm",
+    "style guide",
+    "guideline"
+  ],
+  "n_random_trials": 100,
+  "validation_triplets": [
+    {
+      "head": "standard",
+      "left": "rule of thumb",
+      "right": "implication"
+    },
+    {
+      "head": "norm",
+      "left": "convention",
+      "right": "implication"
+    },
+    {
+      "head": "justification",
+      "left": "implication",
+      "right": "convention"
+    },
+    {
+      "head": "implication",
+      "left": "principle",
+      "right": "recommendation"
+    },
+    {
+      "head": "common practice",
+      "left": "requirement",
+      "right": "heuristic"
+    },
+    {
+      "head": "consideration",
+      "left": "best practice",
+      "right": "style guide"
+    },
+    {
+      "head": "rule of thumb",
+      "left": "requirement",
+      "right": "standard"
+    },
+    {
+      "head": "guardrail",
+      "left": "norm",
+      "right": "recommendation"
+    },
+    {
+      "head": "guideline",
+      "left": "rule of thumb",
+      "right": "paradigm"
+    },
+    {
+      "head": "principle",
+      "left": "paradigm",
+      "right": "convention"
+    }
+  ],
+  "catch_triplets": [
+    {
+      "head": "justification",
+      "left": "justification",
+      "right": "best practice"
+    },
+    {
+      "head": "design pattern",
+      "left": "best practice",
+      "right": "design pattern"
+    },
+    {
+      "head": "heuristic",
+      "left": "heuristic",
+      "right": "requirement"
+    },
+    {
+      "head": "best practice",
+      "left": "best practice",
+      "right": "consideration"
+    },
+    {
+      "head": "norm",
+      "left": "implication",
+      "right": "norm"
+    },
+    {
+      "head": "rule of thumb",
+      "left": "rule of thumb",
+      "right": "paradigm"
+    },
+    {
+      "head": "guardrail",
+      "left": "recommendation",
+      "right": "guardrail"
+    },
+    {
+      "head": "recommendation",
+      "left": "recommendation",
+      "right": "style guide"
+    },
+    {
+      "head": "style guide",
+      "left": "convention",
+      "right": "style guide"
+    },
+    {
+      "head": "consideration",
+      "left": "best practice",
+      "right": "consideration"
+    }
+  ],
+  "seed": 0
+}
