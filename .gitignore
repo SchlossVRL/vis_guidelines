@@ -1,0 +1,72 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Data (uncomment if data should not be tracked)
+# data/
+# results/
