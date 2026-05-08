@@ -4,41 +4,140 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Triplet Similarity Task</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspsych@8.0.0/css/jspsych.css" />
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #fafafa;
+      color: #1a1a1a;
     }
-    .triplet-head {
-      font-size: 2.4rem;
-      font-weight: 600;
+
+    /* ---------- instructions ---------- */
+    .instructions {
+      max-width: 720px;
+      margin: 2rem auto;
+      text-align: left;
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    .instructions h2 {
+      text-align: center;
+      font-weight: 700;
       margin-bottom: 1.5rem;
-      letter-spacing: 0.01em;
+    }
+    .instructions p {
+      margin: 0.9rem 0;
+    }
+    .instructions kbd {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      background: #f0f0f0;
+      border: 1px solid #c8c8c8;
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
+      font-size: 0.95em;
+    }
+
+    /* ---------- triplet stage (used in both example and live trials) ---------- */
+    .triplet-stage {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .example-stage {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 14px;
+      padding: 2rem 1rem 2.25rem;
+      margin: 1.75rem auto;
+    }
+    .example-label {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      color: #888;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    /* All three words share these styles — bold Lato, same size. */
+    .triplet-word {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: 0.005em;
+    }
+    .triplet-target {
+      margin: 0.5rem 0 2rem;
     }
     .triplet-prompt {
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
       font-size: 1rem;
-      color: #555;
-      margin-bottom: 2rem;
+      color: #5a5a5a;
+      margin-bottom: 1.75rem;
     }
-    .jspsych-btn {
-      font-size: 1.2rem;
-      padding: 1rem 2rem;
-      margin: 0 1rem;
+    .triplet-choices {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 3rem;
+    }
+    .triplet-choice {
+      padding: 1.25rem 2rem;
       min-width: 12rem;
-      border-radius: 8px;
-      border: 1px solid #888;
       background: #fff;
+      border: 2px solid #d0d0d0;
+      border-radius: 14px;
       cursor: pointer;
+      user-select: none;
+      transition: border-color 140ms ease, background-color 140ms ease,
+        transform 140ms ease, box-shadow 140ms ease;
     }
-    .jspsych-btn:hover {
-      background: #eef;
+    .triplet-choice:hover,
+    .triplet-choice:focus-visible {
+      border-color: #4a90c8;
+      background: #eef6fc;
+      transform: translateY(-2px);
+      outline: none;
     }
-    .instructions {
-      max-width: 640px;
-      margin: 0 auto;
-      text-align: left;
-      line-height: 1.5;
+    .triplet-choice.selected {
+      border-color: #1f6fa8;
+      background: #cfe5f5;
+      transform: scale(1.04);
+      box-shadow: 0 6px 18px rgba(31, 111, 168, 0.22);
+    }
+
+    /* The example trial in the instructions is non-interactive. */
+    .example-stage .triplet-choice {
+      cursor: default;
+    }
+    .example-stage .triplet-choice:hover {
+      border-color: #d0d0d0;
+      background: #fff;
+      transform: none;
+    }
+
+    .triplet-hint {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 2rem;
+      letter-spacing: 0.05em;
+    }
+
+    .progress {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      color: #aaa;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05em;
     }
   </style>
 </head>

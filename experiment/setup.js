@@ -1,5 +1,7 @@
-import { initJsPsych } from "https://cdn.jsdelivr.net/npm/jspsych@8.0.0/+esm";
-import HtmlButtonResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-button-response@2.0.0/+esm";
+import {
+  initJsPsych,
+  ParameterType,
+} from "https://cdn.jsdelivr.net/npm/jspsych@8.0.0/+esm";
 import HtmlKeyboardResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-keyboard-response@2.0.0/+esm";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
@@ -22,10 +24,6 @@ import {
 
 const EXPERIMENT_COLLECTION = "vis-guidelines-pilot";
 
-// Paste your web app's Firebase configuration here (Project settings → General →
-// Your apps → SDK setup and configuration → Config). While these values are
-// placeholders, the experiment runs in OFFLINE_MODE: trials are logged to the
-// console instead of Firestore so you can preview the UI.
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCMWifly8RpRWOiZZNRGzfRY1zEx7DBMos",
   authDomain: "svrl-vis-guidelines.firebaseapp.com",
@@ -52,13 +50,108 @@ function shuffle(arr, rng = Math.random) {
 }
 
 function sampleRandomTriplets(words, n) {
-  // Sample with replacement across trials but enforce head ≠ left ≠ right within a trial.
   const out = [];
   for (let i = 0; i < n; i++) {
     const [head, left, right] = shuffle(words).slice(0, 3);
     out.push({ head, left, right });
   }
   return out;
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  }[c]));
+}
+
+// ---------- Custom triplet plugin (mouse + keyboard) ----------
+
+class TripletPlugin {
+  static info = {
+    name: "triplet",
+    version: "1.0.0",
+    parameters: {
+      head: { type: ParameterType.STRING, default: "" },
+      left: { type: ParameterType.STRING, default: "" },
+      right: { type: ParameterType.STRING, default: "" },
+      prompt: {
+        type: ParameterType.HTML_STRING,
+        default: "Which is more similar to the target word?",
+      },
+      progress: { type: ParameterType.HTML_STRING, default: "" },
+      feedback_duration: { type: ParameterType.INT, default: 300 },
+    },
+  };
+
+  constructor(jsPsych) {
+    this.jsPsych = jsPsych;
+  }
+
+  trial(display_element, trial) {
+    display_element.innerHTML = `
+      <div class="triplet-stage">
+        ${trial.progress ? `<div class="progress">${trial.progress}</div>` : ""}
+        <div class="triplet-word triplet-target">${escapeHtml(trial.head)}</div>
+        <div class="triplet-prompt">${trial.prompt}</div>
+        <div class="triplet-choices">
+          <div class="triplet-word triplet-choice" data-side="left" tabindex="0">${escapeHtml(trial.left)}</div>
+          <div class="triplet-word triplet-choice" data-side="right" tabindex="0">${escapeHtml(trial.right)}</div>
+        </div>
+        <div class="triplet-hint">← LEFT ARROW   ·   click an option   ·   RIGHT ARROW →</div>
+      </div>
+    `;
+
+    const leftEl = display_element.querySelector('.triplet-choice[data-side="left"]');
+    const rightEl = display_element.querySelector('.triplet-choice[data-side="right"]');
+    const start = performance.now();
+    let finished = false;
+
+    const finish = (side, source) => {
+      if (finished) return;
+      finished = true;
+      cleanup();
+      const el = side === "left" ? leftEl : rightEl;
+      el.classList.add("selected");
+      const rt = performance.now() - start;
+      setTimeout(() => {
+        this.jsPsych.finishTrial({
+          rt,
+          response_side: side,
+          response_source: source, // "click" | "key"
+          head: trial.head,
+          left: trial.left,
+          right: trial.right,
+          choice: side === "left" ? trial.left : trial.right,
+        });
+      }, trial.feedback_duration);
+    };
+
+    const onKey = (e) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        finish("left", "key");
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        finish("right", "key");
+      }
+    };
+    const onClickLeft = () => finish("left", "click");
+    const onClickRight = () => finish("right", "click");
+
+    document.addEventListener("keydown", onKey);
+    leftEl.addEventListener("click", onClickLeft);
+    rightEl.addEventListener("click", onClickRight);
+
+    function cleanup() {
+      document.removeEventListener("keydown", onKey);
+      leftEl.removeEventListener("click", onClickLeft);
+      rightEl.removeEventListener("click", onClickRight);
+    }
+  }
 }
 
 // ---------- Firebase setup ----------
@@ -130,45 +223,68 @@ const allTrials = shuffle([...randomTrials, ...validationTrials, ...catchTrials]
 const jsPsych = initJsPsych({
   on_finish: () => {
     document.body.innerHTML =
-      '<div class="instructions" style="text-align:center;margin-top:4rem;"><h2>Thank you!</h2><p>You can close this window.</p></div>';
+      '<div class="instructions" style="text-align:center;margin-top:4rem;"><h2>Thank you!</h2><p>Your responses have been saved. You can close this window.</p></div>';
   },
 });
 
 const timeline = [];
 
+// Instructions screen — static example trial styled identically to the real ones.
 timeline.push({
   type: HtmlKeyboardResponsePlugin,
   stimulus: `
     <div class="instructions">
       <h2>Word Similarity Task</h2>
-      <p>On each trial you will see one word at the top and two words below it.</p>
-      <p>Your job is to choose which of the two bottom words is <strong>most similar in meaning</strong> to the top word.</p>
-      <p>There are no right or wrong answers for most trials — just go with your gut.</p>
-      <p>The task has ${allTrials.length} trials and should take a few minutes.</p>
-      <p style="margin-top:2rem;"><em>Press any key to begin.</em></p>
+
+      <p>For this study, please think back to times you have read the results
+      or discussion of a VIS paper and you came across words describing the
+      contributions or results of the work. We will present you with examples
+      of the types of words used to describe contributions or results, and we
+      are interested in your judgments about the similarity of these words.</p>
+
+      <p>In each trial, you will see three words: one <strong>target word</strong>
+      on top, and two <strong>choice words</strong> beneath it. Your task is
+      to select which of the two bottom words is most similar to the target
+      word in terms of the contributions or results in a VIS paper.</p>
+
+      <div class="example-stage">
+        <div class="example-label">Example trial</div>
+        <div class="triplet-word triplet-target">recommendation</div>
+        <div class="triplet-prompt">Which is more similar to the target word?</div>
+        <div class="triplet-choices">
+          <div class="triplet-word triplet-choice">guideline</div>
+          <div class="triplet-word triplet-choice">implication</div>
+        </div>
+      </div>
+
+      <p>To select the option on the <strong>LEFT</strong>, press the
+      <kbd>←</kbd> LEFT ARROW key, or click it with your mouse.<br />
+      To select the option on the <strong>RIGHT</strong>, press the
+      <kbd>→</kbd> RIGHT ARROW key, or click it with your mouse.</p>
+
+      <p>There are no right or wrong answers for most trials — go with your
+      gut. The task has ${allTrials.length} trials and should take a few minutes.</p>
+
+      <p style="margin-top:2rem;text-align:center;"><em>Press any key to begin.</em></p>
     </div>
   `,
 });
 
+// Triplet trials.
 allTrials.forEach((t, i) => {
   timeline.push({
-    type: HtmlButtonResponsePlugin,
-    stimulus: `
-      <div class="triplet-head">${t.head}</div>
-      <div class="triplet-prompt">Which is most similar in meaning?</div>
-    `,
-    choices: [t.left, t.right],
-    button_html: (choice) => `<button class="jspsych-btn">${choice}</button>`,
+    type: TripletPlugin,
+    head: t.head,
+    left: t.left,
+    right: t.right,
+    progress: `Trial ${i + 1} of ${allTrials.length}`,
     data: {
       trial_index: i,
       type: t.type,
-      head: t.head,
-      left: t.left,
-      right: t.right,
     },
     on_finish: async (data) => {
-      const winner = data.response === 0 ? t.left : t.right;
-      const loser = data.response === 0 ? t.right : t.left;
+      const winner = data.response_side === "left" ? t.left : t.right;
+      const loser = data.response_side === "left" ? t.right : t.left;
       data.winner = winner;
       data.loser = loser;
       await recordTrial({
@@ -180,11 +296,14 @@ allTrials.forEach((t, i) => {
         winner,
         loser,
         rt: data.rt,
+        response_side: data.response_side,
+        response_source: data.response_source,
       });
     },
   });
 });
 
+// Completion screen.
 timeline.push({
   type: HtmlKeyboardResponsePlugin,
   stimulus:
