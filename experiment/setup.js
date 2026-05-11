@@ -69,6 +69,104 @@ function escapeHtml(s) {
   }[c]));
 }
 
+// ---------- Custom consent plugin (radio + Continue button) ----------
+
+const CONSENT_HTML = `
+  <div class="consent">
+    <h2>Consent to Participate in Research</h2>
+    <p><strong>Study Title:</strong> Terminology Used to Describe Contributions in Visualization Research</p>
+    <p><strong>Principal Investigator:</strong><br />
+      Paul Rosen, Associate Professor<br />
+      University of Utah<br />
+      Email: paul.rosen@utah.edu</p>
+
+    <h3>Purpose of the Study</h3>
+    <p>You are invited to participate in a research study about the terminology used in visualization research papers to describe research contributions. Visualization research often uses terms such as implications, best practices, guidelines, and related phrases. This study seeks to better understand how visualization researchers use and interpret these terms.</p>
+
+    <h3>Procedures</h3>
+    <p>If you agree to participate, you will complete an online survey. The survey will ask about your familiarity with and use of terminology commonly used to describe research contributions in visualization research. The survey is expected to take approximately 20 minutes to complete.</p>
+
+    <h3>Voluntary Participation</h3>
+    <p>Your participation is completely voluntary. You may decline to participate, skip any question you do not wish to answer, or stop the survey at any time without penalty or loss of benefits.</p>
+
+    <h3>Risks or Discomforts</h3>
+    <p>The risks of participating are minimal. You may experience mild discomfort when answering some questions, fatigue from completing the survey, or concern about privacy. You may skip any question or stop participating at any time.</p>
+
+    <h3>Benefits</h3>
+    <p>You may not receive a direct personal benefit from participating. You may benefit indirectly by reflecting on how you use and interpret terminology in visualization research. The study may benefit the visualization research community by improving understanding of how terms such as implications, best practices, and guidelines are used, which may support clearer communication of research contributions.</p>
+
+    <h3>Compensation</h3>
+    <p>No compensation will be provided for participation.</p>
+
+    <h3>Confidentiality</h3>
+    <p>The researchers will make reasonable efforts to protect your privacy and confidentiality. Survey responses will be collected anonymously. Any published results will be reported in aggregate form, and individual participants will not be identified.</p>
+
+    <h3>Questions</h3>
+    <p>If you have questions about the study, you may contact:<br />
+      Paul Rosen<br />
+      Associate Professor, University of Utah<br />
+      paul.rosen@utah.edu</p>
+
+    <h3>Consent</h3>
+    <p>By selecting &ldquo;I agree&rdquo; and continuing to the survey, you indicate that you have read this consent information, are at least 18 years old, and voluntarily agree to participate in this research study.</p>
+
+    <div class="consent-options">
+      <label class="consent-option">
+        <input type="radio" name="consent-choice" value="agree" />
+        <span>I agree to participate in this study</span>
+      </label>
+      <label class="consent-option">
+        <input type="radio" name="consent-choice" value="decline" />
+        <span>I do not agree to participate in this study</span>
+      </label>
+    </div>
+
+    <div class="consent-actions">
+      <button class="jspsych-btn consent-continue" type="button" disabled>Continue</button>
+    </div>
+  </div>
+`;
+
+class ConsentPlugin {
+  static info = {
+    name: "consent",
+    version: "1.0.0",
+    parameters: {},
+  };
+
+  constructor(jsPsych) {
+    this.jsPsych = jsPsych;
+  }
+
+  trial(display_element, trial) {
+    display_element.innerHTML = CONSENT_HTML;
+
+    const radios = display_element.querySelectorAll(
+      'input[name="consent-choice"]'
+    );
+    const continueBtn = display_element.querySelector(".consent-continue");
+    const start = performance.now();
+
+    radios.forEach((r) =>
+      r.addEventListener("change", () => {
+        continueBtn.disabled = false;
+      })
+    );
+
+    continueBtn.addEventListener("click", () => {
+      const selected = display_element.querySelector(
+        'input[name="consent-choice"]:checked'
+      );
+      if (!selected) return;
+      const consent = selected.value === "agree";
+      this.jsPsych.finishTrial({
+        consent,
+        rt: performance.now() - start,
+      });
+    });
+  }
+}
+
 // ---------- Custom triplet plugin (mouse + keyboard) ----------
 
 class TripletPlugin {
@@ -166,6 +264,7 @@ if (!OFFLINE_MODE) {
       collection: EXPERIMENT_COLLECTION,
       startedAt: serverTimestamp(),
       userAgent: navigator.userAgent,
+      consent: null,
       trials: [],
     },
     { merge: true }
@@ -222,93 +321,135 @@ const jsPsych = initJsPsych({
 
 const timeline = [];
 
-// Instructions screen — static example trial styled identically to the real ones.
+// Track consent in a module-level variable so conditional branches can read it.
+let consented = null;
+
+// 1. Consent screen — always shown first.
 timeline.push({
-  type: HtmlButtonResponsePlugin,
-  stimulus: `
-    <div class="instructions">
-      <p>For this study, please think back to times you have read the results
-      or discussion of a VIS paper and you came across words describing the
-      contributions or results of the work. We will present you with examples
-      of the types of words used to describe contributions or results, and we
-      are interested in your judgments about the similarity of these words.</p>
-
-      <p>In each trial, you will see three words: one <strong>target word</strong>
-      on top, and two <strong>choice words</strong> beneath it. Your task is
-      to select which of the two bottom words is most similar to the target
-      word in terms of the contributions or results in a VIS paper. There are
-      no right or wrong answers for most trials — go with your gut. Each
-      trial shows only the three words, like this:</p>
-
-      <div class="triplet-stage example-stage">
-        <div class="example-label">Example trial</div>
-        <div class="triplet-word triplet-target">recommendation</div>
-        <div class="triplet-choices">
-          <div class="triplet-word triplet-choice">guideline</div>
-          <div class="triplet-word triplet-choice">implication</div>
-        </div>
-      </div>
-
-      <p>To select the option on the <strong>LEFT</strong>, press the
-      <kbd>←</kbd> LEFT ARROW key or click it with your mouse.<br />
-      To select the option on the <strong>RIGHT</strong>, press the
-      <kbd>→</kbd> RIGHT ARROW key or click it with your mouse.</p>
-
-      <p>The task has ${allTrials.length} trials and should take a few minutes.</p>
-    </div>
-  `,
-  choices: ["Begin"],
-  button_html: (choice) => `<button class="begin-button">${choice}</button>`,
-});
-
-// Triplet trials.
-allTrials.forEach((t, i) => {
-  timeline.push({
-    type: TripletPlugin,
-    head: t.head,
-    left: t.left,
-    right: t.right,
-    data: {
-      trial_index: i,
-      type: t.type,
-    },
-    on_finish: async (data) => {
-      const winner = data.response_side === "left" ? t.left : t.right;
-      const loser = data.response_side === "left" ? t.right : t.left;
-      data.winner = winner;
-      data.loser = loser;
-      await recordTrial({
-        trial_index: i,
-        type: t.type,
-        head: t.head,
-        left: t.left,
-        right: t.right,
-        winner,
-        loser,
-        rt: data.rt,
-        response_side: data.response_side,
-        response_source: data.response_source,
-      });
-    },
-  });
-});
-
-// Completion screen.
-timeline.push({
-  type: HtmlKeyboardResponsePlugin,
-  stimulus:
-    '<div class="instructions" style="text-align:center;"><h2>All done!</h2><p>Saving your responses...</p></div>',
-  choices: "NO_KEYS",
-  trial_duration: 1500,
-  on_start: async () => {
+  type: ConsentPlugin,
+  on_finish: async (data) => {
+    consented = data.consent;
     if (!OFFLINE_MODE) {
       try {
-        await updateDoc(docRef, { completedAt: serverTimestamp() });
+        await updateDoc(docRef, {
+          consent: data.consent,
+          consentedAt: serverTimestamp(),
+        });
       } catch (err) {
-        console.error("Failed to mark session complete:", err);
+        console.error("Failed to save consent:", err);
       }
     }
   },
+});
+
+// 2. Decline branch — terminal screen if the participant declined.
+timeline.push({
+  timeline: [
+    {
+      type: HtmlKeyboardResponsePlugin,
+      stimulus: `
+        <div class="instructions" style="text-align:center;margin-top:4rem;">
+          <h2>Thank you for your time</h2>
+          <p>You have chosen not to participate in this study.<br />
+          You may now close this window.</p>
+        </div>
+      `,
+      choices: "NO_KEYS",
+    },
+  ],
+  conditional_function: () => consented === false,
+});
+
+// 3. Consent-given branch — instructions, trials, completion.
+timeline.push({
+  timeline: [
+    // Instructions screen — static example trial styled identically to the real ones.
+    {
+      type: HtmlButtonResponsePlugin,
+      stimulus: `
+        <div class="instructions">
+          <p>For this study, please think back to times you have read the results
+          or discussion of a VIS paper and you came across words describing the
+          contributions or results of the work. We will present you with examples
+          of the types of words used to describe contributions or results, and we
+          are interested in your judgments about the similarity of these words.</p>
+
+          <p>In each trial, you will see three words: one <strong>target word</strong>
+          on top, and two <strong>choice words</strong> beneath it. Your task is
+          to select which of the two bottom words is most similar to the target
+          word in terms of the contributions or results in a VIS paper. There are
+          no right or wrong answers for most trials — go with your gut. Each
+          trial shows only the three words, like this:</p>
+
+          <div class="triplet-stage example-stage">
+            <div class="example-label">Example trial</div>
+            <div class="triplet-word triplet-target">recommendation</div>
+            <div class="triplet-choices">
+              <div class="triplet-word triplet-choice">guideline</div>
+              <div class="triplet-word triplet-choice">implication</div>
+            </div>
+          </div>
+
+          <p>To select the option on the <strong>LEFT</strong>, press the
+          <kbd>←</kbd> LEFT ARROW key or click it with your mouse.<br />
+          To select the option on the <strong>RIGHT</strong>, press the
+          <kbd>→</kbd> RIGHT ARROW key or click it with your mouse.</p>
+
+          <p>The task has ${allTrials.length} trials and should take around 10 minutes.</p>
+        </div>
+      `,
+      choices: ["Begin"],
+    },
+
+    // Triplet trials.
+    ...allTrials.map((t, i) => ({
+      type: TripletPlugin,
+      head: t.head,
+      left: t.left,
+      right: t.right,
+      data: {
+        trial_index: i,
+        type: t.type,
+      },
+      on_finish: async (data) => {
+        const winner = data.response_side === "left" ? t.left : t.right;
+        const loser = data.response_side === "left" ? t.right : t.left;
+        data.winner = winner;
+        data.loser = loser;
+        await recordTrial({
+          trial_index: i,
+          type: t.type,
+          head: t.head,
+          left: t.left,
+          right: t.right,
+          winner,
+          loser,
+          rt: data.rt,
+          response_side: data.response_side,
+          response_source: data.response_source,
+        });
+      },
+    })),
+
+    // Completion screen.
+    {
+      type: HtmlKeyboardResponsePlugin,
+      stimulus:
+        '<div class="instructions" style="text-align:center;"><h2>All done!</h2><p>Saving your responses...</p></div>',
+      choices: "NO_KEYS",
+      trial_duration: 1500,
+      on_start: async () => {
+        if (!OFFLINE_MODE) {
+          try {
+            await updateDoc(docRef, { completedAt: serverTimestamp() });
+          } catch (err) {
+            console.error("Failed to mark session complete:", err);
+          }
+        }
+      },
+    },
+  ],
+  conditional_function: () => consented === true,
 });
 
 jsPsych.run(timeline);
