@@ -44,6 +44,43 @@
       font-size: 0.95em;
     }
 
+    /* ---------- survey-text (demographics) ---------- */
+    #jspsych-survey-text,
+    .jspsych-survey-text {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .jspsych-survey-text-question {
+      margin: 1.25rem 0;
+    }
+    .jspsych-survey-text-question label {
+      display: block;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+    .jspsych-survey-text input[type="text"],
+    .jspsych-survey-text textarea {
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #c0c0c0;
+      border-radius: 6px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    .jspsych-survey-text input[type="text"]:focus,
+    .jspsych-survey-text textarea:focus {
+      outline: none;
+      border-color: #1f6fa8;
+      box-shadow: 0 0 0 3px rgba(31, 111, 168, 0.15);
+    }
+    .jspsych-survey-text textarea {
+      resize: vertical;
+    }
+
     /* ---------- consent ---------- */
     .consent {
       max-width: 720px;

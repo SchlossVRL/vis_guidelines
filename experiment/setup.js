@@ -4,6 +4,7 @@ import {
 } from "https://cdn.jsdelivr.net/npm/jspsych@8.0.0/+esm";
 import HtmlKeyboardResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-keyboard-response@2.0.0/+esm";
 import HtmlButtonResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-button-response@2.0.0/+esm";
+import SurveyTextPlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-survey-text@2.0.0/+esm";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
@@ -265,6 +266,7 @@ if (!OFFLINE_MODE) {
       startedAt: serverTimestamp(),
       userAgent: navigator.userAgent,
       consent: null,
+      demographics: null,
       trials: [],
     },
     { merge: true }
@@ -360,9 +362,41 @@ timeline.push({
   conditional_function: () => consented === false,
 });
 
-// 3. Consent-given branch — instructions, trials, completion.
+// 3. Consent-given branch — demographics, instructions, trials, completion.
 timeline.push({
   timeline: [
+    // Demographics survey — saved to data.demographics on the participant doc,
+    // NOT into the trials array (demographics are participant-level).
+    {
+      type: SurveyTextPlugin,
+      preamble: `
+        <div class="instructions" style="margin-bottom:1.5rem;">
+          <p>Before you begin, please answer a few questions about yourself.</p>
+        </div>
+      `,
+      questions: [
+        { prompt: "Age", name: "age", rows: 1, columns: 3, required: true },
+        { prompt: "Gender", name: "gender", rows: 1, columns: 15, required: true },
+        { prompt: "Race/ethnicity", name: "race_ethnicity", rows: 1, columns: 30, required: true },
+        { prompt: "List all languages you know", name: "languages", rows: 6, columns: 60, required: true },
+      ],
+      button_label: "Done",
+      randomize_question_order: false,
+      on_finish: async (data) => {
+        const demographics = data.response || {};
+        if (!OFFLINE_MODE) {
+          try {
+            await updateDoc(docRef, {
+              demographics,
+              demographicsAt: serverTimestamp(),
+            });
+          } catch (err) {
+            console.error("Failed to save demographics:", err);
+          }
+        }
+      },
+    },
+
     // Instructions screen — static example trial styled identically to the real ones.
     {
       type: HtmlButtonResponsePlugin,
