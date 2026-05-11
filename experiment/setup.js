@@ -312,6 +312,11 @@ const catchTrials = stimuli.catch_triplets.map((t) => ({
 }));
 const allTrials = shuffle([...randomTrials, ...validationTrials, ...catchTrials]);
 
+// Insert a break screen after each of these completed-trial counts.
+const BREAK_POINTS = new Set(
+  [0.25, 0.5, 0.75].map((p) => Math.floor(allTrials.length * p))
+);
+
 // ---------- jsPsych timeline ----------
 
 const jsPsych = initJsPsych({
@@ -435,35 +440,56 @@ timeline.push({
       choices: ["Begin"],
     },
 
-    // Triplet trials.
-    ...allTrials.map((t, i) => ({
-      type: TripletPlugin,
-      head: t.head,
-      left: t.left,
-      right: t.right,
-      data: {
-        trial_index: i,
-        type: t.type,
-      },
-      on_finish: async (data) => {
-        const winner = data.response_side === "left" ? t.left : t.right;
-        const loser = data.response_side === "left" ? t.right : t.left;
-        data.winner = winner;
-        data.loser = loser;
-        await recordTrial({
+    // Triplet trials, interleaved with break screens at 25 / 50 / 75% progress.
+    ...allTrials.flatMap((t, i) => {
+      const tripletTrial = {
+        type: TripletPlugin,
+        head: t.head,
+        left: t.left,
+        right: t.right,
+        data: {
           trial_index: i,
           type: t.type,
-          head: t.head,
-          left: t.left,
-          right: t.right,
-          winner,
-          loser,
-          rt: data.rt,
-          response_side: data.response_side,
-          response_source: data.response_source,
-        });
-      },
-    })),
+        },
+        on_finish: async (data) => {
+          const winner = data.response_side === "left" ? t.left : t.right;
+          const loser = data.response_side === "left" ? t.right : t.left;
+          data.winner = winner;
+          data.loser = loser;
+          await recordTrial({
+            trial_index: i,
+            type: t.type,
+            head: t.head,
+            left: t.left,
+            right: t.right,
+            winner,
+            loser,
+            rt: data.rt,
+            response_side: data.response_side,
+            response_source: data.response_source,
+          });
+        },
+      };
+      const completed = i + 1;
+      if (BREAK_POINTS.has(completed)) {
+        const pct = Math.round((completed / allTrials.length) * 100);
+        return [
+          tripletTrial,
+          {
+            type: HtmlButtonResponsePlugin,
+            stimulus: `
+              <div class="instructions" style="text-align:center;">
+                <h2>${pct}% complete</h2>
+                <p>Great job! You have completed ${pct}% of the trials!</p>
+                <p>When you are ready to continue, click the "Continue" button below.</p>
+              </div>
+            `,
+            choices: ["Continue"],
+          },
+        ];
+      }
+      return [tripletTrial];
+    }),
 
     // Completion screen.
     {
