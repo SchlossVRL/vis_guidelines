@@ -92,7 +92,7 @@ to confirm a doc lands in `vis-guidelines-pilot`.
 firebase deploy --only hosting
 ```
 
-### 5. Export the responses
+### 5. Export the data
 
 ```sh
 python analysis/export_triplets.py \
@@ -100,11 +100,19 @@ python analysis/export_triplets.py \
     --credentials ~/.firebase-keys/svrl-vis-guidelines-admin.json
 ```
 
-Useful flags:
-- `--include-incomplete` — include sessions without a `completedAt` (handy for smoke tests where you didn't finish all 120 trials).
-- `--include-validation` — also feed validation triplets to the fit (default: held out).
+The script writes four CSVs into `data/`:
 
-The script prints `sessions used`, `trials exported`, and writes `data/responses.csv` (head/winner/loser ints) and `data/targets.csv` (index ↔ word).
+| file               | what's in it                                                                                                                 |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| `trials.csv`       | one row per triplet trial: `participant_id, collection, trial_index, type, head, left, right, winner, loser, response_side, response_source, rt` |
+| `participants.csv` | one row per participant: session metadata + consent + (future) `demo_<field>` columns                                        |
+| `responses.csv`    | derived, salmon-ready: 0-based integer `head, winner, loser`                                                                 |
+| `targets.csv`      | word ↔ index mapping                                                                                                         |
+
+Flags:
+- `--include-incomplete` — include sessions without a `completedAt` timestamp (handy for smoke tests where you didn't finish all 120 trials).
+- `--include-non-consenting` — include sessions whose `consent` is not `True` (default: skipped).
+- `--include-validation` — also feed validation triplets to the salmon fit (default: held out for post-hoc embedding evaluation).
 
 ### 6. Fit the embedding
 

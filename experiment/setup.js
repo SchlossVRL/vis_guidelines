@@ -23,7 +23,7 @@ import {
 // CONFIG — edit these per experiment
 // =============================================================================
 
-const EXPERIMENT_COLLECTION = "vis-guidelines-pilot";
+const EXPERIMENT_COLLECTION = "vis-guidelines-pilot-v2";
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCMWifly8RpRWOiZZNRGzfRY1zEx7DBMos",
