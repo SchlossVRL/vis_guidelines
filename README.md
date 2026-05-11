@@ -108,7 +108,7 @@ firebase deploy --only hosting
 
 ```sh
 python analysis/export_triplets.py \
-    --collection vis-guidelines-pilot \
+    --collection vis-guidelines-pilot-v3 \
     --credentials ~/.firebase-keys/svrl-vis-guidelines-admin.json
 ```
 
