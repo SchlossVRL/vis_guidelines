@@ -71,13 +71,25 @@ conda env create -f environment.yml
 conda activate vis-guidelines
 ```
 
-### 2. Deploy Firestore rules (one-time, then again whenever rules change)
+### 2. Install the Firebase CLI (one-time)
+
+The `firebase` command is provided by the `firebase-tools` npm package, which requires Node.js. If you don't already have Node, install it via [nvm](https://github.com/nvm-sh/nvm) (recommended), [Homebrew](https://brew.sh) (`brew install node`), or the installer at [nodejs.org](https://nodejs.org). Then:
+
+```sh
+npm install -g firebase-tools          # install the CLI globally
+firebase login                         # opens a browser to sign in with your Google account
+firebase use                           # should print: svrl-vis-guidelines (default)
+```
+
+The `firebase use` check confirms the CLI picked up the project alias from `.firebaserc`. If it prints something else, run `firebase use svrl-vis-guidelines`.
+
+### 3. Deploy Firestore rules (one-time, then again whenever rules change)
 
 ```sh
 firebase deploy --only firestore:rules
 ```
 
-### 3. Preview locally
+### 4. Preview locally
 
 ```sh
 firebase serve --only hosting          # http://localhost:5000
@@ -86,13 +98,13 @@ firebase serve --only hosting          # http://localhost:5000
 Open the URL, click through a few trials, then check the [Firestore console](https://console.firebase.google.com/project/svrl-vis-guidelines/firestore/data)
 to confirm a doc lands in `vis-guidelines-pilot`.
 
-### 4. Deploy to production
+### 5. Deploy to production
 
 ```sh
 firebase deploy --only hosting
 ```
 
-### 5. Export the data
+### 6. Export the data
 
 ```sh
 python analysis/export_triplets.py \
@@ -114,7 +126,7 @@ Flags:
 - `--include-non-consenting` — include sessions whose `consent` is not `True` (default: skipped).
 - `--include-validation` — also feed validation triplets to the salmon fit (default: held out for post-hoc embedding evaluation).
 
-### 6. Fit the embedding
+### 7. Fit the embedding
 
 ```sh
 python analysis/fit_embedding.py -d 3                          # default
