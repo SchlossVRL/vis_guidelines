@@ -44,6 +44,35 @@
       font-size: 0.95em;
     }
 
+    .begin-button {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      padding: 0.85rem 3rem;
+      margin-top: 1.5rem;
+      background: #1f6fa8;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 100ms ease, transform 100ms ease,
+        box-shadow 100ms ease;
+    }
+    .begin-button:hover {
+      background: #185a8a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(31, 111, 168, 0.25);
+    }
+    .begin-button:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 3px rgba(31, 111, 168, 0.2);
+    }
+    .begin-button:focus-visible {
+      outline: 3px solid #a0c5e2;
+      outline-offset: 2px;
+    }
+
     /* ---------- triplet stage (used in both example and live trials) ---------- */
     .triplet-stage {
       text-align: center;

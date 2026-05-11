@@ -3,6 +3,7 @@ import {
   ParameterType,
 } from "https://cdn.jsdelivr.net/npm/jspsych@8.0.0/+esm";
 import HtmlKeyboardResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-keyboard-response@2.0.0/+esm";
+import HtmlButtonResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-button-response@2.0.0/+esm";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
@@ -223,7 +224,7 @@ const timeline = [];
 
 // Instructions screen — static example trial styled identically to the real ones.
 timeline.push({
-  type: HtmlKeyboardResponsePlugin,
+  type: HtmlButtonResponsePlugin,
   stimulus: `
     <div class="instructions">
       <p>For this study, please think back to times you have read the results
@@ -254,10 +255,10 @@ timeline.push({
       <kbd>→</kbd> RIGHT ARROW key or click it with your mouse.</p>
 
       <p>The task has ${allTrials.length} trials and should take a few minutes.</p>
-
-      <p style="margin-top:2rem;text-align:center;"><em>Press any key to begin.</em></p>
     </div>
   `,
+  choices: ["Begin"],
+  button_html: (choice) => `<button class="begin-button">${choice}</button>`,
 });
 
 // Triplet trials.
