@@ -128,6 +128,55 @@ it must never be committed. The expected location is:
 
 The web `firebaseConfig` (with `apiKey`) in `experiment/setup.js` is **not** a secret — Firebase web API keys are project identifiers meant to ship in browser code; security comes from Firestore rules + auth.
 
+## For collaborators (downloading data)
+
+If you've been added to the `svrl-vis-guidelines` Firebase project as an **Editor**, follow these steps to set yourself up to pull data and fit embeddings. Each collaborator should generate their own service-account key rather than sharing one — that way access is tied to your account and can be revoked individually.
+
+### 1. Clone the repo
+
+```sh
+git clone git@github.com:SchlossVRL/vis_guidelines.git
+cd vis_guidelines
+```
+
+### 2. Create the conda environment
+
+```sh
+conda env create -f environment.yml
+conda activate vis-guidelines
+```
+
+### 3. Generate your own service-account key
+
+1. Sign into the [Firebase console for this project](https://console.firebase.google.com/project/svrl-vis-guidelines) with the Google account you were added under.
+2. Click the gear ⚙️ → **Project settings** → **Service accounts** tab.
+3. Scroll to **Firebase Admin SDK** → click **Generate new private key** → **Generate key**. A JSON file will download.
+4. Move it somewhere outside the repo and lock down its permissions:
+   ```sh
+   mkdir -p ~/.firebase-keys
+   mv ~/Downloads/svrl-vis-guidelines-firebase-adminsdk-*.json \
+      ~/.firebase-keys/svrl-vis-guidelines-admin.json
+   chmod 600 ~/.firebase-keys/svrl-vis-guidelines-admin.json
+   ```
+
+**Treat this JSON like a password.** Anyone who has it can read/write the entire Firestore database (it bypasses security rules). Don't commit it, don't paste it into chat, don't email it.
+
+### 4. Pull data and fit an embedding
+
+```sh
+python analysis/export_triplets.py \
+    --collection vis-guidelines-pilot \
+    --credentials ~/.firebase-keys/svrl-vis-guidelines-admin.json
+
+python analysis/fit_embedding.py -d 3
+```
+
+That's it — `data/responses.csv`, `data/targets.csv`, and `results/embedding.csv` will be written locally.
+
+### If your access is ever revoked
+
+If you leave the project (or just want to rotate your key), revoke it in the Firebase console → Project settings → Service accounts → **Manage all service accounts** (which opens Google Cloud) → find your key → delete. Then delete the local JSON.
+
 ## Starting a new experiment (e.g. v2)
 
 1. Pick a new collection name and update `EXPERIMENT_COLLECTION` in `experiment/setup.js`.
