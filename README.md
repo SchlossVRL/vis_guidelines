@@ -73,7 +73,7 @@ conda activate vis-guidelines
 
 ### 2. Install the Firebase CLI (one-time)
 
-The `firebase` command is provided by the `firebase-tools` npm package, which requires Node.js. If you don't already have Node, install it via [nvm](https://github.com/nvm-sh/nvm) (recommended), [Homebrew](https://brew.sh) (`brew install node`), or the installer at [nodejs.org](https://nodejs.org). Then:
+The `firebase` command is provided by the `firebase-tools` npm package, which requires Node.js. If you don't already have Node, install it via [Homebrew](https://brew.sh) (`brew install node`) or the installer at [nodejs.org](https://nodejs.org). Then:
 
 ```sh
 npm install -g firebase-tools          # install the CLI globally
