@@ -47,41 +47,36 @@
     /* ---------- triplet stage (used in both example and live trials) ---------- */
     .triplet-stage {
       text-align: center;
-      margin: 2rem 0;
+      margin: 2.5rem 0;
     }
     .example-stage {
-      background: #fff;
-      border: 1px solid #e3e3e3;
-      border-radius: 14px;
-      padding: 2rem 1rem 2.25rem;
       margin: 1.75rem auto;
     }
     .example-label {
       font-family: 'Lato', sans-serif;
       font-weight: 400;
-      font-size: 0.8rem;
-      letter-spacing: 0.12em;
-      color: #888;
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      color: #999;
       text-transform: uppercase;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
     }
 
-    /* All three words share these styles — bold Lato, same size. */
+    /* All three words share these styles — bold Lato, same size, same pill shape. */
     .triplet-word {
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-size: 2rem;
       letter-spacing: 0.005em;
+      display: inline-block;
+      padding: 1rem 2rem;
+      min-width: 12rem;
+      border-radius: 14px;
+      background: transparent;
+      text-align: center;
     }
     .triplet-target {
-      margin: 0.5rem 0 2rem;
-    }
-    .triplet-prompt {
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #5a5a5a;
-      margin-bottom: 1.75rem;
+      margin: 0.5rem 0 2.25rem;
     }
     .triplet-choices {
       display: flex;
@@ -89,55 +84,24 @@
       align-items: stretch;
       gap: 3rem;
     }
+
+    /* Choices behave like the target by default, but light up on hover/select. */
     .triplet-choice {
-      padding: 1.25rem 2rem;
-      min-width: 12rem;
-      background: #fff;
-      border: 2px solid #d0d0d0;
-      border-radius: 14px;
       cursor: pointer;
       user-select: none;
-      transition: border-color 140ms ease, background-color 140ms ease,
-        transform 140ms ease, box-shadow 140ms ease;
+      transition: background-color 90ms ease, transform 90ms ease,
+        box-shadow 90ms ease;
     }
     .triplet-choice:hover,
     .triplet-choice:focus-visible {
-      border-color: #4a90c8;
-      background: #eef6fc;
+      background: #eaf3fb;
       transform: translateY(-2px);
       outline: none;
     }
     .triplet-choice.selected {
-      border-color: #1f6fa8;
-      background: #cfe5f5;
-      transform: scale(1.04);
-      box-shadow: 0 6px 18px rgba(31, 111, 168, 0.22);
-    }
-
-    /* The example trial in the instructions is non-interactive. */
-    .example-stage .triplet-choice {
-      cursor: default;
-    }
-    .example-stage .triplet-choice:hover {
-      border-color: #d0d0d0;
-      background: #fff;
-      transform: none;
-    }
-
-    .triplet-hint {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.85rem;
-      color: #888;
-      margin-top: 2rem;
-      letter-spacing: 0.05em;
-    }
-
-    .progress {
-      font-family: 'Lato', sans-serif;
-      font-size: 0.8rem;
-      color: #aaa;
-      margin-bottom: 1rem;
-      letter-spacing: 0.05em;
+      background: #b8d8ee;
+      transform: scale(1.05);
+      box-shadow: 0 4px 14px rgba(31, 111, 168, 0.22);
     }
   </style>
 </head>

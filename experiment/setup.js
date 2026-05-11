@@ -78,12 +78,7 @@ class TripletPlugin {
       head: { type: ParameterType.STRING, default: "" },
       left: { type: ParameterType.STRING, default: "" },
       right: { type: ParameterType.STRING, default: "" },
-      prompt: {
-        type: ParameterType.HTML_STRING,
-        default: "Which is more similar to the target word?",
-      },
-      progress: { type: ParameterType.HTML_STRING, default: "" },
-      feedback_duration: { type: ParameterType.INT, default: 300 },
+      feedback_duration: { type: ParameterType.INT, default: 150 },
     },
   };
 
@@ -94,14 +89,11 @@ class TripletPlugin {
   trial(display_element, trial) {
     display_element.innerHTML = `
       <div class="triplet-stage">
-        ${trial.progress ? `<div class="progress">${trial.progress}</div>` : ""}
         <div class="triplet-word triplet-target">${escapeHtml(trial.head)}</div>
-        <div class="triplet-prompt">${trial.prompt}</div>
         <div class="triplet-choices">
           <div class="triplet-word triplet-choice" data-side="left" tabindex="0">${escapeHtml(trial.left)}</div>
           <div class="triplet-word triplet-choice" data-side="right" tabindex="0">${escapeHtml(trial.right)}</div>
         </div>
-        <div class="triplet-hint">← LEFT ARROW   ·   click an option   ·   RIGHT ARROW →</div>
       </div>
     `;
 
@@ -234,8 +226,6 @@ timeline.push({
   type: HtmlKeyboardResponsePlugin,
   stimulus: `
     <div class="instructions">
-      <h2>Word Similarity Task</h2>
-
       <p>For this study, please think back to times you have read the results
       or discussion of a VIS paper and you came across words describing the
       contributions or results of the work. We will present you with examples
@@ -245,12 +235,13 @@ timeline.push({
       <p>In each trial, you will see three words: one <strong>target word</strong>
       on top, and two <strong>choice words</strong> beneath it. Your task is
       to select which of the two bottom words is most similar to the target
-      word in terms of the contributions or results in a VIS paper.</p>
+      word in terms of the contributions or results in a VIS paper. There are
+      no right or wrong answers for most trials — go with your gut. Each
+      trial shows only the three words, like this:</p>
 
-      <div class="example-stage">
+      <div class="triplet-stage example-stage">
         <div class="example-label">Example trial</div>
         <div class="triplet-word triplet-target">recommendation</div>
-        <div class="triplet-prompt">Which is more similar to the target word?</div>
         <div class="triplet-choices">
           <div class="triplet-word triplet-choice">guideline</div>
           <div class="triplet-word triplet-choice">implication</div>
@@ -258,12 +249,11 @@ timeline.push({
       </div>
 
       <p>To select the option on the <strong>LEFT</strong>, press the
-      <kbd>←</kbd> LEFT ARROW key, or click it with your mouse.<br />
+      <kbd>←</kbd> LEFT ARROW key or click it with your mouse.<br />
       To select the option on the <strong>RIGHT</strong>, press the
-      <kbd>→</kbd> RIGHT ARROW key, or click it with your mouse.</p>
+      <kbd>→</kbd> RIGHT ARROW key or click it with your mouse.</p>
 
-      <p>There are no right or wrong answers for most trials — go with your
-      gut. The task has ${allTrials.length} trials and should take a few minutes.</p>
+      <p>The task has ${allTrials.length} trials and should take a few minutes.</p>
 
       <p style="margin-top:2rem;text-align:center;"><em>Press any key to begin.</em></p>
     </div>
@@ -277,7 +267,6 @@ allTrials.forEach((t, i) => {
     head: t.head,
     left: t.left,
     right: t.right,
-    progress: `Trial ${i + 1} of ${allTrials.length}`,
     data: {
       trial_index: i,
       type: t.type,
