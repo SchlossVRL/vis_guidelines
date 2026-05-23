@@ -61,13 +61,17 @@ function sampleRandomTriplets(words, n) {
 }
 
 function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, (c) => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;",
-  }[c]));
+  return String(s).replace(
+    /[&<>"']/g,
+    (c) =>
+      ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[c],
+  );
 }
 
 // ---------- Custom consent plugin (radio + Continue button) ----------
@@ -143,7 +147,7 @@ class ConsentPlugin {
     display_element.innerHTML = CONSENT_HTML;
 
     const radios = display_element.querySelectorAll(
-      'input[name="consent-choice"]'
+      'input[name="consent-choice"]',
     );
     const continueBtn = display_element.querySelector(".consent-continue");
     const start = performance.now();
@@ -151,12 +155,12 @@ class ConsentPlugin {
     radios.forEach((r) =>
       r.addEventListener("change", () => {
         continueBtn.disabled = false;
-      })
+      }),
     );
 
     continueBtn.addEventListener("click", () => {
       const selected = display_element.querySelector(
-        'input[name="consent-choice"]:checked'
+        'input[name="consent-choice"]:checked',
       );
       if (!selected) return;
       const consent = selected.value === "agree";
@@ -197,8 +201,12 @@ class TripletPlugin {
       </div>
     `;
 
-    const leftEl = display_element.querySelector('.triplet-choice[data-side="left"]');
-    const rightEl = display_element.querySelector('.triplet-choice[data-side="right"]');
+    const leftEl = display_element.querySelector(
+      '.triplet-choice[data-side="left"]',
+    );
+    const rightEl = display_element.querySelector(
+      '.triplet-choice[data-side="right"]',
+    );
     const start = performance.now();
     let finished = false;
 
@@ -269,11 +277,11 @@ if (!OFFLINE_MODE) {
       demographics: null,
       trials: [],
     },
-    { merge: true }
+    { merge: true },
   );
 } else {
   console.warn(
-    "[OFFLINE_MODE] Firebase config is unset — trial data will be logged to console only."
+    "[OFFLINE_MODE] Firebase config is unset — trial data will be logged to console only.",
   );
   participantId = "offline-" + Math.random().toString(36).slice(2, 10);
 }
@@ -300,7 +308,7 @@ const stimuli = await fetch("./stimuli.json").then((r) => r.json());
 
 const randomTrials = sampleRandomTriplets(
   stimuli.words,
-  stimuli.n_random_trials
+  stimuli.n_random_trials,
 ).map((t) => ({ ...t, type: "random" }));
 const validationTrials = stimuli.validation_triplets.map((t) => ({
   ...t,
@@ -310,11 +318,15 @@ const catchTrials = stimuli.catch_triplets.map((t) => ({
   ...t,
   type: "catch",
 }));
-const allTrials = shuffle([...randomTrials, ...validationTrials, ...catchTrials]);
+const allTrials = shuffle([
+  ...randomTrials,
+  ...validationTrials,
+  ...catchTrials,
+]);
 
 // Insert a break screen after each of these completed-trial counts.
 const BREAK_POINTS = new Set(
-  [0.25, 0.5, 0.75].map((p) => Math.floor(allTrials.length * p))
+  [0.25, 0.5, 0.75].map((p) => Math.floor(allTrials.length * p)),
 );
 
 // ---------- jsPsych timeline ----------
@@ -380,10 +392,29 @@ timeline.push({
         </div>
       `,
       questions: [
-        { prompt: "Age", name: "age", rows: 1, columns: 3, required: true },
-        { prompt: "Gender", name: "gender", rows: 1, columns: 15, required: true },
-        { prompt: "Race/ethnicity", name: "race_ethnicity", rows: 1, columns: 30, required: true },
-        { prompt: "List all languages you know", name: "languages", rows: 6, columns: 60, required: true },
+        { prompt: "Age", name: "age", rows: 1, columns: 3, required: false },
+        {
+          prompt: "Gender",
+          name: "gender",
+          rows: 1,
+          columns: 15,
+          required: false,
+        },
+        {
+          prompt:
+            "For how many years have you considered yourself a part of the visualization community?",
+          name: "years_in_vis",
+          rows: 1,
+          columns: 30,
+          required: false,
+        },
+        {
+          prompt: "What do you consider to be your native language(s)?",
+          name: "languages",
+          rows: 6,
+          columns: 60,
+          required: false,
+        },
       ],
       button_label: "Done",
       randomize_question_order: false,
