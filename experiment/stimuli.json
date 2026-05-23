@@ -1,7 +1,6 @@
 {
   "words": [
     "design pattern",
-    "justification",
     "heuristic",
     "requirement",
     "implication",
@@ -32,7 +31,7 @@
       "right": "implication"
     },
     {
-      "head": "justification",
+      "head": "best practice",
       "left": "implication",
       "right": "convention"
     },
@@ -74,8 +73,8 @@
   ],
   "catch_triplets": [
     {
-      "head": "justification",
-      "left": "justification",
+      "head": "standard",
+      "left": "standard",
       "right": "best practice"
     },
     {
