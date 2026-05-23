@@ -18,7 +18,7 @@
     "style guide",
     "guideline"
   ],
-  "n_random_trials": 100,
+  "n_random_trials": 80,
   "validation_triplets": [
     {
       "head": "standard",
