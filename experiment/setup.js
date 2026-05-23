@@ -104,7 +104,7 @@ const CONSENT_HTML = `
     <p>No compensation will be provided for participation.</p>
 
     <h3>Confidentiality</h3>
-    <p>The researchers will make reasonable efforts to protect your privacy and confidentiality. Survey responses will be collected anonymously. Any published results will be reported in aggregate form, and individual participants will not be identified.</p>
+    <p>The researchers will make reasonable efforts to protect your privacy and confidentiality. Survey responses will be collected anonymously. Typically, group characteristics will be published, but datasets with individual responses may also be shared. In such cases, the data will not be linked to your name or other identifiable information.</p>
 
     <h3>Questions</h3>
     <p>If you have questions about the study, you may contact:<br />
