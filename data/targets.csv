@@ -1,19 +1,18 @@
 index,word
 0,design pattern
-1,justification
-2,heuristic
-3,requirement
-4,implication
-5,principle
-6,rule of thumb
-7,consideration
-8,common practice
-9,convention
-10,recommendation
-11,best practice
-12,standard
-13,norm
-14,guardrail
-15,paradigm
-16,style guide
-17,guideline
+1,heuristic
+2,requirement
+3,implication
+4,principle
+5,rule of thumb
+6,consideration
+7,common practice
+8,convention
+9,recommendation
+10,best practice
+11,standard
+12,norm
+13,guardrail
+14,paradigm
+15,style guide
+16,guideline
