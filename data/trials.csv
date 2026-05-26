@@ -1,581 +1,301 @@
 participant_id,collection,trial_index,type,head,left,right,winner,loser,response_side,response_source,rt
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,0,random,convention,guideline,guardrail,guideline,guardrail,left,key,4883.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,1,random,best practice,principle,convention,convention,principle,right,key,2030.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,2,random,standard,guardrail,design pattern,guardrail,design pattern,left,key,4870.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,3,random,convention,implication,recommendation,implication,recommendation,left,key,2954.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,4,random,rule of thumb,paradigm,common practice,common practice,paradigm,right,key,4939.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,5,random,paradigm,design pattern,best practice,design pattern,best practice,left,key,3567.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,6,random,rule of thumb,design pattern,paradigm,design pattern,paradigm,left,key,5814.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,7,random,design pattern,paradigm,implication,paradigm,implication,left,key,3959.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,8,random,principle,convention,recommendation,convention,recommendation,left,key,2960.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,9,random,best practice,implication,justification,implication,justification,left,key,2378.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,10,random,implication,style guide,justification,style guide,justification,left,key,3274.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,11,random,paradigm,requirement,heuristic,heuristic,requirement,right,key,4418.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,12,random,common practice,consideration,standard,standard,consideration,right,key,5545.200000047684
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,13,random,heuristic,common practice,principle,principle,common practice,right,key,6541.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,14,random,heuristic,paradigm,rule of thumb,rule of thumb,paradigm,right,key,2476.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,15,random,style guide,recommendation,standard,standard,recommendation,right,key,9712.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,16,catch,best practice,best practice,consideration,best practice,consideration,left,key,5099.299999952316
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,17,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,2900.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,18,random,design pattern,guardrail,rule of thumb,rule of thumb,guardrail,right,key,5357.799999952316
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,19,random,style guide,consideration,rule of thumb,rule of thumb,consideration,right,key,4172.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,20,random,implication,justification,design pattern,design pattern,justification,right,key,5184.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,21,random,heuristic,convention,paradigm,paradigm,convention,right,key,7242.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,22,random,guardrail,best practice,heuristic,best practice,heuristic,left,key,4459.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,23,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,2796.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,24,random,norm,requirement,rule of thumb,rule of thumb,requirement,right,key,2538.599999964237
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,25,random,consideration,implication,heuristic,heuristic,implication,right,key,3642.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,26,random,justification,heuristic,paradigm,paradigm,heuristic,right,key,11147.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,27,random,standard,heuristic,recommendation,heuristic,recommendation,left,key,8119.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,28,random,convention,paradigm,rule of thumb,paradigm,rule of thumb,left,key,4952.599999964237
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,29,random,recommendation,principle,design pattern,design pattern,principle,right,key,6401.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,30,random,heuristic,rule of thumb,implication,rule of thumb,implication,left,key,5050.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,31,random,common practice,design pattern,rule of thumb,rule of thumb,design pattern,right,key,7806.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,32,validation,consideration,best practice,style guide,style guide,best practice,right,key,10115.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,33,validation,guardrail,norm,recommendation,recommendation,norm,right,key,5274.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,34,random,common practice,recommendation,rule of thumb,rule of thumb,recommendation,right,key,4521.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,35,random,design pattern,convention,best practice,convention,best practice,left,key,5214.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,36,random,consideration,design pattern,convention,design pattern,convention,left,key,7342.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,37,catch,justification,justification,best practice,justification,best practice,left,key,2131.099999964237
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,38,random,recommendation,style guide,guideline,guideline,style guide,right,key,7000.899999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,39,random,principle,style guide,paradigm,paradigm,style guide,right,key,6484.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,40,random,implication,justification,requirement,justification,requirement,left,key,4557.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,41,validation,rule of thumb,requirement,standard,standard,requirement,right,key,6258.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,42,random,style guide,consideration,rule of thumb,rule of thumb,consideration,right,key,3697.2999999523163
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,43,random,justification,principle,recommendation,recommendation,principle,right,key,11480.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,44,random,consideration,norm,principle,principle,norm,right,key,10480.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,45,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,2421.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,46,random,heuristic,standard,best practice,best practice,standard,right,key,4294.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,47,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1536.3999999761581
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,48,random,heuristic,principle,justification,principle,justification,left,key,4476.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,49,random,principle,design pattern,justification,design pattern,justification,left,key,3560.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,50,random,principle,paradigm,implication,paradigm,implication,left,key,7226.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,51,random,design pattern,paradigm,style guide,style guide,paradigm,right,key,6475.100000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,52,random,justification,paradigm,best practice,paradigm,best practice,left,key,4705.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,53,random,best practice,style guide,justification,style guide,justification,left,key,9972.299999952316
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,54,catch,consideration,best practice,consideration,consideration,best practice,right,key,1636.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,55,random,guideline,recommendation,design pattern,recommendation,design pattern,left,key,3232.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,56,random,rule of thumb,norm,best practice,best practice,norm,right,key,4214.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,57,random,norm,consideration,justification,consideration,justification,left,key,6961.599999964237
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,58,validation,principle,paradigm,convention,paradigm,convention,left,key,3478.2999999523163
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,59,validation,norm,convention,implication,convention,implication,left,key,2325.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,60,random,standard,principle,design pattern,principle,design pattern,left,key,6373.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,61,random,heuristic,guardrail,paradigm,guardrail,paradigm,left,key,7434.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,62,random,requirement,design pattern,justification,justification,design pattern,right,key,6251.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,63,random,justification,recommendation,standard,standard,recommendation,right,key,5253.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,64,random,consideration,standard,best practice,best practice,standard,right,key,10839.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,65,random,common practice,design pattern,implication,design pattern,implication,left,key,8017.099999964237
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,66,random,principle,recommendation,consideration,recommendation,consideration,left,key,6587.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,67,random,requirement,common practice,guideline,guideline,common practice,right,key,17527.899999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,68,random,guideline,standard,implication,standard,implication,left,key,3930.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,69,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,1197.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,70,random,guardrail,recommendation,best practice,best practice,recommendation,right,key,2803.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,71,random,rule of thumb,paradigm,norm,norm,paradigm,right,key,2050.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,72,random,paradigm,consideration,recommendation,consideration,recommendation,left,key,3383.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,73,random,justification,implication,heuristic,implication,heuristic,left,key,3883.100000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,74,random,implication,guardrail,guideline,guideline,guardrail,right,key,1964.0999999642372
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,75,random,norm,justification,heuristic,heuristic,justification,right,key,8315.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,76,random,implication,common practice,best practice,best practice,common practice,right,key,10079.299999952316
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,77,random,paradigm,implication,style guide,style guide,implication,right,key,10884.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,78,random,paradigm,consideration,common practice,consideration,common practice,left,key,4091.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,79,catch,norm,implication,norm,norm,implication,right,key,1094.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,80,random,requirement,common practice,style guide,style guide,common practice,right,key,2963.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,81,random,guideline,best practice,requirement,best practice,requirement,left,key,5572.900000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,82,random,standard,style guide,common practice,common practice,style guide,right,key,3082.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,83,random,rule of thumb,convention,common practice,common practice,convention,right,key,19412.900000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,84,random,design pattern,guardrail,common practice,common practice,guardrail,right,key,6336.5
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,85,random,convention,guardrail,implication,implication,guardrail,right,key,7539.5
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,86,random,principle,norm,justification,justification,norm,right,key,2246.899999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,87,random,design pattern,convention,paradigm,paradigm,convention,right,key,6415.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,88,random,design pattern,rule of thumb,implication,rule of thumb,implication,left,key,4475.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,89,random,common practice,justification,implication,justification,implication,left,key,11127.900000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,90,random,implication,norm,best practice,best practice,norm,right,key,6316.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,91,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,4266.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,92,random,justification,design pattern,style guide,style guide,design pattern,right,key,3296.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,93,random,heuristic,rule of thumb,design pattern,rule of thumb,design pattern,left,key,14017.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,94,random,guardrail,consideration,best practice,best practice,consideration,right,key,2765.100000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,95,random,requirement,standard,design pattern,standard,design pattern,left,key,4787.400000035763
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,96,random,guardrail,style guide,convention,convention,style guide,right,key,12487.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,97,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,5283.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,98,random,principle,consideration,paradigm,paradigm,consideration,right,key,2869.2000000476837
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,99,random,implication,justification,paradigm,justification,paradigm,left,key,2559.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,100,random,heuristic,paradigm,standard,standard,paradigm,right,key,6165.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,101,random,implication,style guide,guardrail,guardrail,style guide,right,key,10473.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,102,random,convention,norm,heuristic,norm,heuristic,left,key,1713.2000000476837
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,103,random,rule of thumb,style guide,requirement,style guide,requirement,left,key,2663.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,104,validation,implication,principle,recommendation,principle,recommendation,left,key,4109.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,105,validation,justification,implication,convention,implication,convention,left,key,2578.399999976158
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,106,random,principle,standard,paradigm,paradigm,standard,right,key,4740.300000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,107,random,convention,best practice,justification,best practice,justification,left,key,5647.600000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,108,random,paradigm,heuristic,rule of thumb,rule of thumb,heuristic,right,key,9978.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,109,random,guideline,principle,heuristic,principle,heuristic,left,key,6741.100000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,110,validation,standard,rule of thumb,implication,implication,rule of thumb,right,key,7558.800000011921
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,111,catch,style guide,convention,style guide,style guide,convention,right,key,2314.100000023842
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,112,random,requirement,justification,design pattern,design pattern,justification,right,key,3658.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,113,random,guideline,standard,best practice,standard,best practice,left,key,4045.699999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,114,random,design pattern,best practice,norm,norm,best practice,right,key,7128.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,115,random,style guide,design pattern,guideline,guideline,design pattern,right,key,7453.299999952316
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,116,random,requirement,principle,justification,justification,principle,right,key,4473.200000047684
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,117,random,norm,guardrail,justification,justification,guardrail,right,key,2117.0
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,118,random,design pattern,common practice,requirement,common practice,requirement,left,key,6101.199999988079
-ARQunRjHjJcgeGh9iERgwCMBwe92,vis-guidelines-pilot-v3,119,random,convention,design pattern,common practice,common practice,design pattern,right,key,2481.2000000476837
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,0,random,consideration,guardrail,requirement,requirement,guardrail,right,key,7682.600000023842
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,1,random,style guide,justification,standard,standard,justification,right,key,7275.299999982119
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,2,validation,standard,rule of thumb,implication,rule of thumb,implication,left,key,3306.2999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,3,random,justification,design pattern,implication,implication,design pattern,right,key,4733.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,4,random,principle,best practice,convention,convention,best practice,right,key,1865.3999999761581
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,5,random,style guide,rule of thumb,justification,rule of thumb,justification,left,key,5915.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,6,random,standard,rule of thumb,norm,norm,rule of thumb,right,key,1611.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,7,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,4389.799999982119
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,8,validation,guideline,rule of thumb,paradigm,paradigm,rule of thumb,right,key,2147.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,9,random,paradigm,norm,standard,standard,norm,right,key,1578.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,10,random,design pattern,guideline,norm,norm,guideline,right,key,6279.799999982119
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,11,random,design pattern,best practice,common practice,common practice,best practice,right,key,3614.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,12,random,recommendation,standard,consideration,consideration,standard,right,key,2297.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,13,random,design pattern,common practice,best practice,common practice,best practice,left,key,1630.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,14,random,norm,consideration,convention,convention,consideration,right,key,4673.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,15,random,style guide,justification,principle,justification,principle,left,key,1542.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,16,random,guideline,guardrail,norm,norm,guardrail,right,key,2190.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,17,random,justification,norm,guardrail,norm,guardrail,left,key,2727.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,18,random,guardrail,guideline,requirement,requirement,guideline,right,key,5599.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,19,random,implication,paradigm,heuristic,heuristic,paradigm,right,key,2782.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,20,validation,rule of thumb,requirement,standard,standard,requirement,right,key,1864.699999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,21,random,best practice,guardrail,principle,principle,guardrail,right,key,1566.7999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,22,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,1312.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,23,catch,consideration,best practice,consideration,consideration,best practice,right,key,2105.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,24,random,guardrail,consideration,rule of thumb,rule of thumb,consideration,right,key,1885.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,25,random,convention,norm,paradigm,norm,paradigm,left,key,1080.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,26,random,standard,implication,guideline,guideline,implication,right,key,1305.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,27,random,implication,justification,recommendation,justification,recommendation,left,key,2013.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,28,random,heuristic,guideline,guardrail,guideline,guardrail,left,key,1825.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,29,random,best practice,design pattern,requirement,requirement,design pattern,right,key,1933.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,30,validation,norm,convention,implication,convention,implication,left,key,2070.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,31,random,paradigm,rule of thumb,standard,standard,rule of thumb,right,key,1382.3999999761581
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,32,random,best practice,norm,justification,norm,justification,left,key,4789.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,33,random,heuristic,design pattern,principle,principle,design pattern,right,key,2610.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,34,random,justification,common practice,guardrail,guardrail,common practice,right,key,3634.699999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,35,random,guideline,best practice,justification,best practice,justification,left,key,1475.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,36,random,implication,standard,paradigm,standard,paradigm,left,key,1370.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,37,random,convention,heuristic,norm,norm,heuristic,right,key,3932.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,38,random,recommendation,norm,justification,norm,justification,left,key,1518.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,39,random,design pattern,justification,best practice,best practice,justification,right,key,1260.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,40,random,common practice,paradigm,guardrail,paradigm,guardrail,left,key,1851.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,41,catch,style guide,convention,style guide,style guide,convention,right,key,1144.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,42,random,guardrail,implication,requirement,requirement,implication,right,key,1247.6000000238419
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,43,random,recommendation,design pattern,heuristic,heuristic,design pattern,right,key,1329.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,44,random,standard,convention,norm,norm,convention,right,key,1078.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,45,random,guardrail,style guide,requirement,requirement,style guide,right,key,3964.7999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,46,random,style guide,convention,heuristic,heuristic,convention,right,key,4597.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,47,random,rule of thumb,guideline,implication,guideline,implication,left,key,1458.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,48,random,heuristic,norm,guideline,norm,guideline,left,key,7135.700000017881
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,49,validation,guardrail,norm,recommendation,recommendation,norm,right,key,4613.799999982119
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,50,catch,best practice,best practice,consideration,consideration,best practice,right,key,2781.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,51,random,design pattern,principle,norm,norm,principle,right,key,2794.600000023842
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,52,validation,principle,paradigm,convention,convention,paradigm,right,key,1229.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,53,random,requirement,rule of thumb,convention,rule of thumb,convention,left,key,2557.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,54,random,requirement,norm,paradigm,paradigm,norm,right,key,2385.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,55,random,implication,requirement,best practice,best practice,requirement,right,key,1585.800000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,56,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,1385.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,57,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1162.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,58,random,requirement,common practice,design pattern,common practice,design pattern,left,key,2695.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,59,random,best practice,paradigm,guideline,guideline,paradigm,right,key,2019.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,60,random,implication,paradigm,design pattern,design pattern,paradigm,right,key,5285.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,61,random,requirement,guardrail,style guide,guardrail,style guide,left,key,2258.699999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,62,random,convention,common practice,norm,norm,common practice,right,key,2131.899999976158
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,63,random,style guide,requirement,guardrail,requirement,guardrail,left,key,2500.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,64,random,style guide,paradigm,convention,convention,paradigm,right,key,1608.699999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,65,random,rule of thumb,guideline,standard,standard,guideline,right,key,1956.7999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,66,random,heuristic,consideration,design pattern,consideration,design pattern,left,key,1535.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,67,random,guardrail,convention,common practice,convention,common practice,left,key,1575.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,68,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,1469.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,69,random,guardrail,heuristic,rule of thumb,heuristic,rule of thumb,left,key,1708.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,70,random,paradigm,requirement,rule of thumb,requirement,rule of thumb,left,key,946.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,71,random,guardrail,best practice,principle,principle,best practice,right,key,832.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,72,random,recommendation,guardrail,principle,guardrail,principle,left,key,593.8000000119209
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,73,random,style guide,implication,recommendation,recommendation,implication,right,key,3723.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,74,random,design pattern,convention,consideration,consideration,convention,right,key,1494.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,75,catch,justification,justification,best practice,best practice,justification,right,key,1161.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,76,random,recommendation,principle,guardrail,guardrail,principle,right,key,745.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,77,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,1536.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,78,random,justification,consideration,recommendation,consideration,recommendation,left,key,2506.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,79,random,consideration,style guide,design pattern,design pattern,style guide,right,key,3002.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,80,random,consideration,standard,requirement,standard,requirement,left,key,1141.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,81,random,guideline,norm,heuristic,heuristic,norm,right,key,750.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,82,random,standard,design pattern,guardrail,design pattern,guardrail,left,key,594.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,83,random,convention,guideline,implication,implication,guideline,right,key,788.6000000238419
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,84,random,consideration,norm,heuristic,norm,heuristic,left,key,1720.8999999761581
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,85,validation,implication,principle,recommendation,recommendation,principle,right,key,1548.8999999761581
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,86,validation,consideration,best practice,style guide,best practice,style guide,left,key,1479.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,87,random,convention,heuristic,implication,implication,heuristic,right,key,2101.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,88,random,heuristic,design pattern,rule of thumb,rule of thumb,design pattern,right,key,1679.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,89,random,guideline,justification,paradigm,paradigm,justification,right,key,1623.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,90,random,guardrail,design pattern,convention,convention,design pattern,right,key,1558.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,91,random,recommendation,best practice,principle,principle,best practice,right,key,1760.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,92,random,style guide,guideline,convention,convention,guideline,right,key,59035.39999997616
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,93,random,design pattern,best practice,implication,best practice,implication,left,key,5225.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,94,random,best practice,guardrail,heuristic,heuristic,guardrail,right,key,1888.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,95,random,guardrail,norm,common practice,norm,common practice,left,key,2177.7999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,96,random,principle,guideline,style guide,guideline,style guide,left,key,1858.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,97,random,rule of thumb,principle,implication,principle,implication,left,key,1350.199999988079
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,98,random,heuristic,design pattern,rule of thumb,design pattern,rule of thumb,left,key,2146.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,99,random,justification,recommendation,paradigm,recommendation,paradigm,left,key,1852.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,100,random,common practice,norm,consideration,norm,consideration,left,key,1464.0999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,101,random,justification,principle,convention,convention,principle,right,key,2506.7999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,102,random,norm,heuristic,principle,principle,heuristic,right,key,1659.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,103,random,best practice,consideration,style guide,consideration,style guide,left,key,1204.2999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,104,random,norm,common practice,principle,principle,common practice,right,key,1214.5999999940395
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,105,catch,norm,implication,norm,norm,implication,right,key,994.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,106,random,rule of thumb,heuristic,norm,norm,heuristic,right,key,1630.4000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,107,random,heuristic,best practice,rule of thumb,rule of thumb,best practice,right,key,1337.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,108,random,common practice,best practice,justification,best practice,justification,left,key,1698.300000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,109,random,common practice,heuristic,recommendation,recommendation,heuristic,right,key,1649.2999999821186
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,110,random,standard,justification,principle,principle,justification,right,key,1242.7000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,111,validation,justification,implication,convention,convention,implication,right,key,1353.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,112,random,guideline,paradigm,requirement,requirement,paradigm,right,key,1894.0
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,113,random,convention,consideration,principle,principle,consideration,right,key,2834.2000000178814
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,114,random,consideration,best practice,convention,best practice,convention,left,key,1726.800000011921
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,115,random,convention,justification,guideline,guideline,justification,right,key,1447.5
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,116,random,paradigm,style guide,convention,convention,style guide,right,key,2482.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,117,random,requirement,design pattern,paradigm,paradigm,design pattern,right,key,1390.9000000059605
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,118,random,heuristic,style guide,common practice,common practice,style guide,right,key,1217.1000000238419
-UnzuQQj6JNZ7IzoVU57HWy9VplG3,vis-guidelines-pilot-v3,119,random,principle,rule of thumb,standard,standard,rule of thumb,right,key,1043.2000000178814
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,0,random,implication,common practice,best practice,best practice,common practice,right,key,10212.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,1,random,requirement,principle,justification,principle,justification,left,key,6220.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,2,random,implication,guideline,design pattern,design pattern,guideline,right,key,5150.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,3,random,guideline,common practice,norm,common practice,norm,left,key,5394.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,4,random,guardrail,common practice,design pattern,common practice,design pattern,left,key,3307.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,5,random,consideration,heuristic,standard,heuristic,standard,left,key,3284.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,6,random,implication,principle,justification,principle,justification,left,key,14813.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,7,random,norm,standard,requirement,standard,requirement,left,key,2105.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,8,random,paradigm,implication,rule of thumb,implication,rule of thumb,left,key,5944.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,9,random,best practice,style guide,common practice,style guide,common practice,left,key,9333.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,10,catch,consideration,best practice,consideration,consideration,best practice,right,key,47481.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,11,random,convention,common practice,principle,common practice,principle,left,key,4735.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,12,random,guideline,standard,common practice,common practice,standard,right,key,11158.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,13,validation,standard,rule of thumb,implication,implication,rule of thumb,right,key,71930.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,14,random,design pattern,norm,justification,justification,norm,right,key,38540.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,15,random,consideration,heuristic,guardrail,heuristic,guardrail,left,key,3068.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,16,random,style guide,best practice,norm,best practice,norm,left,key,2024.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,17,random,recommendation,implication,style guide,style guide,implication,right,key,3192.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,18,random,norm,requirement,consideration,requirement,consideration,left,key,3143.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,19,random,justification,convention,norm,convention,norm,left,key,28720.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,20,random,consideration,standard,best practice,best practice,standard,right,key,2925.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,21,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,25893.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,22,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,1817.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,23,random,standard,norm,requirement,norm,requirement,left,key,1933.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,24,random,convention,heuristic,paradigm,heuristic,paradigm,left,key,2299.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,25,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,2065.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,26,catch,norm,implication,norm,norm,implication,right,key,1048.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,27,random,guideline,heuristic,principle,principle,heuristic,right,key,3377.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,28,random,justification,principle,heuristic,principle,heuristic,left,key,5679.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,29,random,recommendation,design pattern,requirement,design pattern,requirement,left,key,3193.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,30,random,guideline,standard,norm,standard,norm,left,key,2479.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,31,random,common practice,design pattern,rule of thumb,design pattern,rule of thumb,left,key,7501.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,32,random,implication,norm,principle,principle,norm,right,key,9686.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,33,random,norm,consideration,implication,implication,consideration,right,key,4171.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,34,random,convention,common practice,style guide,common practice,style guide,left,key,2886.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,35,validation,consideration,best practice,style guide,best practice,style guide,left,key,3974.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,36,random,guideline,recommendation,guardrail,recommendation,guardrail,left,key,5997.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,37,random,recommendation,common practice,convention,convention,common practice,right,key,2194.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,38,catch,style guide,convention,style guide,style guide,convention,right,key,1258.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,39,random,guardrail,rule of thumb,design pattern,design pattern,rule of thumb,right,key,7026.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,40,random,requirement,norm,design pattern,norm,design pattern,left,key,3212.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,41,random,heuristic,standard,principle,principle,standard,right,key,4818.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,42,random,best practice,guardrail,style guide,style guide,guardrail,right,key,7715.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,43,random,design pattern,implication,recommendation,recommendation,implication,right,key,10654.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,44,random,paradigm,justification,heuristic,justification,heuristic,left,key,3268.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,45,random,rule of thumb,heuristic,guardrail,heuristic,guardrail,left,key,3607.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,46,random,style guide,best practice,paradigm,best practice,paradigm,left,key,5487.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,47,random,standard,rule of thumb,style guide,style guide,rule of thumb,right,key,2844.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,48,random,paradigm,guideline,style guide,guideline,style guide,left,key,4670.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,49,random,recommendation,guardrail,standard,guardrail,standard,left,key,4994.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,50,random,principle,design pattern,recommendation,recommendation,design pattern,right,key,7637.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,51,random,style guide,implication,requirement,implication,requirement,left,key,8683.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,52,random,guideline,standard,norm,standard,norm,left,key,1385.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,53,random,consideration,common practice,guardrail,guardrail,common practice,right,key,3653.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,54,validation,rule of thumb,requirement,standard,requirement,standard,left,key,3845.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,55,random,principle,norm,style guide,style guide,norm,right,key,5044.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,56,random,implication,requirement,recommendation,recommendation,requirement,right,key,9898.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,57,random,convention,consideration,heuristic,heuristic,consideration,right,key,32397.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,58,random,heuristic,recommendation,standard,recommendation,standard,left,key,2276.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,59,random,guardrail,consideration,guideline,guideline,consideration,right,key,2665.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,60,random,design pattern,rule of thumb,paradigm,rule of thumb,paradigm,left,key,4614.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,61,validation,norm,convention,implication,convention,implication,left,key,2824.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,62,validation,guardrail,norm,recommendation,recommendation,norm,right,key,8597.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,63,random,design pattern,paradigm,convention,convention,paradigm,right,key,5091.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,64,random,requirement,convention,standard,standard,convention,right,key,3007.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,65,random,heuristic,guardrail,principle,principle,guardrail,right,key,3506.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,66,random,guideline,paradigm,guardrail,guardrail,paradigm,right,key,2772.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,67,random,guardrail,rule of thumb,principle,principle,rule of thumb,right,key,5865.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,68,random,standard,common practice,style guide,common practice,style guide,left,key,2842.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,69,catch,best practice,best practice,consideration,best practice,consideration,left,key,1730.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,70,random,style guide,guideline,common practice,guideline,common practice,left,key,5276.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,71,random,recommendation,paradigm,design pattern,design pattern,paradigm,right,key,1877.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,72,random,guardrail,recommendation,heuristic,recommendation,heuristic,left,key,6650.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,73,random,rule of thumb,style guide,implication,style guide,implication,left,key,8837.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,74,random,requirement,heuristic,style guide,style guide,heuristic,right,key,91818.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,75,random,principle,heuristic,norm,norm,heuristic,right,key,1456.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,76,random,common practice,standard,norm,standard,norm,left,key,1901.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,77,random,consideration,implication,guideline,guideline,implication,right,key,5467.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,78,random,guardrail,best practice,norm,norm,best practice,right,key,4799.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,79,random,norm,principle,justification,principle,justification,left,key,2262.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,80,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,1316.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,81,random,convention,paradigm,guardrail,paradigm,guardrail,left,key,3694.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,82,random,requirement,rule of thumb,principle,principle,rule of thumb,right,key,3571.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,83,random,heuristic,norm,common practice,common practice,norm,right,key,7189.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,84,random,guardrail,requirement,paradigm,requirement,paradigm,left,key,2840.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,85,random,implication,standard,justification,justification,standard,right,key,3437.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,86,random,consideration,convention,standard,convention,standard,left,key,3722.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,87,random,design pattern,recommendation,guideline,recommendation,guideline,left,key,9025.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,88,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,2906.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,89,random,requirement,design pattern,heuristic,design pattern,heuristic,left,key,7663.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,90,random,paradigm,best practice,design pattern,design pattern,best practice,right,key,3006.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,91,random,justification,guardrail,design pattern,design pattern,guardrail,right,key,9556.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,92,random,principle,style guide,design pattern,style guide,design pattern,left,key,4981.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,93,validation,principle,paradigm,convention,paradigm,convention,left,key,2469.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,94,random,guardrail,design pattern,style guide,style guide,design pattern,right,key,2160.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,95,random,implication,standard,justification,justification,standard,right,key,8933.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,96,random,guideline,recommendation,design pattern,recommendation,design pattern,left,key,4821.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,97,validation,implication,principle,recommendation,recommendation,principle,right,key,4351.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,98,validation,justification,implication,convention,implication,convention,left,key,5322.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,99,random,standard,consideration,guideline,guideline,consideration,right,key,4212.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,100,random,paradigm,rule of thumb,style guide,style guide,rule of thumb,right,key,1880.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,101,random,norm,guardrail,best practice,guardrail,best practice,left,key,2563.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,102,random,style guide,principle,implication,principle,implication,left,key,5290.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,103,random,norm,principle,recommendation,principle,recommendation,left,key,1997.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,104,catch,justification,justification,best practice,justification,best practice,left,key,1248.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,105,random,common practice,recommendation,style guide,style guide,recommendation,right,key,2546.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,106,random,design pattern,rule of thumb,consideration,consideration,rule of thumb,right,key,6230.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,107,random,principle,design pattern,rule of thumb,design pattern,rule of thumb,left,key,3480.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,108,random,recommendation,convention,justification,convention,justification,left,key,2936.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,109,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,2574.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,110,random,guardrail,guideline,requirement,guideline,requirement,left,key,1912.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,111,random,standard,justification,paradigm,paradigm,justification,right,key,16666.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,112,random,implication,guideline,requirement,guideline,requirement,left,key,2707.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,113,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1674.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,114,random,style guide,consideration,guardrail,consideration,guardrail,left,key,17088.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,115,random,standard,guardrail,design pattern,design pattern,guardrail,right,key,4497.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,116,random,justification,norm,rule of thumb,rule of thumb,norm,right,key,2982.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,117,random,consideration,implication,convention,convention,implication,right,key,2609.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,118,random,design pattern,convention,standard,convention,standard,left,key,3805.0
-V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-pilot-v3,119,random,paradigm,recommendation,consideration,consideration,recommendation,right,key,4133.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,0,random,common practice,style guide,recommendation,style guide,recommendation,left,key,6918.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,1,random,paradigm,guardrail,style guide,guardrail,style guide,left,key,6900.70000000298
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,2,random,consideration,paradigm,norm,norm,paradigm,right,key,6446.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,3,random,convention,consideration,guardrail,guardrail,consideration,right,key,3883.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,4,random,justification,norm,paradigm,norm,paradigm,left,key,2388.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,5,catch,justification,justification,best practice,justification,best practice,left,key,2505.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,6,random,principle,norm,convention,norm,convention,left,key,5909.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,7,random,rule of thumb,norm,common practice,common practice,norm,right,key,1906.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,8,random,implication,principle,standard,principle,standard,left,key,5745.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,9,random,style guide,implication,norm,norm,implication,right,key,10233.599999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,10,random,convention,design pattern,common practice,common practice,design pattern,right,key,5492.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,11,validation,implication,principle,recommendation,principle,recommendation,left,key,4554.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,12,random,rule of thumb,guideline,norm,guideline,norm,left,key,1919.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,13,random,norm,guideline,common practice,guideline,common practice,left,key,6704.70000000298
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,14,random,guardrail,heuristic,paradigm,heuristic,paradigm,left,key,4981.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,15,random,design pattern,recommendation,best practice,best practice,recommendation,right,key,5489.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,16,random,heuristic,principle,requirement,principle,requirement,left,key,3266.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,17,random,standard,principle,heuristic,principle,heuristic,left,key,6205.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,18,catch,best practice,best practice,consideration,best practice,consideration,left,key,1785.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,19,random,design pattern,standard,justification,standard,justification,left,key,7257.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,20,random,best practice,standard,common practice,common practice,standard,right,key,3766.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,21,random,guardrail,heuristic,rule of thumb,rule of thumb,heuristic,right,key,3718.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,22,random,justification,best practice,guideline,guideline,best practice,right,key,6719.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,23,validation,standard,rule of thumb,implication,rule of thumb,implication,left,key,2563.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,24,validation,principle,paradigm,convention,paradigm,convention,left,key,4057.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,25,random,guideline,paradigm,recommendation,recommendation,paradigm,right,key,3560.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,26,random,rule of thumb,design pattern,guardrail,guardrail,design pattern,right,key,14614.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,27,random,paradigm,best practice,recommendation,recommendation,best practice,right,key,4209.599999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,28,random,common practice,style guide,norm,style guide,norm,left,key,5450.89999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,29,random,standard,justification,implication,justification,implication,left,key,4783.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,30,validation,rule of thumb,requirement,standard,standard,requirement,right,key,5252.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,31,random,norm,consideration,design pattern,design pattern,consideration,right,key,2207.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,32,random,paradigm,recommendation,common practice,common practice,recommendation,right,key,4786.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,33,random,style guide,convention,implication,convention,implication,left,key,4316.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,34,validation,consideration,best practice,style guide,best practice,style guide,left,key,3684.7999999970198
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,35,random,requirement,guardrail,justification,justification,guardrail,right,key,3612.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,36,random,consideration,guardrail,design pattern,design pattern,guardrail,right,key,4413.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,37,random,guardrail,recommendation,implication,recommendation,implication,left,key,3386.2999999970198
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,38,random,principle,standard,consideration,standard,consideration,left,key,3866.89999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,39,random,consideration,norm,recommendation,recommendation,norm,right,key,2321.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,40,random,paradigm,recommendation,convention,convention,recommendation,right,key,4201.89999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,41,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,3592.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,42,random,principle,guideline,guardrail,guideline,guardrail,left,key,5072.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,43,random,recommendation,paradigm,standard,standard,paradigm,right,key,15766.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,44,random,design pattern,convention,consideration,convention,consideration,left,key,2770.2999999970198
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,45,random,consideration,requirement,design pattern,design pattern,requirement,right,key,4877.10000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,46,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,1553.1000000014901
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,47,random,norm,standard,convention,standard,convention,left,key,11607.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,48,random,heuristic,implication,recommendation,recommendation,implication,right,key,1965.8999999985099
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,49,random,requirement,implication,convention,convention,implication,right,key,9810.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,50,random,heuristic,norm,design pattern,design pattern,norm,right,key,2793.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,51,random,common practice,consideration,design pattern,design pattern,consideration,right,key,4522.10000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,52,random,principle,heuristic,best practice,best practice,heuristic,right,key,4026.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,53,random,rule of thumb,standard,recommendation,recommendation,standard,right,key,2145.89999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,54,random,paradigm,principle,requirement,principle,requirement,left,key,5409.20000000298
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,55,random,implication,rule of thumb,justification,justification,rule of thumb,right,key,12741.89999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,56,random,paradigm,guardrail,recommendation,recommendation,guardrail,right,key,5250.29999999702
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,57,random,paradigm,standard,guardrail,standard,guardrail,left,key,2697.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,58,random,requirement,heuristic,implication,implication,heuristic,right,key,6115.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,59,validation,norm,convention,implication,convention,implication,left,key,2074.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,60,random,guardrail,guideline,justification,guideline,justification,left,key,7588.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,61,random,implication,guideline,design pattern,guideline,design pattern,left,key,4167.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,62,random,justification,rule of thumb,implication,implication,rule of thumb,right,key,4492.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,63,random,common practice,guardrail,standard,standard,guardrail,right,key,2049.2999999970198
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,64,random,guardrail,design pattern,consideration,consideration,design pattern,right,key,3327.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,65,random,best practice,heuristic,style guide,heuristic,style guide,left,key,5555.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,66,random,common practice,consideration,design pattern,design pattern,consideration,right,key,3346.599999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,67,random,best practice,justification,requirement,justification,requirement,left,key,3408.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,68,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,4740.099999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,69,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,7095.099999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,70,random,standard,design pattern,style guide,style guide,design pattern,right,key,3818.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,71,random,consideration,rule of thumb,standard,rule of thumb,standard,left,key,3314.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,72,random,paradigm,heuristic,best practice,best practice,heuristic,right,key,3640.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,73,random,paradigm,style guide,recommendation,style guide,recommendation,left,key,3182.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,74,random,convention,requirement,best practice,best practice,requirement,right,key,7781.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,75,random,principle,guideline,style guide,style guide,guideline,right,key,5122.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,76,random,convention,consideration,implication,implication,consideration,right,key,6421.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,77,random,norm,implication,justification,implication,justification,left,key,5372.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,78,random,requirement,recommendation,guideline,guideline,recommendation,right,key,4960.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,79,random,guardrail,requirement,implication,requirement,implication,left,key,1953.1000000014901
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,80,random,recommendation,guideline,consideration,guideline,consideration,left,key,5787.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,81,random,design pattern,convention,justification,convention,justification,left,key,5012.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,82,catch,norm,implication,norm,norm,implication,right,key,1042.2000000029802
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,83,random,implication,best practice,heuristic,heuristic,best practice,right,key,4264.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,84,random,requirement,justification,guideline,guideline,justification,right,key,3235.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,85,validation,justification,implication,convention,convention,implication,right,key,4934.20000000298
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,86,random,guardrail,heuristic,common practice,heuristic,common practice,left,key,2668.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,87,random,guideline,norm,guardrail,norm,guardrail,left,key,5879.10000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,88,random,justification,consideration,principle,consideration,principle,left,key,2651.099999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,89,random,implication,rule of thumb,requirement,rule of thumb,requirement,left,key,2439.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,90,validation,guardrail,norm,recommendation,norm,recommendation,left,key,8208.599999997765
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,91,random,standard,implication,guideline,guideline,implication,right,key,2357.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,92,random,guideline,consideration,common practice,common practice,consideration,right,key,2760.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,93,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,1307.5
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,94,random,recommendation,style guide,standard,style guide,standard,left,key,3411.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,95,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,1657.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,96,random,implication,requirement,guardrail,requirement,guardrail,left,key,8285.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,97,random,consideration,justification,guideline,guideline,justification,right,key,3074.0
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,98,random,principle,style guide,rule of thumb,style guide,rule of thumb,left,key,2869.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,99,random,requirement,design pattern,implication,design pattern,implication,left,key,4050.7999999970198
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,100,random,justification,common practice,principle,common practice,principle,left,key,4813.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,101,random,guideline,consideration,principle,principle,consideration,right,key,3624.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,102,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1307.4000000022352
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,103,catch,style guide,convention,style guide,style guide,convention,right,key,1531.8999999985099
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,104,random,requirement,justification,style guide,style guide,justification,right,key,3028.199999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,105,random,standard,design pattern,paradigm,paradigm,design pattern,right,key,5031.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,106,random,common practice,consideration,justification,consideration,justification,left,key,4393.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,107,random,heuristic,paradigm,principle,principle,paradigm,right,key,3857.60000000149
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,108,random,common practice,rule of thumb,guideline,rule of thumb,guideline,left,key,6391.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,109,random,style guide,rule of thumb,implication,rule of thumb,implication,left,key,3123.800000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,110,random,convention,consideration,principle,principle,consideration,right,key,2910.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,111,random,convention,style guide,paradigm,style guide,paradigm,left,key,3728.400000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,112,random,requirement,paradigm,guardrail,paradigm,guardrail,left,key,3681.2000000029802
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,113,random,standard,requirement,common practice,requirement,common practice,left,key,3472.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,114,random,convention,paradigm,standard,standard,paradigm,right,key,2703.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,115,random,design pattern,consideration,style guide,style guide,consideration,right,key,4124.39999999851
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,116,catch,consideration,best practice,consideration,consideration,best practice,right,key,1126.699999999255
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,117,random,heuristic,recommendation,design pattern,recommendation,design pattern,left,key,6262.900000002235
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,118,random,paradigm,convention,guideline,convention,guideline,left,key,4870.300000000745
-wFXWwslTlRfLWpTxth0CmSqKDrF2,vis-guidelines-pilot-v3,119,random,convention,justification,paradigm,paradigm,justification,right,key,2910.199999999255
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,0,catch,norm,implication,norm,norm,implication,right,key,3440.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,1,random,design pattern,principle,paradigm,principle,paradigm,left,key,187.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,2,random,recommendation,guideline,common practice,common practice,guideline,right,key,84.89999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,3,validation,best practice,implication,convention,implication,convention,left,key,462.7000000476837
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,4,random,common practice,principle,implication,implication,principle,right,key,168.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,5,random,recommendation,heuristic,guideline,heuristic,guideline,left,key,3.3000001907348633
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,6,validation,standard,rule of thumb,implication,implication,rule of thumb,right,key,56.89999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,7,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,134.79999995231628
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,8,random,convention,requirement,standard,standard,requirement,right,key,77.70000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,9,random,guideline,requirement,recommendation,requirement,recommendation,left,key,106.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,10,validation,guardrail,norm,recommendation,recommendation,norm,right,key,69.29999995231628
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,11,random,convention,standard,best practice,best practice,standard,right,key,436.7999999523163
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,12,random,best practice,recommendation,paradigm,recommendation,paradigm,left,key,20.899999856948853
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,13,random,heuristic,standard,guardrail,standard,guardrail,left,key,7.200000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,14,random,consideration,standard,best practice,standard,best practice,left,key,272.39999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,15,validation,common practice,requirement,heuristic,requirement,heuristic,left,key,124.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,16,random,design pattern,principle,implication,principle,implication,left,key,33.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,17,validation,rule of thumb,requirement,standard,requirement,standard,left,key,65.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,18,random,guideline,paradigm,convention,paradigm,convention,left,key,153.10000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,19,random,implication,standard,style guide,standard,style guide,left,key,17.700000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,20,random,guardrail,design pattern,norm,design pattern,norm,left,key,8.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,21,random,paradigm,standard,convention,standard,convention,left,key,14.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,22,random,recommendation,design pattern,best practice,design pattern,best practice,left,key,171.39999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,23,validation,principle,paradigm,convention,convention,paradigm,right,key,20.40000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,24,random,standard,convention,implication,convention,implication,left,key,128.69999980926514
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,25,random,rule of thumb,convention,recommendation,convention,recommendation,left,key,269.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,26,catch,best practice,best practice,consideration,best practice,consideration,left,key,172.29999995231628
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,27,random,convention,consideration,requirement,consideration,requirement,left,key,6.799999952316284
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,28,random,recommendation,paradigm,design pattern,design pattern,paradigm,right,key,63.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,29,catch,consideration,best practice,consideration,best practice,consideration,left,key,69.79999995231628
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,30,random,common practice,paradigm,requirement,paradigm,requirement,left,key,17.59999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,31,random,heuristic,guardrail,common practice,common practice,guardrail,right,key,1.7999999523162842
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,32,random,best practice,standard,requirement,standard,requirement,left,key,127.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,33,random,requirement,convention,paradigm,paradigm,convention,right,key,95.10000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,34,random,norm,best practice,common practice,best practice,common practice,left,key,38.700000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,35,validation,norm,convention,implication,implication,convention,right,key,71.20000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,36,random,design pattern,convention,paradigm,convention,paradigm,left,key,81.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,37,random,consideration,requirement,design pattern,design pattern,requirement,right,key,69.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,38,catch,guardrail,recommendation,guardrail,recommendation,guardrail,left,key,107.40000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,39,random,convention,paradigm,style guide,paradigm,style guide,left,key,28.299999952316284
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,40,random,paradigm,consideration,guideline,guideline,consideration,right,key,81.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,41,random,principle,guideline,design pattern,guideline,design pattern,left,key,70.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,42,random,guardrail,heuristic,consideration,heuristic,consideration,left,key,188.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,43,random,norm,guideline,design pattern,design pattern,guideline,right,key,95.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,44,random,common practice,rule of thumb,implication,rule of thumb,implication,left,key,46.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,45,random,standard,best practice,paradigm,paradigm,best practice,right,key,143.70000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,46,random,heuristic,guardrail,recommendation,guardrail,recommendation,left,key,213.89999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,47,random,consideration,paradigm,convention,paradigm,convention,left,key,45.19999980926514
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,48,random,paradigm,norm,guardrail,norm,guardrail,left,key,124.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,49,random,recommendation,guardrail,convention,guardrail,convention,left,key,18.100000143051147
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,50,random,guardrail,common practice,standard,common practice,standard,left,key,5679.900000095367
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,51,random,paradigm,convention,guideline,guideline,convention,right,key,51.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,52,random,design pattern,convention,common practice,convention,common practice,left,key,50.59999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,53,random,consideration,best practice,paradigm,best practice,paradigm,left,key,73.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,54,random,principle,paradigm,recommendation,recommendation,paradigm,right,key,80.20000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,55,random,consideration,style guide,recommendation,style guide,recommendation,left,key,155.59999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,56,catch,design pattern,best practice,design pattern,best practice,design pattern,left,key,121.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,57,random,guardrail,standard,convention,standard,convention,left,key,134.70000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,58,random,style guide,heuristic,convention,heuristic,convention,left,key,19.899999856948853
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,59,random,guideline,norm,consideration,norm,consideration,left,key,144.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,60,random,principle,best practice,heuristic,best practice,heuristic,left,key,136.39999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,61,random,norm,best practice,consideration,best practice,consideration,left,key,176.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,62,random,norm,best practice,guardrail,best practice,guardrail,left,key,162.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,63,random,convention,principle,consideration,consideration,principle,right,key,2.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,64,random,consideration,convention,implication,convention,implication,left,key,25.299999952316284
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,65,random,guardrail,rule of thumb,consideration,consideration,rule of thumb,right,key,36.80000019073486
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,66,random,style guide,heuristic,consideration,heuristic,consideration,left,key,51.09999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,67,random,guideline,convention,guardrail,guardrail,convention,right,key,51.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,68,random,best practice,guideline,recommendation,guideline,recommendation,left,key,10621.900000095367
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,69,random,heuristic,common practice,norm,norm,common practice,right,key,76.59999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,70,random,common practice,principle,requirement,principle,requirement,left,key,44.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,71,random,standard,norm,rule of thumb,rule of thumb,norm,right,key,45.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,72,random,guideline,paradigm,guardrail,paradigm,guardrail,left,key,45.39999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,73,random,convention,requirement,guardrail,guardrail,requirement,right,key,34.700000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,74,catch,heuristic,heuristic,requirement,requirement,heuristic,right,key,150.39999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,75,random,implication,design pattern,best practice,best practice,design pattern,right,key,424.69999980926514
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,76,random,standard,design pattern,implication,design pattern,implication,left,key,79.70000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,77,random,principle,heuristic,common practice,heuristic,common practice,left,key,21.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,78,random,requirement,consideration,guideline,consideration,guideline,left,key,125.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,79,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,124.70000004768372
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,80,random,design pattern,guardrail,standard,guardrail,standard,left,key,29.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,81,random,design pattern,recommendation,principle,recommendation,principle,left,key,55.19999980926514
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,82,validation,implication,principle,recommendation,principle,recommendation,left,key,62.799999952316284
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,83,random,style guide,paradigm,requirement,paradigm,requirement,left,key,43.700000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,84,random,paradigm,best practice,design pattern,best practice,design pattern,left,key,58.200000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,85,random,recommendation,design pattern,common practice,design pattern,common practice,left,key,189.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,86,random,requirement,norm,convention,norm,convention,left,key,34.60000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,87,random,convention,consideration,common practice,consideration,common practice,left,key,59.89999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,88,catch,recommendation,recommendation,style guide,style guide,recommendation,right,key,91.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,89,random,requirement,rule of thumb,consideration,rule of thumb,consideration,left,key,150.59999990463257
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,90,random,heuristic,requirement,implication,implication,requirement,right,key,36.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,91,random,rule of thumb,recommendation,design pattern,recommendation,design pattern,left,key,41.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,92,catch,style guide,convention,style guide,style guide,convention,right,key,0.19999980926513672
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,93,random,heuristic,convention,design pattern,convention,design pattern,left,key,71.0
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,94,validation,consideration,best practice,style guide,style guide,best practice,right,key,95.5
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,95,catch,standard,standard,best practice,standard,best practice,left,key,83.90000009536743
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,96,random,convention,best practice,design pattern,design pattern,best practice,right,key,109.89999985694885
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,97,random,consideration,guardrail,style guide,guardrail,style guide,left,key,61.700000047683716
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,98,random,style guide,standard,guideline,guideline,standard,right,key,93.10000014305115
-y2O9iNui2JNRaHXwsdYsoJtgEbz1,vis-guidelines-pilot-v3,99,random,standard,implication,common practice,implication,common practice,left,key,75.89999985694885
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,0,random,style guide,rule of thumb,guideline,guideline,rule of thumb,right,key,2774.4000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,1,random,paradigm,heuristic,implication,heuristic,implication,left,key,2239.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,2,validation,consideration,best practice,style guide,best practice,style guide,left,key,1968.7000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,3,random,paradigm,implication,rule of thumb,rule of thumb,implication,right,key,1900.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,4,random,best practice,rule of thumb,style guide,rule of thumb,style guide,left,key,4093.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,5,random,design pattern,principle,implication,principle,implication,left,key,1799.9000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,6,validation,guardrail,norm,recommendation,norm,recommendation,left,key,3255.600000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,7,random,design pattern,recommendation,convention,convention,recommendation,right,key,2330.1999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,8,random,consideration,best practice,principle,best practice,principle,left,key,2639.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,9,random,heuristic,convention,paradigm,convention,paradigm,left,key,2814.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,10,random,best practice,design pattern,common practice,common practice,design pattern,right,key,2565.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,11,validation,standard,rule of thumb,implication,rule of thumb,implication,left,key,2827.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,12,random,convention,design pattern,recommendation,design pattern,recommendation,left,key,3895.7000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,13,random,rule of thumb,convention,design pattern,design pattern,convention,right,key,4173.599999904633
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,14,random,paradigm,guardrail,rule of thumb,guardrail,rule of thumb,left,key,2927.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,15,random,implication,design pattern,requirement,requirement,design pattern,right,key,2053.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,16,random,principle,norm,recommendation,norm,recommendation,left,key,6433.299999952316
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,17,random,norm,style guide,best practice,best practice,style guide,right,key,1716.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,18,random,heuristic,common practice,recommendation,common practice,recommendation,left,key,3831.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,19,random,paradigm,recommendation,principle,principle,recommendation,right,key,6771.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,20,random,principle,guardrail,requirement,requirement,guardrail,right,key,1848.3999999761581
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,21,random,norm,best practice,design pattern,best practice,design pattern,left,key,2908.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,22,catch,norm,implication,norm,norm,implication,right,key,1119.8999999761581
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,23,random,principle,rule of thumb,best practice,rule of thumb,best practice,left,key,2779.8000000715256
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,24,random,requirement,principle,consideration,principle,consideration,left,key,2245.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,25,random,design pattern,standard,norm,norm,standard,right,key,3653.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,26,random,principle,requirement,implication,requirement,implication,left,key,3858.1999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,27,random,convention,requirement,guideline,guideline,requirement,right,key,2409.4000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,28,random,norm,requirement,design pattern,design pattern,requirement,right,key,2252.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,29,random,guardrail,best practice,convention,best practice,convention,left,key,3200.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,30,random,guideline,guardrail,recommendation,recommendation,guardrail,right,key,2060.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,31,random,common practice,guardrail,norm,norm,guardrail,right,key,2496.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,32,random,recommendation,guideline,heuristic,guideline,heuristic,left,key,2350.7999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,33,random,consideration,convention,common practice,common practice,convention,right,key,2863.9000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,34,random,heuristic,guideline,principle,principle,guideline,right,key,4117.799999952316
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,35,catch,best practice,best practice,consideration,best practice,consideration,left,key,1390.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,36,random,rule of thumb,consideration,norm,norm,consideration,right,key,9650.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,37,random,heuristic,norm,guardrail,guardrail,norm,right,key,4118.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,38,random,recommendation,convention,norm,convention,norm,left,key,4362.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,39,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,889.5999999046326
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,40,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1453.2000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,41,random,guideline,rule of thumb,requirement,rule of thumb,requirement,left,key,2472.9000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,42,random,common practice,consideration,paradigm,paradigm,consideration,right,key,2937.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,43,random,requirement,consideration,paradigm,consideration,paradigm,left,key,1883.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,44,random,design pattern,standard,common practice,common practice,standard,right,key,3228.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,45,random,standard,guideline,design pattern,guideline,design pattern,left,key,2862.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,46,validation,best practice,implication,convention,convention,implication,right,key,4777.200000047684
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,47,validation,implication,principle,recommendation,principle,recommendation,left,key,3292.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,48,catch,standard,standard,best practice,standard,best practice,left,key,1436.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,49,random,requirement,design pattern,guideline,guideline,design pattern,right,key,2452.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,50,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,1526.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,51,random,recommendation,guardrail,common practice,common practice,guardrail,right,key,3151.8000000715256
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,52,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,2052.3000000715256
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,53,catch,consideration,best practice,consideration,consideration,best practice,right,key,1225.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,54,random,convention,heuristic,requirement,heuristic,requirement,left,key,2733.7999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,55,random,implication,standard,heuristic,heuristic,standard,right,key,2888.2999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,56,random,best practice,recommendation,guardrail,recommendation,guardrail,left,key,1326.6000000238419
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,57,random,style guide,norm,common practice,common practice,norm,right,key,4440.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,58,random,paradigm,norm,guideline,guideline,norm,right,key,1743.7000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,59,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,871.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,60,validation,principle,paradigm,convention,convention,paradigm,right,key,2887.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,61,random,consideration,best practice,implication,best practice,implication,left,key,1492.2000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,62,random,rule of thumb,best practice,principle,principle,best practice,right,key,2496.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,63,random,rule of thumb,guardrail,principle,principle,guardrail,right,key,1781.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,64,random,standard,recommendation,consideration,recommendation,consideration,left,key,2814.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,65,validation,rule of thumb,requirement,standard,requirement,standard,left,key,3200.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,66,random,best practice,recommendation,style guide,recommendation,style guide,left,key,4762.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,67,random,paradigm,principle,common practice,common practice,principle,right,key,4629.200000047684
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,68,random,requirement,standard,guideline,standard,guideline,left,key,6228.599999904633
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,69,random,paradigm,guideline,best practice,best practice,guideline,right,key,2149.600000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,70,random,heuristic,common practice,convention,common practice,convention,left,key,3059.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,71,random,paradigm,rule of thumb,recommendation,recommendation,rule of thumb,right,key,2986.100000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,72,validation,norm,convention,implication,convention,implication,left,key,1630.4000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,73,random,style guide,guideline,guardrail,guideline,guardrail,left,key,2197.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,74,random,recommendation,consideration,design pattern,consideration,design pattern,left,key,2787.6999999284744
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,75,random,common practice,heuristic,guardrail,heuristic,guardrail,left,key,6538.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,76,random,heuristic,guardrail,paradigm,paradigm,guardrail,right,key,2413.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,77,random,guardrail,rule of thumb,requirement,rule of thumb,requirement,left,key,8768.300000071526
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,78,validation,guideline,rule of thumb,paradigm,paradigm,rule of thumb,right,key,2672.600000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,79,random,common practice,guardrail,consideration,consideration,guardrail,right,key,3530.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,80,random,common practice,convention,heuristic,convention,heuristic,left,key,3967.8000000715256
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,81,random,design pattern,requirement,heuristic,heuristic,requirement,right,key,2496.899999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,82,random,best practice,paradigm,norm,norm,paradigm,right,key,1459.2000000476837
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,83,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,4450.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,84,random,standard,style guide,best practice,best practice,style guide,right,key,2026.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,85,random,convention,implication,requirement,requirement,implication,right,key,2266.7999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,86,random,paradigm,convention,best practice,convention,best practice,left,key,5330.699999928474
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,87,random,best practice,standard,heuristic,standard,heuristic,left,key,3114.5999999046326
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,88,random,style guide,guideline,convention,guideline,convention,left,key,3292.600000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,89,random,convention,style guide,common practice,common practice,style guide,right,key,1716.0
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,90,random,guardrail,standard,principle,principle,standard,right,key,3162.600000023842
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,91,random,convention,design pattern,implication,implication,design pattern,right,key,4851.300000071526
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,92,random,style guide,principle,consideration,consideration,principle,right,key,6690.900000095367
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,93,random,consideration,style guide,implication,implication,style guide,right,key,2465.3000000715256
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,94,random,convention,style guide,paradigm,paradigm,style guide,right,key,7414.399999976158
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,95,random,best practice,principle,consideration,principle,consideration,left,key,2916.5
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,96,random,consideration,norm,guardrail,norm,guardrail,left,key,6552.199999928474
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,97,random,consideration,implication,design pattern,implication,design pattern,left,key,1857.9000000953674
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,98,catch,style guide,convention,style guide,style guide,convention,right,key,2886.7999999523163
+3m3eKugsq8fugi81lAiL8cGUVFu2,vis-guidelines-pilot-v4,99,random,rule of thumb,guardrail,implication,guardrail,implication,left,key,7621.300000071526
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,0,random,heuristic,common practice,rule of thumb,rule of thumb,common practice,right,key,1739.1000000000931
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,1,random,consideration,implication,convention,implication,convention,left,key,6066.199999999953
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,2,random,best practice,recommendation,principle,recommendation,principle,left,key,4153.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,3,random,requirement,standard,guardrail,guardrail,standard,right,key,3771.7000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,4,random,standard,requirement,implication,requirement,implication,left,key,4817.40000000014
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,5,random,consideration,norm,requirement,requirement,norm,right,key,4645.800000000047
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,6,random,requirement,guardrail,guideline,guardrail,guideline,left,key,2546.9000000001397
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,7,random,requirement,rule of thumb,convention,convention,rule of thumb,right,key,5134.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,8,validation,standard,rule of thumb,implication,rule of thumb,implication,left,key,2441.3000000000466
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,9,random,convention,design pattern,paradigm,design pattern,paradigm,left,key,7244.700000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,10,random,design pattern,principle,guideline,guideline,principle,right,key,1695.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,11,random,guardrail,standard,guideline,standard,guideline,left,key,4173.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,12,random,rule of thumb,consideration,guideline,guideline,consideration,right,key,4688.300000000047
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,13,random,principle,consideration,rule of thumb,rule of thumb,consideration,right,key,6507.299999999814
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,14,random,consideration,heuristic,implication,heuristic,implication,left,key,26296.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,15,random,style guide,principle,heuristic,heuristic,principle,right,key,3631.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,16,random,guardrail,norm,consideration,norm,consideration,left,key,2201.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,17,random,best practice,convention,common practice,common practice,convention,right,key,2246.1999999999534
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,18,random,style guide,common practice,implication,common practice,implication,left,key,6865.800000000047
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,19,random,best practice,principle,style guide,style guide,principle,right,key,1967.6999999999534
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,20,random,guardrail,standard,principle,standard,principle,left,key,2699.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,21,validation,consideration,best practice,style guide,best practice,style guide,left,key,18111.699999999953
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,22,random,guideline,paradigm,design pattern,design pattern,paradigm,right,key,24847.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,23,random,implication,best practice,design pattern,design pattern,best practice,right,key,45878.30000000005
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,24,random,norm,principle,paradigm,paradigm,principle,right,key,11935.300000000047
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,25,random,best practice,implication,requirement,requirement,implication,right,key,3152.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,26,random,design pattern,paradigm,convention,convention,paradigm,right,key,2028.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,27,random,design pattern,principle,norm,norm,principle,right,key,5337.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,28,catch,consideration,best practice,consideration,consideration,best practice,right,key,2098.2999999998137
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,29,random,implication,norm,paradigm,norm,paradigm,left,key,11040.499999999767
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,30,random,principle,standard,heuristic,standard,heuristic,left,key,2436.8000000002794
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,31,random,principle,paradigm,design pattern,paradigm,design pattern,left,key,1764.1999999997206
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,32,random,rule of thumb,common practice,heuristic,heuristic,common practice,right,key,1795.3000000002794
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,33,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,1532.4000000003725
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,34,random,consideration,common practice,recommendation,recommendation,common practice,right,key,3185.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,35,random,guideline,convention,best practice,best practice,convention,right,key,5827.899999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,36,random,best practice,principle,guardrail,guardrail,principle,right,key,31026.700000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,37,random,design pattern,paradigm,common practice,common practice,paradigm,right,key,15195.30000000028
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,38,random,rule of thumb,requirement,guardrail,requirement,guardrail,left,key,2532.1999999997206
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,39,random,convention,principle,rule of thumb,rule of thumb,principle,right,key,2491.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,40,validation,norm,convention,implication,convention,implication,left,key,4175.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,41,random,principle,recommendation,best practice,recommendation,best practice,left,key,6269.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,42,random,heuristic,standard,common practice,standard,common practice,left,key,6109.700000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,43,catch,norm,implication,norm,norm,implication,right,key,1146.8000000002794
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,44,catch,standard,standard,best practice,standard,best practice,left,key,855.8999999999069
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,45,random,style guide,recommendation,requirement,recommendation,requirement,left,key,13760.200000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,46,random,norm,style guide,implication,style guide,implication,left,key,3686.6999999997206
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,47,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,6840.800000000279
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,48,random,design pattern,paradigm,common practice,common practice,paradigm,right,key,2626.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,49,random,best practice,principle,paradigm,principle,paradigm,left,key,4102.699999999721
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,50,random,guideline,principle,paradigm,principle,paradigm,left,key,36786.69999999972
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,51,random,convention,implication,style guide,style guide,implication,right,key,25772.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,52,random,recommendation,guideline,heuristic,guideline,heuristic,left,key,5814.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,53,validation,principle,paradigm,convention,paradigm,convention,left,key,14746.200000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,54,random,consideration,paradigm,recommendation,recommendation,paradigm,right,key,7162.700000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,55,random,best practice,implication,heuristic,heuristic,implication,right,key,14436.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,56,random,convention,requirement,guideline,guideline,requirement,right,key,10333.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,57,validation,rule of thumb,requirement,standard,standard,requirement,right,key,1953.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,58,catch,best practice,best practice,consideration,best practice,consideration,left,key,1030.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,59,catch,style guide,convention,style guide,style guide,convention,right,key,838.3000000002794
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,60,validation,guardrail,norm,recommendation,norm,recommendation,left,key,4326.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,61,random,guideline,principle,rule of thumb,rule of thumb,principle,right,key,2270.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,62,random,heuristic,principle,guardrail,guardrail,principle,right,key,18301.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,63,random,best practice,style guide,heuristic,style guide,heuristic,left,key,1682.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,64,random,convention,norm,recommendation,norm,recommendation,left,key,2972.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,65,random,standard,norm,principle,norm,principle,left,key,3615.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,66,random,best practice,paradigm,style guide,style guide,paradigm,right,key,8408.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,67,random,design pattern,consideration,heuristic,heuristic,consideration,right,key,5881.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,68,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,1653.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,69,random,convention,heuristic,rule of thumb,heuristic,rule of thumb,left,key,4731.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,70,random,style guide,implication,guideline,guideline,implication,right,key,10386.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,71,random,convention,principle,guardrail,guardrail,principle,right,key,8143.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,72,random,principle,style guide,consideration,style guide,consideration,left,key,6841.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,73,random,guardrail,standard,paradigm,standard,paradigm,left,key,6197.200000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,74,random,guideline,norm,paradigm,norm,paradigm,left,key,1726.5999999996275
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,75,random,guideline,style guide,recommendation,recommendation,style guide,right,key,3101.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,76,random,requirement,recommendation,style guide,style guide,recommendation,right,key,5373.9000000003725
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,77,random,implication,design pattern,style guide,style guide,design pattern,right,key,6693.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,78,random,implication,guideline,best practice,guideline,best practice,left,key,4227.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,79,random,rule of thumb,heuristic,guideline,heuristic,guideline,left,key,1830.2999999998137
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,80,random,guideline,style guide,convention,convention,style guide,right,key,2769.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,81,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,2370.2999999998137
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,82,random,recommendation,principle,best practice,best practice,principle,right,key,4137.600000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,83,validation,implication,principle,recommendation,recommendation,principle,right,key,1723.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,84,validation,best practice,implication,convention,convention,implication,right,key,12083.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,85,random,norm,paradigm,style guide,style guide,paradigm,right,key,2724.9000000003725
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,86,random,best practice,heuristic,convention,convention,heuristic,right,key,4905.899999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,87,random,implication,rule of thumb,design pattern,design pattern,rule of thumb,right,key,4818.199999999721
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,88,random,style guide,norm,requirement,requirement,norm,right,key,2301.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,89,random,best practice,paradigm,implication,implication,paradigm,right,key,9325.700000000186
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,90,random,recommendation,common practice,rule of thumb,rule of thumb,common practice,right,key,3345.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,91,random,guardrail,paradigm,best practice,best practice,paradigm,right,key,1764.3999999999069
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,92,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,1019.8999999999069
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,93,random,guardrail,convention,heuristic,convention,heuristic,left,key,4146.100000000093
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,94,random,guideline,rule of thumb,heuristic,heuristic,rule of thumb,right,key,3551.2000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,95,random,rule of thumb,guardrail,principle,guardrail,principle,left,key,2313.399999999907
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,96,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,key,2092.5
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,97,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,891.0
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,98,random,norm,recommendation,convention,convention,recommendation,right,key,3506.7000000001863
+Z4dcvoL1thV503iIleULDbmL2Ds2,vis-guidelines-pilot-v4,99,random,heuristic,consideration,design pattern,consideration,design pattern,left,key,10510.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,0,random,consideration,design pattern,principle,principle,design pattern,right,click,31393.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,1,random,style guide,principle,standard,standard,principle,right,click,4709.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,2,random,implication,requirement,common practice,requirement,common practice,left,click,2717.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,3,validation,norm,convention,implication,convention,implication,left,click,1805.9999999999854
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,4,random,norm,requirement,common practice,common practice,requirement,right,click,2562.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,5,validation,implication,principle,recommendation,recommendation,principle,right,click,3061.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,6,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,click,1940.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,7,random,consideration,guideline,recommendation,recommendation,guideline,right,click,3998.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,8,random,recommendation,common practice,implication,implication,common practice,right,click,2782.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,9,random,best practice,common practice,guardrail,common practice,guardrail,left,click,3357.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,10,random,guideline,heuristic,design pattern,heuristic,design pattern,left,click,5514.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,11,random,implication,best practice,paradigm,paradigm,best practice,right,click,2104.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,12,random,design pattern,requirement,rule of thumb,rule of thumb,requirement,right,click,10704.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,13,random,guardrail,paradigm,guideline,paradigm,guideline,left,click,3126.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,14,random,heuristic,rule of thumb,best practice,rule of thumb,best practice,left,click,1925.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,15,random,recommendation,guideline,design pattern,guideline,design pattern,left,click,2780.0000000000146
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,16,random,guideline,recommendation,principle,recommendation,principle,left,click,1876.9999999999854
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,17,random,rule of thumb,consideration,convention,convention,consideration,right,click,8790.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,18,validation,standard,rule of thumb,implication,implication,rule of thumb,right,click,4190.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,19,random,norm,heuristic,principle,heuristic,principle,left,click,4896.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,20,random,convention,guideline,best practice,guideline,best practice,left,click,4337.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,21,random,implication,convention,recommendation,recommendation,convention,right,click,3133.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,22,random,paradigm,style guide,implication,implication,style guide,right,click,1499.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,23,random,guideline,best practice,principle,best practice,principle,left,click,2553.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,24,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,click,1587.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,25,catch,norm,implication,norm,norm,implication,right,click,1278.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,26,random,style guide,common practice,norm,common practice,norm,left,click,2139.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,27,random,requirement,rule of thumb,implication,implication,rule of thumb,right,click,2127.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,28,random,principle,convention,paradigm,paradigm,convention,right,click,1490.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,29,random,consideration,convention,common practice,convention,common practice,left,click,2728.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,30,catch,consideration,best practice,consideration,best practice,consideration,left,click,3146.000000000029
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,31,catch,heuristic,heuristic,requirement,heuristic,requirement,left,click,1348.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,32,random,standard,style guide,requirement,requirement,style guide,right,click,1262.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,33,random,principle,heuristic,requirement,requirement,heuristic,right,click,2491.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,34,random,guardrail,guideline,principle,principle,guideline,right,click,2098.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,35,random,heuristic,best practice,requirement,best practice,requirement,left,click,2042.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,36,random,norm,standard,recommendation,standard,recommendation,left,click,1357.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,37,random,implication,guardrail,rule of thumb,rule of thumb,guardrail,right,click,2445.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,38,random,consideration,guideline,style guide,guideline,style guide,left,click,2801.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,39,random,norm,common practice,principle,common practice,principle,left,click,3176.000000000029
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,40,random,guideline,recommendation,paradigm,paradigm,recommendation,right,click,1588.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,41,validation,principle,paradigm,convention,paradigm,convention,left,click,2235.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,42,random,guideline,heuristic,norm,norm,heuristic,right,click,1899.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,43,random,common practice,recommendation,heuristic,recommendation,heuristic,left,click,6474.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,44,random,guardrail,heuristic,best practice,best practice,heuristic,right,click,2890.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,45,random,rule of thumb,requirement,guardrail,requirement,guardrail,left,click,3089.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,46,random,common practice,best practice,guideline,best practice,guideline,left,click,5559.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,47,random,guardrail,requirement,guideline,requirement,guideline,left,click,3336.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,48,random,principle,style guide,recommendation,recommendation,style guide,right,click,3162.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,49,random,common practice,style guide,guideline,guideline,style guide,right,click,6908.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,50,random,guardrail,heuristic,style guide,style guide,heuristic,right,click,4423.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,51,random,guideline,standard,guardrail,standard,guardrail,left,click,1587.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,52,validation,best practice,implication,convention,convention,implication,right,click,1543.999999999971
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,53,random,guardrail,best practice,standard,standard,best practice,right,click,1760.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,54,validation,guardrail,norm,recommendation,norm,recommendation,left,click,1186.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,55,random,design pattern,standard,implication,standard,implication,left,click,2816.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,56,random,rule of thumb,paradigm,common practice,common practice,paradigm,right,click,1852.000000000029
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,57,catch,style guide,convention,style guide,style guide,convention,right,click,1722.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,58,catch,recommendation,recommendation,style guide,recommendation,style guide,left,click,1400.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,59,random,rule of thumb,guardrail,guideline,guardrail,guideline,left,click,1854.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,60,validation,guideline,rule of thumb,paradigm,paradigm,rule of thumb,right,click,2549.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,61,random,style guide,design pattern,recommendation,design pattern,recommendation,left,click,2998.000000000058
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,62,validation,common practice,requirement,heuristic,heuristic,requirement,right,click,1817.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,63,validation,rule of thumb,requirement,standard,standard,requirement,right,click,1698.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,64,random,paradigm,recommendation,requirement,requirement,recommendation,right,click,3867.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,65,random,design pattern,paradigm,heuristic,heuristic,paradigm,right,click,2661.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,66,catch,standard,standard,best practice,standard,best practice,left,click,1251.0000000000582
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,67,random,rule of thumb,design pattern,requirement,design pattern,requirement,left,click,2298.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,68,random,guideline,design pattern,paradigm,design pattern,paradigm,left,click,2876.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,69,random,style guide,paradigm,rule of thumb,rule of thumb,paradigm,right,click,2964.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,70,validation,consideration,best practice,style guide,best practice,style guide,left,click,2839.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,71,random,norm,best practice,implication,best practice,implication,left,click,1716.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,72,random,style guide,heuristic,rule of thumb,rule of thumb,heuristic,right,click,1836.9999999999418
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,73,random,paradigm,rule of thumb,guideline,guideline,rule of thumb,right,click,3411.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,74,random,best practice,common practice,recommendation,common practice,recommendation,left,click,2257.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,75,random,paradigm,heuristic,design pattern,design pattern,heuristic,right,click,2726.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,76,random,standard,common practice,paradigm,paradigm,common practice,right,click,1874.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,77,random,implication,requirement,standard,requirement,standard,left,click,5500.999999999942
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,78,random,implication,paradigm,recommendation,recommendation,paradigm,right,click,1457.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,79,random,requirement,principle,norm,principle,norm,left,click,3092.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,80,random,requirement,convention,principle,principle,convention,right,click,1555.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,81,random,consideration,guardrail,convention,convention,guardrail,right,click,2608.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,82,random,recommendation,guardrail,paradigm,guardrail,paradigm,left,click,1812.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,83,random,principle,design pattern,standard,standard,design pattern,right,click,3321.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,84,random,implication,convention,guideline,convention,guideline,left,click,1754.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,85,catch,design pattern,best practice,design pattern,design pattern,best practice,right,click,1748.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,86,random,implication,guardrail,rule of thumb,guardrail,rule of thumb,left,click,5619.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,87,random,consideration,design pattern,rule of thumb,design pattern,rule of thumb,left,click,2228.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,88,random,paradigm,consideration,principle,principle,consideration,right,click,1547.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,89,random,convention,consideration,paradigm,paradigm,consideration,right,click,4447.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,90,random,heuristic,consideration,norm,norm,consideration,right,click,2548.999999999942
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,91,random,design pattern,guideline,norm,guideline,norm,left,click,2721.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,92,catch,best practice,best practice,consideration,best practice,consideration,left,click,1246.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,93,random,common practice,rule of thumb,guideline,guideline,rule of thumb,right,click,2416.999999999942
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,94,random,standard,style guide,guideline,style guide,guideline,left,click,2008.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,95,random,consideration,design pattern,norm,design pattern,norm,left,click,1915.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,96,random,standard,paradigm,guardrail,paradigm,guardrail,left,click,2772.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,97,random,heuristic,implication,style guide,style guide,implication,right,click,1905.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,98,random,heuristic,convention,recommendation,convention,recommendation,left,click,3177.0
+mmS9CJgRQEO5Qy1XlTd2L97b7kL2,vis-guidelines-pilot-v4,99,random,style guide,common practice,guideline,guideline,common practice,right,click,2418.0
