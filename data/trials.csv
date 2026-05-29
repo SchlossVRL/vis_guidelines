@@ -191,6 +191,106 @@ LS07UwATJqeOhem87tJA7oA5ZUs2,vis-guidelines-true-run,96,catch,consideration,best
 LS07UwATJqeOhem87tJA7oA5ZUs2,vis-guidelines-true-run,97,random,implication,rule of thumb,norm,rule of thumb,norm,left,key,1532.0999999977648
 LS07UwATJqeOhem87tJA7oA5ZUs2,vis-guidelines-true-run,98,random,guardrail,guideline,paradigm,guideline,paradigm,left,key,807.0
 LS07UwATJqeOhem87tJA7oA5ZUs2,vis-guidelines-true-run,99,random,standard,heuristic,recommendation,recommendation,heuristic,right,key,4790.900000002235
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,0,random,design pattern,standard,best practice,standard,best practice,left,key,2511.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,1,validation,consideration,best practice,style guide,best practice,style guide,left,key,12708.100000023842
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,2,validation,implication,principle,recommendation,principle,recommendation,left,key,23472.29999998212
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,3,random,principle,rule of thumb,guideline,rule of thumb,guideline,left,key,3623.600000023842
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,4,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,key,3363.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,5,random,best practice,standard,norm,norm,standard,right,key,2093.2000000178814
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,6,random,convention,guardrail,common practice,common practice,guardrail,right,key,2589.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,7,random,paradigm,principle,guardrail,principle,guardrail,left,key,13827.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,8,validation,norm,convention,implication,convention,implication,left,key,2231.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,9,random,implication,guideline,design pattern,guideline,design pattern,left,key,9609.59999999404
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,10,random,consideration,guardrail,common practice,common practice,guardrail,right,key,3099.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,11,random,requirement,paradigm,standard,standard,paradigm,right,key,3098.100000023842
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,12,random,common practice,guardrail,paradigm,paradigm,guardrail,right,key,2250.300000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,13,validation,rule of thumb,requirement,standard,standard,requirement,right,key,4763.600000023842
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,14,random,implication,heuristic,guideline,guideline,heuristic,right,key,11809.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,15,random,rule of thumb,recommendation,consideration,recommendation,consideration,left,key,7852.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,16,random,principle,paradigm,consideration,paradigm,consideration,left,key,4703.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,17,random,style guide,recommendation,consideration,recommendation,consideration,left,key,9210.90000000596
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,18,random,heuristic,common practice,rule of thumb,common practice,rule of thumb,left,key,4655.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,19,random,guardrail,norm,best practice,norm,best practice,left,key,2021.7000000178814
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,20,random,standard,common practice,heuristic,common practice,heuristic,left,key,2941.899999976158
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,21,random,guardrail,standard,design pattern,standard,design pattern,left,key,9450.299999982119
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,22,random,norm,recommendation,implication,implication,recommendation,right,key,1306.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,23,random,guardrail,recommendation,norm,norm,recommendation,right,key,1925.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,24,random,rule of thumb,paradigm,consideration,paradigm,consideration,left,key,3101.899999976158
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,25,random,style guide,convention,common practice,common practice,convention,right,key,7276.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,26,random,recommendation,guideline,best practice,best practice,guideline,right,key,1791.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,27,random,guardrail,style guide,design pattern,style guide,design pattern,left,key,3880.7999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,28,catch,best practice,best practice,consideration,best practice,consideration,left,key,1795.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,29,random,consideration,requirement,standard,requirement,standard,left,key,4166.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,30,random,common practice,principle,guideline,guideline,principle,right,key,2916.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,31,random,standard,principle,design pattern,design pattern,principle,right,key,19547.69999998808
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,32,validation,common practice,requirement,heuristic,heuristic,requirement,right,key,34088.59999999404
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,33,random,design pattern,principle,recommendation,recommendation,principle,right,key,13374.300000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,34,random,rule of thumb,design pattern,standard,standard,design pattern,right,key,4805.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,35,random,requirement,guideline,paradigm,guideline,paradigm,left,key,3193.300000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,36,random,design pattern,requirement,best practice,best practice,requirement,right,key,7548.299999982119
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,37,random,standard,principle,design pattern,design pattern,principle,right,key,10902.09999999404
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,38,random,guardrail,standard,common practice,common practice,standard,right,key,3986.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,39,random,design pattern,style guide,heuristic,style guide,heuristic,left,key,3508.2999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,40,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,key,3244.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,41,random,paradigm,rule of thumb,heuristic,rule of thumb,heuristic,left,key,3796.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,42,random,requirement,rule of thumb,best practice,rule of thumb,best practice,left,key,2667.199999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,43,random,common practice,design pattern,recommendation,design pattern,recommendation,left,key,8806.59999999404
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,44,random,implication,guardrail,convention,guardrail,convention,left,key,2224.2000000178814
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,45,random,implication,heuristic,design pattern,heuristic,design pattern,left,key,2447.300000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,46,random,design pattern,guideline,consideration,guideline,consideration,left,key,4815.700000017881
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,47,random,guideline,style guide,implication,style guide,implication,left,key,1354.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,48,random,implication,consideration,guardrail,consideration,guardrail,left,key,2521.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,49,random,implication,requirement,recommendation,requirement,recommendation,left,key,15538.699999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,50,random,implication,rule of thumb,best practice,rule of thumb,best practice,left,key,4487.200000017881
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,51,random,requirement,rule of thumb,principle,rule of thumb,principle,left,key,1923.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,52,random,convention,recommendation,guideline,recommendation,guideline,left,key,2273.899999976158
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,53,random,consideration,requirement,convention,requirement,convention,left,key,3662.0
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,54,random,requirement,guardrail,style guide,guardrail,style guide,left,key,1743.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,55,catch,norm,implication,norm,norm,implication,right,key,1443.1000000238419
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,56,random,design pattern,requirement,guideline,guideline,requirement,right,key,6745.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,57,catch,style guide,convention,style guide,style guide,convention,right,key,3568.199999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,58,catch,recommendation,recommendation,style guide,recommendation,style guide,left,key,1121.8999999761581
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,59,catch,standard,standard,best practice,standard,best practice,left,key,879.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,60,random,recommendation,design pattern,principle,design pattern,principle,left,key,1907.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,61,random,guideline,consideration,principle,principle,consideration,right,key,3718.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,62,random,requirement,common practice,norm,common practice,norm,left,key,4793.699999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,63,random,design pattern,consideration,guideline,guideline,consideration,right,key,5942.299999982119
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,64,random,style guide,norm,guideline,guideline,norm,right,key,1769.3999999761581
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,65,random,requirement,principle,guideline,guideline,principle,right,key,2556.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,66,random,principle,requirement,style guide,requirement,style guide,left,key,2024.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,67,random,principle,best practice,guideline,guideline,best practice,right,key,1832.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,68,random,norm,implication,rule of thumb,rule of thumb,implication,right,key,1476.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,69,random,guideline,best practice,convention,best practice,convention,left,key,1557.3999999761581
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,70,validation,guardrail,norm,recommendation,norm,recommendation,left,key,1099.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,71,random,guideline,best practice,style guide,style guide,best practice,right,key,6768.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,72,random,norm,guideline,convention,guideline,convention,left,key,1844.4000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,73,random,implication,design pattern,recommendation,design pattern,recommendation,left,key,1491.8999999761581
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,74,validation,best practice,implication,convention,implication,convention,left,key,2720.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,75,random,standard,paradigm,recommendation,recommendation,paradigm,right,key,2486.7999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,76,random,requirement,style guide,guardrail,style guide,guardrail,left,key,5808.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,77,random,heuristic,best practice,design pattern,design pattern,best practice,right,key,2319.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,78,catch,heuristic,heuristic,requirement,heuristic,requirement,left,key,914.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,79,random,best practice,implication,paradigm,paradigm,implication,right,key,2844.2999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,80,random,common practice,principle,style guide,principle,style guide,left,key,1718.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,81,random,recommendation,requirement,paradigm,requirement,paradigm,left,key,1728.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,82,catch,design pattern,best practice,design pattern,design pattern,best practice,right,key,3180.2999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,83,catch,consideration,best practice,consideration,consideration,best practice,right,key,893.8000000119209
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,84,random,consideration,design pattern,paradigm,design pattern,paradigm,left,key,2974.800000011921
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,85,random,principle,consideration,guardrail,consideration,guardrail,left,key,1771.7999999821186
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,86,random,paradigm,principle,guardrail,principle,guardrail,left,key,2907.899999976158
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,87,random,guideline,standard,consideration,standard,consideration,left,key,1509.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,88,random,design pattern,recommendation,principle,principle,recommendation,right,key,1894.0999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,89,validation,standard,rule of thumb,implication,implication,rule of thumb,right,key,6740.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,90,catch,guardrail,recommendation,guardrail,recommendation,guardrail,left,key,1326.199999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,91,random,guardrail,recommendation,paradigm,recommendation,paradigm,left,key,813.5999999940395
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,92,validation,principle,paradigm,convention,convention,paradigm,right,key,2021.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,93,random,requirement,guideline,guardrail,guideline,guardrail,left,key,2080.699999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,94,random,common practice,heuristic,consideration,consideration,heuristic,right,key,1529.9000000059605
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,95,random,requirement,convention,norm,convention,norm,left,key,1095.199999988079
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,96,random,norm,guardrail,principle,principle,guardrail,right,key,1796.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,97,random,requirement,best practice,guideline,best practice,guideline,left,key,1438.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,98,random,design pattern,principle,guardrail,principle,guardrail,left,key,1673.5
+OMcD0oMo9QN3b4jqAtVvimAzSet1,vis-guidelines-true-run,99,random,consideration,guardrail,principle,principle,guardrail,right,key,5435.0999999940395
 RFgn6Ur6ApbJlcR3xICZyop5HYJ3,vis-guidelines-true-run,0,random,common practice,standard,rule of thumb,rule of thumb,standard,right,key,8543.0
 RFgn6Ur6ApbJlcR3xICZyop5HYJ3,vis-guidelines-true-run,1,validation,standard,rule of thumb,implication,rule of thumb,implication,left,key,2863.0
 RFgn6Ur6ApbJlcR3xICZyop5HYJ3,vis-guidelines-true-run,2,random,consideration,principle,implication,principle,implication,left,key,6073.0
