@@ -891,6 +891,106 @@ Yv9oGsLrHza4W2vv0SuFxPwCNgh2,vis-guidelines-true-run,96,random,guardrail,norm,pa
 Yv9oGsLrHza4W2vv0SuFxPwCNgh2,vis-guidelines-true-run,97,random,principle,design pattern,consideration,consideration,design pattern,right,click,9041.899999856949
 Yv9oGsLrHza4W2vv0SuFxPwCNgh2,vis-guidelines-true-run,98,random,recommendation,implication,style guide,style guide,implication,right,click,6683.5
 Yv9oGsLrHza4W2vv0SuFxPwCNgh2,vis-guidelines-true-run,99,random,requirement,rule of thumb,recommendation,recommendation,rule of thumb,right,click,4014.899999856949
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,0,random,common practice,norm,design pattern,norm,design pattern,left,click,3554.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,1,random,standard,requirement,norm,norm,requirement,right,click,5910.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,2,random,convention,consideration,principle,consideration,principle,left,click,7431.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,3,random,consideration,heuristic,style guide,style guide,heuristic,right,click,7261.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,4,random,implication,guideline,common practice,common practice,guideline,right,click,9845.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,5,random,consideration,guardrail,paradigm,guardrail,paradigm,left,click,6464.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,6,random,guideline,standard,implication,implication,standard,right,click,6182.9000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,7,random,paradigm,common practice,convention,convention,common practice,right,click,7232.9000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,8,random,guideline,rule of thumb,norm,rule of thumb,norm,left,click,3802.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,9,random,rule of thumb,convention,style guide,convention,style guide,left,click,7080.700000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,10,random,style guide,standard,recommendation,recommendation,standard,right,click,4218.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,11,random,rule of thumb,requirement,consideration,consideration,requirement,right,click,5261.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,12,random,paradigm,requirement,rule of thumb,requirement,rule of thumb,left,click,10914.599999999627
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,13,random,rule of thumb,recommendation,common practice,common practice,recommendation,right,click,6946.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,14,random,consideration,implication,guideline,guideline,implication,right,click,8702.799999998882
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,15,random,guardrail,consideration,convention,consideration,convention,left,click,3553.7999999988824
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,16,random,norm,consideration,best practice,consideration,best practice,left,click,7854.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,17,catch,style guide,convention,style guide,style guide,convention,right,click,2729.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,18,random,paradigm,guideline,principle,principle,guideline,right,click,3908.7999999988824
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,19,catch,heuristic,heuristic,requirement,heuristic,requirement,left,click,2754.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,20,random,design pattern,norm,style guide,style guide,norm,right,click,17719.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,21,random,heuristic,guideline,design pattern,design pattern,guideline,right,click,4842.39999999851
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,22,random,heuristic,guardrail,norm,norm,guardrail,right,click,3843.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,23,catch,guardrail,recommendation,guardrail,guardrail,recommendation,right,click,3907.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,24,random,paradigm,principle,recommendation,principle,recommendation,left,click,8325.400000000373
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,25,random,convention,heuristic,paradigm,heuristic,paradigm,left,click,9249.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,26,catch,design pattern,best practice,design pattern,design pattern,best practice,right,click,1498.9000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,27,random,implication,consideration,norm,norm,consideration,right,click,10056.39999999851
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,28,random,recommendation,requirement,common practice,common practice,requirement,right,click,3678.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,29,random,guideline,recommendation,rule of thumb,recommendation,rule of thumb,left,click,5832.200000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,30,random,paradigm,style guide,norm,norm,style guide,right,click,4994.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,31,random,best practice,paradigm,standard,paradigm,standard,left,click,3757.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,32,random,guardrail,heuristic,recommendation,recommendation,heuristic,right,click,4418.60000000149
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,33,validation,standard,rule of thumb,implication,implication,rule of thumb,right,click,135991.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,34,catch,standard,standard,best practice,standard,best practice,left,click,2690.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,35,random,best practice,paradigm,principle,principle,paradigm,right,click,4062.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,36,random,recommendation,heuristic,best practice,best practice,heuristic,right,click,3512.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,37,random,standard,best practice,principle,best practice,principle,left,click,3921.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,38,random,guideline,norm,recommendation,recommendation,norm,right,click,5462.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,39,validation,principle,paradigm,convention,paradigm,convention,left,click,5169.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,40,random,common practice,principle,style guide,style guide,principle,right,click,4645.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,41,random,common practice,requirement,best practice,best practice,requirement,right,click,4437.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,42,random,style guide,heuristic,implication,implication,heuristic,right,click,7558.10000000149
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,43,validation,consideration,best practice,style guide,style guide,best practice,right,click,5871.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,44,random,principle,design pattern,norm,design pattern,norm,left,click,10929.400000000373
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,45,random,convention,guideline,style guide,style guide,guideline,right,click,5517.700000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,46,random,consideration,principle,common practice,common practice,principle,right,click,7923.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,47,validation,best practice,implication,convention,implication,convention,left,click,3505.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,48,random,consideration,best practice,convention,best practice,convention,left,click,8426.599999999627
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,49,catch,consideration,best practice,consideration,consideration,best practice,right,click,1837.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,50,random,guardrail,best practice,norm,best practice,norm,left,click,3413.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,51,random,requirement,common practice,norm,common practice,norm,left,click,6791.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,52,random,common practice,guardrail,rule of thumb,rule of thumb,guardrail,right,click,5610.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,53,random,norm,guideline,common practice,common practice,guideline,right,click,4444.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,54,catch,recommendation,recommendation,style guide,recommendation,style guide,left,click,1383.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,55,random,guardrail,requirement,convention,convention,requirement,right,click,6518.700000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,56,random,design pattern,consideration,standard,standard,consideration,right,click,5899.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,57,random,standard,norm,style guide,style guide,norm,right,click,3245.7000000011176
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,58,random,principle,recommendation,consideration,recommendation,consideration,left,click,5618.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,59,random,rule of thumb,norm,standard,norm,standard,left,click,2428.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,60,random,norm,guideline,recommendation,recommendation,guideline,right,click,4847.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,61,catch,best practice,best practice,consideration,best practice,consideration,left,click,1326.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,62,random,requirement,common practice,style guide,style guide,common practice,right,click,9340.800000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,63,random,convention,recommendation,heuristic,recommendation,heuristic,left,click,4062.2000000011176
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,64,random,norm,recommendation,design pattern,design pattern,recommendation,right,click,6171.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,65,random,design pattern,implication,best practice,best practice,implication,right,click,21483.599999999627
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,66,random,rule of thumb,standard,consideration,consideration,standard,right,click,6828.700000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,67,random,guideline,design pattern,consideration,consideration,design pattern,right,click,3988.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,68,catch,norm,implication,norm,norm,implication,right,click,1236.7000000011176
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,69,validation,guideline,rule of thumb,paradigm,rule of thumb,paradigm,left,click,3270.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,70,random,best practice,heuristic,principle,heuristic,principle,left,click,8188.9000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,71,random,guardrail,heuristic,common practice,common practice,heuristic,right,click,2592.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,72,random,best practice,standard,recommendation,recommendation,standard,right,click,2835.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,73,random,guideline,norm,design pattern,norm,design pattern,left,click,2955.2999999988824
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,74,random,requirement,design pattern,consideration,consideration,design pattern,right,click,26743.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,75,random,norm,style guide,guideline,style guide,guideline,left,click,5268.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,76,random,norm,guideline,convention,convention,guideline,right,click,2183.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,77,random,guardrail,consideration,guideline,consideration,guideline,left,click,4270.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,78,random,norm,paradigm,recommendation,recommendation,paradigm,right,click,2530.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,79,random,style guide,heuristic,best practice,best practice,heuristic,right,click,2825.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,80,validation,norm,convention,implication,convention,implication,left,click,2296.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,81,random,style guide,standard,principle,principle,standard,right,click,6925.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,82,validation,common practice,requirement,heuristic,heuristic,requirement,right,click,11638.200000001118
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,83,random,rule of thumb,implication,consideration,consideration,implication,right,click,5107.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,84,random,common practice,rule of thumb,standard,rule of thumb,standard,left,click,4714.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,85,random,style guide,heuristic,standard,standard,heuristic,right,click,18451.10000000149
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,86,validation,implication,principle,recommendation,recommendation,principle,right,click,3387.9000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,87,random,convention,rule of thumb,heuristic,rule of thumb,heuristic,left,click,5455.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,88,random,heuristic,requirement,best practice,best practice,requirement,right,click,5432.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,89,random,design pattern,standard,norm,norm,standard,right,click,2425.4000000003725
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,90,random,common practice,norm,principle,norm,principle,left,click,2515.0999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,91,validation,rule of thumb,requirement,standard,standard,requirement,right,click,5137.699999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,92,random,best practice,consideration,principle,consideration,principle,left,click,18151.300000000745
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,93,validation,guardrail,norm,recommendation,norm,recommendation,left,click,2078.7999999988824
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,94,random,implication,convention,heuristic,convention,heuristic,left,click,4902.0
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,95,random,norm,rule of thumb,common practice,common practice,rule of thumb,right,click,1994.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,96,random,guardrail,common practice,recommendation,recommendation,common practice,right,click,5336.5999999996275
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,97,random,principle,rule of thumb,design pattern,design pattern,rule of thumb,right,click,15607.199999999255
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,98,catch,rule of thumb,rule of thumb,paradigm,rule of thumb,paradigm,left,click,2322.5
+l4F9Teblj9eH4Xw0x8JfMTlY0j42,vis-guidelines-true-run,99,random,rule of thumb,recommendation,guardrail,recommendation,guardrail,left,click,2899.5
 mbvrU88439YI5Spi8xjcKF4HnuU2,vis-guidelines-true-run,0,random,paradigm,heuristic,guardrail,guardrail,heuristic,right,click,44162.80000001192
 mbvrU88439YI5Spi8xjcKF4HnuU2,vis-guidelines-true-run,1,random,principle,guideline,norm,guideline,norm,left,click,2158.800000011921
 mbvrU88439YI5Spi8xjcKF4HnuU2,vis-guidelines-true-run,2,random,heuristic,implication,design pattern,implication,design pattern,left,click,6025.400000035763
