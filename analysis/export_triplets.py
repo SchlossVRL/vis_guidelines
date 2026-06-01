@@ -128,10 +128,23 @@ def main() -> None:
         if not args.include_incomplete and data.get("completedAt") is None:
             n_skipped_incomplete += 1
             continue
+        
+        #get deomographics data to exclude for less than 1 year vis experience
+        demographics = data.get("demographics") or {}
+
+        #skip participants with less than 1 year of experience in VIS
+        vis_exp = demographics.get("years_in_vis")
+
+        try:
+            years = float(vis_exp)
+            if years < 1:
+                continue
+        except (TypeError, ValueError):
+            pass
 
         pid = data.get("participantId") or snap.id
         trials = data.get("trials", []) or []
-        demographics = data.get("demographics") or {}
+        #demographics = data.get("demographics") or {}
 
         p_row: dict[str, Any] = {
             "participant_id": pid,
