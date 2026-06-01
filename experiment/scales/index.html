@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Triplet Similarity Task</title>
+  <title>Slider Scale Task</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jspsych@8.0.0/css/jspsych.css" />
   <style>
     body {
@@ -26,14 +24,17 @@
       line-height: 1.6;
       font-size: 1.05rem;
     }
+
     .instructions h2 {
       text-align: center;
       font-weight: 700;
       margin-bottom: 1.5rem;
     }
+
     .instructions p {
       margin: 0.9rem 0;
     }
+
     .instructions kbd {
       font-family: 'Lato', sans-serif;
       font-weight: 700;
@@ -61,26 +62,31 @@
       line-height: 1.6;
       font-size: 1rem;
     }
+
     .consent h2 {
       font-weight: 700;
       font-size: 1.8rem;
       margin-bottom: 1.25rem;
     }
+
     .consent h3 {
       font-weight: 700;
       font-size: 1.1rem;
       margin-top: 1.6rem;
       margin-bottom: 0.4rem;
     }
+
     .consent p {
       margin: 0.5rem 0;
     }
+
     .consent-options {
       margin: 1.5rem 0 1rem;
       padding: 1rem 1.25rem;
       border-top: 1px solid #e0e0e0;
       border-bottom: 1px solid #e0e0e0;
     }
+
     .consent-option {
       display: flex;
       align-items: center;
@@ -90,16 +96,19 @@
       user-select: none;
       font-size: 1rem;
     }
+
     .consent-option input[type="radio"] {
       width: 1.1rem;
       height: 1.1rem;
       cursor: pointer;
       accent-color: #1f6fa8;
     }
+
     .consent-actions {
       text-align: center;
       margin-top: 1.5rem;
     }
+
     .consent-continue:disabled {
       opacity: 0.45;
       cursor: not-allowed;
@@ -120,82 +129,76 @@
       transition: background-color 100ms ease, transform 100ms ease,
         box-shadow 100ms ease;
     }
+
     .begin-button:hover {
       background: #185a8a;
       transform: translateY(-2px);
       box-shadow: 0 4px 14px rgba(31, 111, 168, 0.25);
     }
+
     .begin-button:active {
       transform: translateY(0);
       box-shadow: 0 1px 3px rgba(31, 111, 168, 0.2);
     }
+
     .begin-button:focus-visible {
       outline: 3px solid #a0c5e2;
       outline-offset: 2px;
     }
 
-    /* ---------- triplet stage (used in both example and live trials) ---------- */
-    .triplet-stage {
-      text-align: center;
-      margin: 2.5rem 0;
-    }
-    .example-stage {
-      margin: 1.75rem auto;
-    }
-    .example-label {
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      font-size: 0.75rem;
-      letter-spacing: 0.14em;
-      color: #999;
-      text-transform: uppercase;
-      margin-bottom: 1rem;
-    }
-
-    /* All three words share these styles — bold Lato, same size, same pill shape. */
-    .triplet-word {
-      font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      font-size: 2rem;
-      letter-spacing: 0.005em;
-      display: inline-block;
-      padding: 1rem 2rem;
-      min-width: 12rem;
-      border-radius: 14px;
-      background: transparent;
-      text-align: center;
-    }
-    .triplet-target {
-      margin: 0.5rem 0 2.25rem;
-    }
-    .triplet-choices {
-      display: flex;
-      justify-content: center;
-      align-items: stretch;
-      gap: 3rem;
-    }
-
-    /* Choices behave like the target by default, but light up on hover/select. */
-    .triplet-choice {
-      cursor: pointer;
-      user-select: none;
-      transition: background-color 90ms ease, transform 90ms ease,
-        box-shadow 90ms ease;
-    }
-    .triplet-choice:hover,
-    .triplet-choice:focus-visible {
-      background: #eaf3fb;
-      transform: translateY(-2px);
+    /* ---------- slider ---------- */
+    input[type="range"] {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 70%;
+      height: 6px;
+      background: black;
+      display: block;
+      margin: 40px auto;
       outline: none;
     }
-    .triplet-choice.selected {
-      background: #b8d8ee;
-      transform: scale(1.05);
-      box-shadow: 0 4px 14px rgba(31, 111, 168, 0.22);
+
+    /* slider wrapper*/
+    .slider-wrapper {
+      text-align: center;
+    }
+
+    /* jsPsych container */
+    .jspsych-html-slider-response {
+      text-align: center;
+    }
+
+    /* track */
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 6px;
+      background: black;
+    }
+
+    input[type="range"]::-moz-range-track {
+      height: 6px;
+      background: black;
+    }
+
+    /* hide thumb (bubble) */
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      background: black;
+      cursor: pointer;
+      width: 1px;
+      height: 24px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      width: 1 px;
+      height: 24px;
+      background: black;
+      border: none;
     }
   </style>
 </head>
+
 <body>
   <script type="module" src="./setup.js"></script>
 </body>
+
 </html>

@@ -5,6 +5,7 @@ import {
 import HtmlKeyboardResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-keyboard-response@2.0.0/+esm";
 import HtmlButtonResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-button-response@2.0.0/+esm";
 import SurveyTextPlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-survey-text@2.0.0/+esm";
+import HtmlSliderResponsePlugin from "https://cdn.jsdelivr.net/npm/@jspsych/plugin-html-slider-response@2.0.0/+esm";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
 import {
@@ -24,7 +25,7 @@ import {
 // CONFIG — edit these per experiment
 // =============================================================================
 
-const EXPERIMENT_COLLECTION = "vis-guidelines-true-run";
+const EXPERIMENT_COLLECTION = "vis-guidelines-scale-pilot-test";
 
 const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCMWifly8RpRWOiZZNRGzfRY1zEx7DBMos",
@@ -49,15 +50,6 @@ function shuffle(arr, rng = Math.random) {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
-}
-
-function sampleRandomTriplets(words, n) {
-  const out = [];
-  for (let i = 0; i < n; i++) {
-    const [head, left, right] = shuffle(words).slice(0, 3);
-    out.push({ head, left, right });
-  }
-  return out;
 }
 
 function escapeHtml(s) {
@@ -172,88 +164,6 @@ class ConsentPlugin {
   }
 }
 
-// ---------- Custom triplet plugin (mouse + keyboard) ----------
-
-class TripletPlugin {
-  static info = {
-    name: "triplet",
-    version: "1.0.0",
-    parameters: {
-      head: { type: ParameterType.STRING, default: "" },
-      left: { type: ParameterType.STRING, default: "" },
-      right: { type: ParameterType.STRING, default: "" },
-      feedback_duration: { type: ParameterType.INT, default: 150 },
-    },
-  };
-
-  constructor(jsPsych) {
-    this.jsPsych = jsPsych;
-  }
-
-  trial(display_element, trial) {
-    display_element.innerHTML = `
-      <div class="triplet-stage">
-        <div class="triplet-word triplet-target">${escapeHtml(trial.head)}</div>
-        <div class="triplet-choices">
-          <div class="triplet-word triplet-choice" data-side="left" tabindex="0">${escapeHtml(trial.left)}</div>
-          <div class="triplet-word triplet-choice" data-side="right" tabindex="0">${escapeHtml(trial.right)}</div>
-        </div>
-      </div>
-    `;
-
-    const leftEl = display_element.querySelector(
-      '.triplet-choice[data-side="left"]',
-    );
-    const rightEl = display_element.querySelector(
-      '.triplet-choice[data-side="right"]',
-    );
-    const start = performance.now();
-    let finished = false;
-
-    const finish = (side, source) => {
-      if (finished) return;
-      finished = true;
-      cleanup();
-      const el = side === "left" ? leftEl : rightEl;
-      el.classList.add("selected");
-      const rt = performance.now() - start;
-      setTimeout(() => {
-        this.jsPsych.finishTrial({
-          rt,
-          response_side: side,
-          response_source: source, // "click" | "key"
-          head: trial.head,
-          left: trial.left,
-          right: trial.right,
-          choice: side === "left" ? trial.left : trial.right,
-        });
-      }, trial.feedback_duration);
-    };
-
-    const onKey = (e) => {
-      if (e.key === "ArrowLeft") {
-        e.preventDefault();
-        finish("left", "key");
-      } else if (e.key === "ArrowRight") {
-        e.preventDefault();
-        finish("right", "key");
-      }
-    };
-    const onClickLeft = () => finish("left", "click");
-    const onClickRight = () => finish("right", "click");
-
-    document.addEventListener("keydown", onKey);
-    leftEl.addEventListener("click", onClickLeft);
-    rightEl.addEventListener("click", onClickRight);
-
-    function cleanup() {
-      document.removeEventListener("keydown", onKey);
-      leftEl.removeEventListener("click", onClickLeft);
-      rightEl.removeEventListener("click", onClickRight);
-    }
-  }
-}
-
 // ---------- Firebase setup ----------
 
 let docRef = null;
@@ -306,28 +216,66 @@ async function recordTrial(trial) {
 
 const stimuli = await fetch("./stimuli.json").then((r) => r.json());
 
-const randomTrials = sampleRandomTriplets(
-  stimuli.words,
-  stimuli.n_random_trials,
-).map((t) => ({ ...t, type: "random" }));
-const validationTrials = stimuli.validation_triplets.map((t) => ({
-  ...t,
-  type: "validation",
-}));
-const catchTrials = stimuli.catch_triplets.map((t) => ({
-  ...t,
-  type: "catch",
-}));
-const allTrials = shuffle([
-  ...randomTrials,
-  ...validationTrials,
-  ...catchTrials,
-]);
+const scales = shuffle(stimuli.scales);
+const words = shuffle(stimuli.words);
+
+const blocks = scales.map((scale, bIndex) => {
+  const shuffledWords = shuffle(words);
+  return {
+    scale,
+    trials: shuffledWords.map((word) => ({
+      word,
+    })),
+  };
+});
+
+const TOTAL_BLOCKS = blocks.length;
+
+//---------- build slider trial ----------
+
+function makeSliderTrial(word, scale, blockIndex, trialIndex) {
+  return {
+    type: HtmlSliderResponsePlugin,
+    stimulus: `
+  <div class="instructions slider-wrapper">
+    <h2>${word}</h2>
+  </div>
+`,
+    labels: [scale.left, scale.right],
+    min: -200,
+    max: 200,
+    step: 1,
+    slider_start: 0,
+    require_movement: false,
+    response_ends_trial: true,
+    post_trial_gap: 500,
+    on_finish: async (data) => {
+      data.word = word;
+      data.scale_id = scale.id;
+      data.block = blockIndex;
+      data.trial_index = trialIndex;
+      await recordTrial(data);
+    },
+  };
+}
 
 // Insert a break screen after each of these completed-trial counts.
-const BREAK_POINTS = new Set(
-  [0.25, 0.5, 0.75].map((p) => Math.floor(allTrials.length * p)),
-);
+
+function makeBreak(scale, blockIndex) {
+  return {
+    type: HtmlButtonResponsePlugin,
+    stimulus: `
+      <div class="instructions" style="text-align:center;">
+        <h2>New Rating Block</h2>
+        <p>You are now rating words on:</p>
+        <h3>${scale.left} ↔ ${scale.right}</h3>
+        <p>Block ${blockIndex + 1} of ${TOTAL_BLOCKS}</p>
+        <p>Click continue when ready.</p>
+      </div>
+    `,
+    choices: ["Continue"],
+  };
+}
 
 // ---------- jsPsych timeline ----------
 
@@ -380,10 +328,10 @@ timeline.push({
 });
 
 // 3. Consent-given branch — demographics, instructions, trials, completion.
+
 timeline.push({
   timeline: [
-    // Demographics survey — saved to data.demographics on the participant doc,
-    // NOT into the trials array (demographics are participant-level).
+    // ---------------- DEMOGRAPHICS ----------------
     {
       type: SurveyTextPlugin,
       preamble: `
@@ -417,24 +365,85 @@ timeline.push({
         },
       ],
       button_label: "Done",
-      randomize_question_order: false,
       on_finish: async (data) => {
         const demographics = data.response || {};
         if (!OFFLINE_MODE) {
-          try {
-            await updateDoc(docRef, {
-              demographics,
-              demographicsAt: serverTimestamp(),
-            });
-          } catch (err) {
-            console.error("Failed to save demographics:", err);
-          }
+          await updateDoc(docRef, {
+            demographics,
+            demographicsAt: serverTimestamp(),
+          });
         }
       },
     },
 
-    // Instructions screen — static example trial styled identically to the real ones.
+    // ---------------- INSTRUCTIONS ----------------
+
     {
+      type: HtmlButtonResponsePlugin,
+      stimulus: `
+        <div class="instructions">
+          <h2>Instructions</h2>
+          <p>You will rate a set of words on several scales.</p>
+          <p><strong>Words:</strong></p>
+          <p>${stimuli.words.join(", ")}</p>
+          <p><strong>Rating scales:</strong></p>
+          ${stimuli.scales.map((s) => `<p>${s.left} ↔ ${s.right}</p>`).join("")}
+          <hr />
+          <p><strong>How to respond:</strong></p>
+          <p>Move the slider and click to submit your rating.</p>
+          <p>The scale ranges from -200 to +200.</p>
+          <hr />
+          <p><strong>Example:</strong></p>
+          <div style="margin-top:10px;">
+            <p><b>loose</b> ← → <b>strict</b></p>
+            <input type="range" min="-200" max="200" value="0" disabled />
+          </div>
+        </div>
+      `,
+      choices: ["Begin"],
+    },
+
+    // ---------------- BLOCKED EXPERIMENT FLOW ----------------
+
+    ...blocks.flatMap((block, bIndex) => {
+      const blockTimeline = [];
+
+      // break screen at start of each block
+
+      blockTimeline.push(makeBreak(block.scale, bIndex));
+
+      // trials
+      block.trials.forEach((t, i) => {
+        blockTimeline.push(makeSliderTrial(t.word, block.scale, bIndex, i));
+      });
+      return blockTimeline;
+    }),
+
+    // ---------------- COMPLETION ----------------
+
+    {
+      type: HtmlKeyboardResponsePlugin,
+      stimulus: `
+        <div class="instructions" style="text-align:center;">
+          <h2>All done!</h2>
+          <p>Saving your responses...</p>
+        </div>
+      `,
+      choices: "NO_KEYS",
+      trial_duration: 1500,
+      on_start: async () => {
+        if (!OFFLINE_MODE) {
+          await updateDoc(docRef, { completedAt: serverTimestamp() });
+        }
+      },
+    },
+  ],
+  conditional_function: () => consented === true,
+});
+
+// OLD
+
+/* {
       type: HtmlButtonResponsePlugin,
       stimulus: `
         <div class="instructions">
@@ -469,78 +478,6 @@ timeline.push({
         </div>
       `,
       choices: ["Begin"],
-    },
-
-    // Triplet trials, interleaved with break screens at 25 / 50 / 75% progress.
-    ...allTrials.flatMap((t, i) => {
-      const tripletTrial = {
-        type: TripletPlugin,
-        head: t.head,
-        left: t.left,
-        right: t.right,
-        data: {
-          trial_index: i,
-          type: t.type,
-        },
-        on_finish: async (data) => {
-          const winner = data.response_side === "left" ? t.left : t.right;
-          const loser = data.response_side === "left" ? t.right : t.left;
-          data.winner = winner;
-          data.loser = loser;
-          await recordTrial({
-            trial_index: i,
-            type: t.type,
-            head: t.head,
-            left: t.left,
-            right: t.right,
-            winner,
-            loser,
-            rt: data.rt,
-            response_side: data.response_side,
-            response_source: data.response_source,
-          });
-        },
-      };
-      const completed = i + 1;
-      if (BREAK_POINTS.has(completed)) {
-        const pct = Math.round((completed / allTrials.length) * 100);
-        return [
-          tripletTrial,
-          {
-            type: HtmlButtonResponsePlugin,
-            stimulus: `
-              <div class="instructions" style="text-align:center;">
-                <h2>${pct}% complete</h2>
-                <p>Great job! You have completed ${pct}% of the trials!</p>
-                <p>When you are ready to continue, click the "Continue" button below.</p>
-              </div>
-            `,
-            choices: ["Continue"],
-          },
-        ];
-      }
-      return [tripletTrial];
-    }),
-
-    // Completion screen.
-    {
-      type: HtmlKeyboardResponsePlugin,
-      stimulus:
-        '<div class="instructions" style="text-align:center;"><h2>All done!</h2><p>Saving your responses...</p></div>',
-      choices: "NO_KEYS",
-      trial_duration: 1500,
-      on_start: async () => {
-        if (!OFFLINE_MODE) {
-          try {
-            await updateDoc(docRef, { completedAt: serverTimestamp() });
-          } catch (err) {
-            console.error("Failed to mark session complete:", err);
-          }
-        }
-      },
-    },
-  ],
-  conditional_function: () => consented === true,
-});
+    }, */
 
 jsPsych.run(timeline);
