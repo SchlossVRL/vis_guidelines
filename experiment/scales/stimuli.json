@@ -123,5 +123,37 @@
       "right": "consideration"
     }
   ],
-  "seed": 0
+  "seed": 0,
+  "scales": [
+    {
+      "id": "strictness",
+      "left": "loose",
+      "right": "strict"
+    },
+    {
+      "id": "evidence_based",
+      "left": "intuition-based",
+      "right": "evidence-based"
+    },
+    {
+      "id": "prescriptiveness",
+      "left": "suggestive",
+      "right": "prescriptive"
+    },
+    {
+      "id": "flexibility",
+      "left": "rigid",
+      "right": "flexible"
+    },
+    {
+      "id": "broadness",
+      "left": "situationally specific",
+      "right": "broadly applicable"
+    },
+    {
+      "id": "authority_driven",
+      "left": "learned by experience",
+      "right": "learned from authority"
+    }
+  ]
 }
