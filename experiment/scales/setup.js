@@ -433,7 +433,6 @@ timeline.push({
           <hr />
           <p><strong>How to respond:</strong></p>
           <p>Move the slider and click to submit your rating.</p>
-          <p>The scale ranges from -200 to +200.</p>
           <hr />
           <p><strong>Example:</strong></p>
           <div style="margin-top:10px;">
@@ -444,6 +443,236 @@ timeline.push({
       `,
       choices: ["Begin"],
     },
+
+    // ---------------- PRACTICE TRIALS ----------------
+
+    // 1. Instructions for practice
+
+    {
+      type: HtmlButtonResponsePlugin,
+
+      stimulus: `
+
+    <div class="instructions">
+
+      <p>
+
+        To move the slider, click and drag your cursor to the location of the scale
+
+        where you would like to make your rating and then let go. When you let go
+
+        of the slider, your response will be recorded and the next trial will begin.
+
+      </p>
+
+      <p>
+
+        We are interested in your initial impressions of each map for the given concept,
+
+        so please go with your first intuition.
+
+      </p>
+
+      <p>
+
+        Before you begin the experiment, there will be four training trials for you to
+
+        practice using the scale.
+
+      </p>
+
+      <p>
+
+        When you are ready to start the training trials, please click "Continue".
+
+      </p>
+
+    </div>
+
+  `,
+
+      choices: ["Continue"],
+    },
+
+    // 2. Practice trial definitions
+
+    ...[
+      {
+        text: "Please move the slider all the way to the <br> right endpoint of the scale",
+
+        range: [180, 220],
+      },
+
+      {
+        text: "Please move the slider all the way to the <br> left endpoint of the scale",
+
+        range: [-220, -180],
+      },
+
+      {
+        text: "Please move the slider halfway between the <br> center and right endpoint of the scale",
+
+        range: [80, 110],
+      },
+
+      {
+        text: "Please move the slider halfway between the <br> center and left endpoint of the scale",
+
+        range: [-110, -80],
+      },
+    ].map((p, i) => {
+      return {
+        timeline: [
+          // ---------------- SLIDER TRIAL ----------------
+
+          {
+            type: HtmlSliderResponsePlugin,
+
+            stimulus: `
+
+  <div class="instructions">
+
+    <h2>${p.text}</h2>
+
+    <div class="slider-wrapper">
+
+      <div class="slider-tick left"></div>
+
+      <div class="slider-tick center"></div>
+
+      <div class="slider-tick right"></div>
+
+    </div>
+
+  </div>
+
+`,
+
+            labels: ["", ""],
+
+            min: -200,
+
+            max: 200,
+
+            step: 1,
+
+            slider_start: 0,
+
+            require_movement: false,
+
+            response_ends_trial: true,
+
+            on_load: () => {
+              setTimeout(() => {
+                const slider = document.querySelector(
+                  "#jspsych-html-slider-response-response",
+                );
+
+                if (!slider) return;
+
+                let locked = false;
+
+                const updateSlider = (e) => {
+                  if (locked) return;
+
+                  const rect = slider.getBoundingClientRect();
+
+                  const padding = 40;
+
+                  if (
+                    e.clientX < rect.left - padding ||
+                    e.clientX > rect.right + padding ||
+                    e.clientY < rect.top - padding ||
+                    e.clientY > rect.bottom + padding
+                  )
+                    return;
+
+                  const percent = Math.min(
+                    Math.max((e.clientX - rect.left) / rect.width, 0),
+
+                    1,
+                  );
+
+                  const min = Number(slider.min);
+
+                  const max = Number(slider.max);
+
+                  slider.value = min + percent * (max - min);
+
+                  slider.dispatchEvent(new Event("input"));
+                };
+
+                const lockSlider = () => {
+                  locked = true;
+
+                  document.removeEventListener("mousemove", updateSlider);
+                };
+
+                document.addEventListener("mousemove", updateSlider);
+
+                document.addEventListener("click", lockSlider, { once: true });
+              }, 0);
+            },
+
+            on_finish: function (data) {
+              const val = data.response;
+
+              const [low, high] = p.range;
+
+              data.practice = true;
+
+              data.practice_index = i;
+
+              data.correct = val >= low && val <= high;
+            },
+          },
+
+          // ---------------- FEEDBACK TRIAL ----------------
+
+          {
+            type: HtmlButtonResponsePlugin,
+
+            stimulus: function () {
+              const last = jsPsych.data.get().last(1).values()[0];
+
+              if (last.correct) {
+                return `
+
+              <div class="instructions">
+
+                <p><b>Good job!</b> Click "Continue" to proceed.</p>
+
+              </div>
+
+            `;
+              } else {
+                return `
+
+              <div class="instructions">
+
+                <p><b>Not quite!</b> The slider was not placed near the instructed location.</p>
+
+                <p>Click "Continue" to try again.</p>
+
+              </div>
+
+            `;
+              }
+            },
+
+            choices: ["Continue"],
+          },
+        ],
+
+        // ---------------- LOOP LOGIC ----------------
+
+        loop_function: function (data) {
+          const last = data.values()[0];
+
+          return last.correct !== true;
+        },
+      };
+    }),
 
     // ---------------- BLOCKED EXPERIMENT FLOW ----------------
 
