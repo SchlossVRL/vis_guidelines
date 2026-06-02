@@ -236,24 +236,107 @@ const TOTAL_BLOCKS = blocks.length;
 function makeSliderTrial(word, scale, blockIndex, trialIndex) {
   return {
     type: HtmlSliderResponsePlugin,
+
     stimulus: `
-  <div class="instructions slider-wrapper">
+
+  <div class="instructions">
+
     <h2>${word}</h2>
+
+    <div class="slider-wrapper">
+
+      <div class="slider-tick left"></div>
+
+      <div class="slider-tick center"></div>
+
+      <div class="slider-tick right"></div>
+
+    </div>
+
   </div>
+
 `,
+
     labels: [scale.left, scale.right],
+
     min: -200,
+
     max: 200,
+
     step: 1,
+
     slider_start: 0,
+
     require_movement: false,
+
     response_ends_trial: true,
+
     post_trial_gap: 500,
+
+    on_load: () => {
+      setTimeout(() => {
+        const slider = document.querySelector(
+          "#jspsych-html-slider-response-response",
+        );
+
+        if (!slider) return;
+
+        let locked = false;
+
+        const updateSlider = (e) => {
+          if (locked) return;
+
+          const rect = slider.getBoundingClientRect();
+
+          // extra clickable area around slider
+
+          const padding = 40;
+
+          if (
+            e.clientX < rect.left - padding ||
+            e.clientX > rect.right + padding ||
+            e.clientY < rect.top - padding ||
+            e.clientY > rect.bottom + padding
+          ) {
+            return;
+          }
+
+          const percent = Math.min(
+            Math.max((e.clientX - rect.left) / rect.width, 0),
+
+            1,
+          );
+
+          const min = Number(slider.min);
+
+          const max = Number(slider.max);
+
+          slider.value = min + percent * (max - min);
+
+          slider.dispatchEvent(new Event("input"));
+        };
+
+        const lockSlider = () => {
+          locked = true;
+
+          document.removeEventListener("mousemove", updateSlider);
+        };
+
+        document.addEventListener("mousemove", updateSlider);
+
+        document.addEventListener("click", lockSlider, { once: true });
+      }, 0);
+    },
+
     on_finish: async (data) => {
       data.word = word;
+
       data.scale_id = scale.id;
+
       data.block = blockIndex;
+
       data.trial_index = trialIndex;
+
       await recordTrial(data);
     },
   };
