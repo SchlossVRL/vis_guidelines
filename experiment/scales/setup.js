@@ -308,8 +308,8 @@ function makeBreak(scale, blockIndex) {
     type: HtmlButtonResponsePlugin,
     stimulus: `
       <div class="instructions" style="text-align:center;">
-        <h2>New Rating Block</h2>
-        <p>You are now rating words on:</p>
+        <p>Good work!</p>
+        <p>The next scale is:</p>
         <h3>${scale.left} ↔ ${scale.right}</h3>
         <p>Block ${blockIndex + 1} of ${TOTAL_BLOCKS}</p>
         <p>Click continue when ready.</p>
@@ -425,20 +425,45 @@ timeline.push({
       stimulus: `
         <div class="instructions">
           <h2>Instructions</h2>
-          <p>You will rate a set of words on several scales.</p>
-          <p><strong>Words:</strong></p>
-          <p>${stimuli.words.join(", ")}</p>
-          <p><strong>Rating scales:</strong></p>
-          ${stimuli.scales.map((s) => `<p>${s.left} ↔ ${s.right}</p>`).join("")}
+          <p>For this study, please think back to times you have read the results
+          or discussion of a VIS paper and you came across words describing the
+          contributions or results of the work. We will present you with examples
+          of the types of words used to describe contributions or results, and we
+          are interested in your judgments about how you rate these words on a series of descriptive scales.</p>
+          <p>During this experiment, you will see the following words, one at a time:
+           </p>
+          <div class="word-grid">
+
+  ${stimuli.words.map((w) => `<div class="word-cell">${w}</div>`).join("")}
+
+</div>
+           <p>
+           For each word, you will be asked to rate where you think it falls on each of the response scales with the following endpoints:
+           </p>
+          <div class="scale-grid">
+
+  ${stimuli.scales
+    .map(
+      (s) => `
+
+    <div class="scale-cell">
+
+      ${s.left} ↔ ${s.right}
+
+    </div>
+
+  `,
+    )
+    .join("")}
+
+</div>
           <hr />
-          <p><strong>How to respond:</strong></p>
-          <p>Move the slider and click to submit your rating.</p>
-          <hr />
-          <p><strong>Example:</strong></p>
-          <div style="margin-top:10px;">
-            <p><b>loose</b> ← → <b>strict</b></p>
-            <input type="range" min="-200" max="200" value="0" disabled />
-          </div>
+          <p>Each trial will include one word and one response scale. You will be asked to make your rating by sliding the cursor along a slider response scale.</p>
+          <p>Before beginning, please look at the words and scales. For each scale, think about the word you associate most with the left endpoint. When you see that word for that response scale, please click near the left of the scale.</p>
+          <p>Now, please think about the word you associate most with the right endpoint of each scale. When you see that word for that response scale, please click near the right of the scale.</p>
+          <p>If you think a word is not strongly associated with either endpoint of the scale, please click near the midpoint of the scale. Please use the full range of the scale.</p>
+          <p>You will be asked to rate each word for a given scale before moving on to the next scale.</p>
+          <p>Click "Begin" to learn how to use the slider and start the practice trials.</p>
         </div>
       `,
       choices: ["Begin"],
@@ -450,47 +475,26 @@ timeline.push({
 
     {
       type: HtmlButtonResponsePlugin,
-
       stimulus: `
-
     <div class="instructions">
-
       <p>
-
         To move the slider, click and drag your cursor to the location of the scale
-
         where you would like to make your rating and then let go. When you let go
-
         of the slider, your response will be recorded and the next trial will begin.
-
       </p>
-
       <p>
-
         We are interested in your initial impressions of each map for the given concept,
-
         so please go with your first intuition.
-
       </p>
-
       <p>
-
         Before you begin the experiment, there will be four training trials for you to
-
         practice using the scale.
-
       </p>
-
       <p>
-
         When you are ready to start the training trials, please click "Continue".
-
       </p>
-
     </div>
-
   `,
-
       choices: ["Continue"],
     },
 
@@ -499,25 +503,18 @@ timeline.push({
     ...[
       {
         text: "Please move the slider all the way to the <br> right endpoint of the scale",
-
         range: [180, 220],
       },
-
       {
         text: "Please move the slider all the way to the <br> left endpoint of the scale",
-
         range: [-220, -180],
       },
-
       {
         text: "Please move the slider halfway between the <br> center and right endpoint of the scale",
-
         range: [80, 110],
       },
-
       {
         text: "Please move the slider halfway between the <br> center and left endpoint of the scale",
-
         range: [-110, -80],
       },
     ].map((p, i) => {
@@ -527,58 +524,34 @@ timeline.push({
 
           {
             type: HtmlSliderResponsePlugin,
-
             stimulus: `
-
   <div class="instructions">
-
     <h2>${p.text}</h2>
-
     <div class="slider-wrapper">
-
       <div class="slider-tick left"></div>
-
       <div class="slider-tick center"></div>
-
       <div class="slider-tick right"></div>
-
     </div>
-
   </div>
-
 `,
-
             labels: ["", ""],
-
             min: -200,
-
             max: 200,
-
             step: 1,
-
             slider_start: 0,
-
             require_movement: false,
-
             response_ends_trial: true,
-
             on_load: () => {
               setTimeout(() => {
                 const slider = document.querySelector(
                   "#jspsych-html-slider-response-response",
                 );
-
                 if (!slider) return;
-
                 let locked = false;
-
                 const updateSlider = (e) => {
                   if (locked) return;
-
                   const rect = slider.getBoundingClientRect();
-
                   const padding = 40;
-
                   if (
                     e.clientX < rect.left - padding ||
                     e.clientX > rect.right + padding ||
@@ -586,43 +559,28 @@ timeline.push({
                     e.clientY > rect.bottom + padding
                   )
                     return;
-
                   const percent = Math.min(
                     Math.max((e.clientX - rect.left) / rect.width, 0),
-
                     1,
                   );
-
                   const min = Number(slider.min);
-
                   const max = Number(slider.max);
-
                   slider.value = min + percent * (max - min);
-
                   slider.dispatchEvent(new Event("input"));
                 };
-
                 const lockSlider = () => {
                   locked = true;
-
                   document.removeEventListener("mousemove", updateSlider);
                 };
-
                 document.addEventListener("mousemove", updateSlider);
-
                 document.addEventListener("click", lockSlider, { once: true });
               }, 0);
             },
-
             on_finish: function (data) {
               const val = data.response;
-
               const [low, high] = p.range;
-
               data.practice = true;
-
               data.practice_index = i;
-
               data.correct = val >= low && val <= high;
             },
           },
@@ -631,35 +589,23 @@ timeline.push({
 
           {
             type: HtmlButtonResponsePlugin,
-
             stimulus: function () {
               const last = jsPsych.data.get().last(1).values()[0];
-
               if (last.correct) {
                 return `
-
               <div class="instructions">
-
                 <p><b>Good job!</b> Click "Continue" to proceed.</p>
-
               </div>
-
             `;
               } else {
                 return `
-
               <div class="instructions">
-
                 <p><b>Not quite!</b> The slider was not placed near the instructed location.</p>
-
                 <p>Click "Continue" to try again.</p>
-
               </div>
-
             `;
               }
             },
-
             choices: ["Continue"],
           },
         ],
