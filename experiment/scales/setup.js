@@ -270,25 +270,52 @@ function makeSliderTrial(
   return {
     type: HtmlSliderResponsePlugin,
     stimulus: `
-  <div class="instructions">
-    <h2>${word}</h2>
-    <div class="slider-wrapper">
-      <div class="slider-tick left"></div>
-      <div class="slider-tick center"></div>
-      <div class="slider-tick right"></div>
-    </div>
-  </div>
-`,
+      <div class="instructions">
+        <h2>${word}</h2>
+        <div class="slider-wrapper">
+          <div class="slider-tick left"></div>
+          <div class="slider-tick center"></div>
+          <div class="slider-tick right"></div>
+        </div>
+      </div>
+    `,
     labels: [scale.left, scale.right],
     min: -200,
     max: 200,
     step: 1,
     slider_start: 0,
     require_movement: false,
-    response_ends_trial: true,
-    post_trial_gap: 500,
+    // IMPORTANT: remove button system entirely
+    //button_label: null,
+    // IMPORTANT: we control trial ending ourselves
+    response_ends_trial: false,
+    post_trial_gap: 300,
     on_load: () => {
       setTimeout(() => {
+        //REMOVE CONTINUE BUTTON COMPLETELY
+        const removeButton = () => {
+          const btn = document.querySelector(".jspsych-btn");
+          if (btn) btn.remove();
+          const container = document.querySelector(
+            ".jspsych-html-slider-response-button",
+          );
+          if (container) container.remove();
+        };
+
+        removeButton();
+
+        // also keep watching in case jsPsych re-adds it
+
+        const observer = new MutationObserver(() => {
+          removeButton();
+        });
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+
+        // ---- your existing slider code continues here ----
+
         const slider = document.querySelector(
           "#jspsych-html-slider-response-response",
         );
@@ -297,7 +324,6 @@ function makeSliderTrial(
         const updateSlider = (e) => {
           if (locked) return;
           const rect = slider.getBoundingClientRect();
-          // extra clickable area around slider
           const padding = 40;
           if (
             e.clientX < rect.left - padding ||
@@ -316,22 +342,28 @@ function makeSliderTrial(
           slider.value = min + percent * (max - min);
           slider.dispatchEvent(new Event("input"));
         };
-        const lockSlider = () => {
+        const finishTrial = async () => {
+          if (locked) return;
           locked = true;
           document.removeEventListener("mousemove", updateSlider);
+          document.removeEventListener("click", finishTrial);
+          jsPsych.finishTrial({
+            response: Number(slider.value),
+            word,
+            scale_id: scale.id,
+            scale_left_display: scale.left,
+            scale_right_display: scale.right,
+            block: blockIndex,
+            trial_index: trialIndex,
+            scale_reversed: reversed,
+          });
         };
         document.addEventListener("mousemove", updateSlider);
-        document.addEventListener("click", lockSlider, { once: true });
+        document.addEventListener("click", finishTrial, { once: true });
       }, 0);
     },
+
     on_finish: async (data) => {
-      data.word = word;
-      data.scale_id = scale.id;
-      data.scale_left_display = scale.left;
-      data.scale_right_display = scale.right;
-      data.block = blockIndex;
-      data.trial_index = trialIndex;
-      data.scale_reversed = reversed;
       await recordTrial(data);
     },
   };
@@ -515,7 +547,7 @@ timeline.push({
     <div class="instructions">
       <p>
         To move the slider, drag your cursor to the location of the scale
-        where you would like to make your rating and then click. When you clcik, your response will be recorded and the continue button will be enables to proceed to the next trial.
+        where you would like to make your rating and then click. When you click the slider, your response will be recorded and the next trial will begin.
       </p>
       <p>
         We are interested in your initial impressions of each map for the given concept,
@@ -560,28 +592,36 @@ timeline.push({
           {
             type: HtmlSliderResponsePlugin,
             stimulus: `
-  <div class="instructions">
-    <h2>${p.text}</h2>
-    <div class="slider-wrapper">
-      <div class="slider-tick left"></div>
-      <div class="slider-tick center"></div>
-      <div class="slider-tick right"></div>
-    </div>
-  </div>
-`,
+          <div class="instructions">
+            <h2>${p.text}</h2>
+            <div class="slider-wrapper">
+              <div class="slider-tick left"></div>
+              <div class="slider-tick center"></div>
+              <div class="slider-tick right"></div>
+            </div>
+          </div>
+        `,
             labels: ["", ""],
             min: -200,
             max: 200,
             step: 1,
             slider_start: 0,
-            require_movement: false,
-            response_ends_trial: true,
+            response_ends_trial: false,
             on_load: () => {
               setTimeout(() => {
                 const slider = document.querySelector(
                   "#jspsych-html-slider-response-response",
                 );
                 if (!slider) return;
+
+                // ---------------- HIDE BUTTON SAFELY ----------------
+
+                const btn = document.querySelector(".jspsych-btn");
+                if (btn) btn.style.visibility = "hidden";
+                const container = document.querySelector(
+                  ".jspsych-html-slider-response-button",
+                );
+                if (container) container.style.display = "none";
                 let locked = false;
                 const updateSlider = (e) => {
                   if (locked) return;
@@ -603,12 +643,18 @@ timeline.push({
                   slider.value = min + percent * (max - min);
                   slider.dispatchEvent(new Event("input"));
                 };
-                const lockSlider = () => {
+                const finishTrial = () => {
+                  if (locked) return;
                   locked = true;
                   document.removeEventListener("mousemove", updateSlider);
+                  document.removeEventListener("click", finishTrial);
+                  //MUST pass response
+                  jsPsych.finishTrial({
+                    response: Number(slider.value),
+                  });
                 };
                 document.addEventListener("mousemove", updateSlider);
-                document.addEventListener("click", lockSlider, { once: true });
+                document.addEventListener("click", finishTrial, { once: true });
               }, 0);
             },
             on_finish: function (data) {
@@ -669,15 +715,10 @@ timeline.push({
         blockTimeline.push(
           makeSliderTrial(
             t.word,
-
             block.scale,
-
             bIndex,
-
             i,
-
             block.reversed,
-
             block.scale_id,
           ),
         );
