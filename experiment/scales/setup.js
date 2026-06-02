@@ -212,6 +212,10 @@ async function recordTrial(trial) {
   }
 }
 
+// ---------- balance scales -----------
+
+const scaleOrientationMap = {};
+
 // ---------- build trial list ----------
 
 const stimuli = await fetch("./stimuli.json").then((r) => r.json());
@@ -221,11 +225,33 @@ const words = shuffle(stimuli.words);
 
 const blocks = scales.map((scale, bIndex) => {
   const shuffledWords = shuffle(words);
+
+  // stable key
+
+  const scaleKey = scale.id;
+
+  // assign once per participant
+
+  if (scaleOrientationMap[scaleKey] === undefined) {
+    scaleOrientationMap[scaleKey] = Math.random() < 0.5;
+  }
+
+  const reversed = scaleOrientationMap[scaleKey];
+
+  // ONLY change what is shown to participant
+
+  const displayScale = reversed
+    ? {
+        ...scale,
+        left: scale.right,
+        right: scale.left,
+      }
+    : scale;
   return {
-    scale,
-    trials: shuffledWords.map((word) => ({
-      word,
-    })),
+    scale: displayScale,
+    scale_id: scaleKey,
+    reversed,
+    trials: shuffledWords.map((word) => ({ word })),
   };
 });
 
@@ -233,7 +259,14 @@ const TOTAL_BLOCKS = blocks.length;
 
 //---------- build slider trial ----------
 
-function makeSliderTrial(word, scale, blockIndex, trialIndex) {
+function makeSliderTrial(
+  word,
+  scale,
+  blockIndex,
+  trialIndex,
+  reversed,
+  scaleId,
+) {
   return {
     type: HtmlSliderResponsePlugin,
     stimulus: `
@@ -294,8 +327,11 @@ function makeSliderTrial(word, scale, blockIndex, trialIndex) {
     on_finish: async (data) => {
       data.word = word;
       data.scale_id = scale.id;
+      data.scale_left_display = scale.left;
+      data.scale_right_display = scale.right;
       data.block = blockIndex;
       data.trial_index = trialIndex;
+      data.scale_reversed = reversed;
       await recordTrial(data);
     },
   };
@@ -311,7 +347,7 @@ function makeBreak(scale, blockIndex) {
         <p>Good work!</p>
         <p>The next scale is:</p>
         <h3>${scale.left} ↔ ${scale.right}</h3>
-        <p>Block ${blockIndex + 1} of ${TOTAL_BLOCKS}</p>
+        <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS}</p>
         <p>Click continue when ready.</p>
       </div>
     `,
@@ -478,9 +514,8 @@ timeline.push({
       stimulus: `
     <div class="instructions">
       <p>
-        To move the slider, click and drag your cursor to the location of the scale
-        where you would like to make your rating and then let go. When you let go
-        of the slider, your response will be recorded and the next trial will begin.
+        To move the slider, drag your cursor to the location of the scale
+        where you would like to make your rating and then click. When you clcik, your response will be recorded and the continue button will be enables to proceed to the next trial.
       </p>
       <p>
         We are interested in your initial impressions of each map for the given concept,
@@ -631,7 +666,21 @@ timeline.push({
 
       // trials
       block.trials.forEach((t, i) => {
-        blockTimeline.push(makeSliderTrial(t.word, block.scale, bIndex, i));
+        blockTimeline.push(
+          makeSliderTrial(
+            t.word,
+
+            block.scale,
+
+            bIndex,
+
+            i,
+
+            block.reversed,
+
+            block.scale_id,
+          ),
+        );
       });
       return blockTimeline;
     }),
@@ -657,44 +706,5 @@ timeline.push({
   ],
   conditional_function: () => consented === true,
 });
-
-// OLD
-
-/* {
-      type: HtmlButtonResponsePlugin,
-      stimulus: `
-        <div class="instructions">
-          <p>For this study, please think back to times you have read the results
-          or discussion of a VIS paper and you came across words describing the
-          contributions or results of the work. We will present you with examples
-          of the types of words used to describe contributions or results, and we
-          are interested in your judgments about the similarity of these words.</p>
-
-          <p>In each trial, you will see three words: one <strong>target word</strong>
-          on top, and two <strong>choice words</strong> beneath it. Your task is
-          to select which of the two bottom words is most similar to the target
-          word in terms of the contributions or results in a VIS paper. There are
-          no right or wrong answers for most trials — go with your gut. Each
-          trial shows only the three words, like this:</p>
-
-          <div class="triplet-stage example-stage">
-            <div class="example-label">Example trial</div>
-            <div class="triplet-word triplet-target">recommendation</div>
-            <div class="triplet-choices">
-              <div class="triplet-word triplet-choice">guideline</div>
-              <div class="triplet-word triplet-choice">implication</div>
-            </div>
-          </div>
-
-          <p>To select the option on the <strong>LEFT</strong>, press the
-          <kbd>←</kbd> LEFT ARROW key or click it with your mouse.<br />
-          To select the option on the <strong>RIGHT</strong>, press the
-          <kbd>→</kbd> RIGHT ARROW key or click it with your mouse.</p>
-
-          <p>The task has ${allTrials.length} trials and should take around 10 minutes.</p>
-        </div>
-      `,
-      choices: ["Begin"],
-    }, */
 
 jsPsych.run(timeline);
