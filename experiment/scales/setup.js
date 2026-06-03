@@ -292,27 +292,17 @@ function makeSliderTrial(
     post_trial_gap: 300,
     on_load: () => {
       setTimeout(() => {
-        //REMOVE CONTINUE BUTTON COMPLETELY
-        const removeButton = () => {
-          const btn = document.querySelector(".jspsych-btn");
-          if (btn) btn.remove();
-          const container = document.querySelector(
-            ".jspsych-html-slider-response-button",
-          );
-          if (container) container.remove();
-        };
+        // REMOVE ONLY THIS TRIAL'S BUTTON
 
-        removeButton();
+        const btn = document.querySelector(".jspsych-btn");
 
-        // also keep watching in case jsPsych re-adds it
+        if (btn) btn.style.display = "none";
 
-        const observer = new MutationObserver(() => {
-          removeButton();
-        });
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true,
-        });
+        const container = document.querySelector(
+          ".jspsych-html-slider-response-button",
+        );
+
+        if (container) container.style.display = "none";
 
         // ---- your existing slider code continues here ----
 
