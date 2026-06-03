@@ -314,15 +314,6 @@ function makeSliderTrial(
         const updateSlider = (e) => {
           if (locked) return;
           const rect = slider.getBoundingClientRect();
-          const padding = 40;
-          if (
-            e.clientX < rect.left - padding ||
-            e.clientX > rect.right + padding ||
-            e.clientY < rect.top - padding ||
-            e.clientY > rect.bottom + padding
-          ) {
-            return;
-          }
           const percent = Math.min(
             Math.max((e.clientX - rect.left) / rect.width, 0),
             1,
@@ -616,14 +607,6 @@ timeline.push({
                 const updateSlider = (e) => {
                   if (locked) return;
                   const rect = slider.getBoundingClientRect();
-                  const padding = 40;
-                  if (
-                    e.clientX < rect.left - padding ||
-                    e.clientX > rect.right + padding ||
-                    e.clientY < rect.top - padding ||
-                    e.clientY > rect.bottom + padding
-                  )
-                    return;
                   const percent = Math.min(
                     Math.max((e.clientX - rect.left) / rect.width, 0),
                     1,
