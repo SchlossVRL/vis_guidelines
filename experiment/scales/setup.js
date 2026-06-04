@@ -310,7 +310,7 @@ function makeSliderTrial(
           "#jspsych-html-slider-response-response",
         );
         if (!slider) return;
-        slider.style.width = "600px";
+        slider.style.width = "500px";
         slider.style.maxWidth = "85vw";
         slider.style.margin = "0 auto";
         slider.style.display = "block";
@@ -586,7 +586,7 @@ timeline.push({
             "#jspsych-html-slider-response-response",
           );
           if (!slider) return;
-          slider.style.width = "600px";
+          slider.style.width = "500px";
           slider.style.maxWidth = "85vw";
           slider.style.margin = "0 auto";
           slider.style.display = "block";
