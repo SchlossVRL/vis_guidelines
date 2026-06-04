@@ -474,14 +474,14 @@ timeline.push({
 
     // ---------------- INSTRUCTIONS ----------------
 
-    {
+    /* {
       type: HtmlButtonResponsePlugin,
       stimulus: `
         <div class="instructions">
           <h2>Instructions</h2>
           <p>For this study, please think back to times you have read the results
           or discussion of a VIS paper and you came across words describing the
-          contributions or results of the work. We will present you with the words that describe contributions or results, listed below and your task will be to rate them on a series of scales. </p>
+          contributions or results of the work. We will present you with words that describe contributions or results, listed below, and your task will be to rate them on a series of scales. </p>
           <p>The words you will be asked to rate are:</p>
           
           <div class="word-grid">
@@ -490,7 +490,7 @@ timeline.push({
 
 </div>
            <p>
-           During the experiment you will see each word one at a time, and will be asked it on each of the folllowing scales:
+           During the experiment you will see each word one at a time, and will be asked to rate it on each of the following scales:
            </p>
           <div class="scale-grid">
 
@@ -518,16 +518,55 @@ timeline.push({
         </div>
       `,
       choices: ["Next"],
-    },
+    }, */
 
     // ---------------- SINGLE PRACTICE TRIAL ----------------
 
     {
       type: HtmlSliderResponsePlugin,
       stimulus: `
-    <div class="instructions practice-trial">
-      <p>Below in an example of what the response scale will look like for the first block of trials. </p> 
-      <p>Please slide the cursor along any point of the scale and click to begin the experiment.</p>
+    
+    <div class="instructions">
+          <h2>Instructions</h2>
+          <p>For this study, please think back to times you have read the results
+          or discussion of a VIS paper and you came across words describing the
+          contributions or results of the work. We will present you with words that describe contributions or results, listed below, and your task will be to rate them on a series of scales. </p>
+          <p>The words you will be asked to rate are:</p>
+          
+          <div class="word-grid">
+
+  ${stimuli.words.map((w) => `<div class="word-cell">${w}</div>`).join("")}
+
+</div>
+           <p>
+           During the experiment you will see each word one at a time, and will be asked to rate it on each of the following scales:
+           </p>
+          <div class="scale-grid">
+
+  ${blocks
+    .map(
+      (b) => `
+
+    <div class="scale-cell">
+
+      ${b.scale.left} ↔ ${b.scale.right}
+
+    </div>
+
+  `,
+    )
+    .join("")}
+
+</div>
+          <hr />
+          <p>To make your rating, slide the cursor along the response scale and click the mouse to record your response.</p>
+          <p>So you know what the endpoints of each scale means to you in the context of these test words, please look at the words and determine which one you associate with the left and right endpoints of each scale. When you see those words, please click near the left/right endpoints of the respective scale.</p>
+          <p>If you think a word is not strongly associated with either endpoint of the scale, please click near the midpoint of the scale. Please use the full range of the scale.</p>
+          <p>You will be asked to rate each word for a given scale before moving on to the next scale.</p>
+        </div>
+        
+      <div class="instructions practice-trial">
+      <p>Below in an example of what the response scale will look like for the first block of trials. Please slide the cursor along any point of the scale and click to begin the experiment.</p>
       <div class="slider-wrapper practice-slider">
         <div class="slider-tick left"></div>
         <div class="slider-tick center"></div>
