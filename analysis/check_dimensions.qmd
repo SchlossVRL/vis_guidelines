@@ -19,6 +19,21 @@ library(ggplot2)
 ```
 # Check loss
 ```{r}
+d4 <- read_csv("log_4.csv")
+```
+
+```{r}
+names(d4) <- gsub("^X\\.|\\.$", "", names(d4))
+```
+
+```{r}
+d4 <- d4 %>% 
+  mutate(
+    dim = 4
+  )
+```
+
+```{r}
 d3 <- read_csv("log_3.csv")
 ```
 
@@ -64,7 +79,7 @@ d1 <- d1 %>%
 ```
 
 ```{r}
-d <- rbind(d1, d2, d3)
+d <- rbind(d1, d2, d3, d4)
 ```
 
 ```{r}
@@ -79,14 +94,16 @@ p_loss <- ggplot(d, aes(x = dim, y = loss_test)) +
   geom_point(size = 2) +
   labs(
     title = "Embedding Dimension vs Test Loss",
-    x = "Embedding dimension",
+    x = "Numbers of Dimensions",
     y = "Test loss"
   ) +
   theme_classic()
 
 p_loss
 ```
-
+```{r}
+ggsave("../plots/dimensions_loss.png", plot = p_loss, width = 6, height = 5, dpi = 300)
+```
 # 3 Dimension Embedding
 ```{r}
 #load in embedding
