@@ -310,6 +310,10 @@ function makeSliderTrial(
           "#jspsych-html-slider-response-response",
         );
         if (!slider) return;
+        slider.style.width = "600px";
+        slider.style.maxWidth = "85vw";
+        slider.style.margin = "0 auto";
+        slider.style.display = "block";
         let locked = false;
         const updateSlider = (e) => {
           if (locked) return;
@@ -518,7 +522,7 @@ timeline.push({
 
     // ---------------- PRACTICE TRIALS ----------------
 
-    // 1. Instructions for practice
+    /* // 1. Instructions for practice
 
     {
       type: HtmlButtonResponsePlugin,
@@ -530,9 +534,76 @@ timeline.push({
     </div>
   `,
       choices: ["Continue"],
+    },*/
+
+    // ---------------- SINGLE PRACTICE TRIAL ----------------
+
+    {
+      type: HtmlSliderResponsePlugin,
+      stimulus: `
+    <div class="instructions practice-trial">
+      <p>Below in an example of what the response scale will look like for the first block of trials. <p/> 
+      <p>Please slide the cursor along any point of the scale and click to begin the experiment.</p>
+      <div class="slider-wrapper practice-slider">
+        <div class="slider-tick left"></div>
+        <div class="slider-tick center"></div>
+        <div class="slider-tick right"></div>
+      </div>
+    </div>
+  `,
+      labels: ["", ""],
+      min: -200,
+      max: 200,
+      step: 1,
+      slider_start: 0,
+      response_ends_trial: false,
+      on_load: () => {
+        setTimeout(() => {
+          const slider = document.querySelector(
+            "#jspsych-html-slider-response-response",
+          );
+          if (!slider) return;
+          slider.style.width = "600px";
+          slider.style.maxWidth = "85vw";
+          slider.style.margin = "0 auto";
+          slider.style.display = "block";
+          const btn = document.querySelector(".jspsych-btn");
+          if (btn) btn.style.display = "none";
+          const container = document.querySelector(
+            ".jspsych-html-slider-response-button",
+          );
+          if (container) container.style.display = "none";
+          let locked = false;
+          const updateSlider = (e) => {
+            if (locked) return;
+            const rect = slider.getBoundingClientRect();
+            const percent = Math.min(
+              Math.max((e.clientX - rect.left) / rect.width, 0),
+
+              1,
+            );
+            slider.value = -200 + percent * 400;
+            slider.dispatchEvent(new Event("input"));
+          };
+
+          const finishTrial = () => {
+            if (locked) return;
+
+            locked = true;
+            document.removeEventListener("mousemove", updateSlider);
+            document.removeEventListener("click", finishTrial);
+            jsPsych.finishTrial({
+              response: Number(slider.value),
+              practice: true,
+            });
+          };
+          document.addEventListener("mousemove", updateSlider);
+          document.addEventListener("click", finishTrial, { once: true });
+        }, 0);
+      },
     },
 
-    // 2. Practice trial definitions
+    /*// 2. Practice trial definitions
 
     ...[
       {
@@ -658,7 +729,7 @@ timeline.push({
           return last.correct !== true;
         },
       };
-    }),
+    }), */
 
     // ---------------- BLOCKED EXPERIMENT FLOW ----------------
 
