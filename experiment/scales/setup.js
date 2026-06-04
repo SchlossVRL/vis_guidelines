@@ -362,7 +362,7 @@ function makeBreak(scale, blockIndex) {
     stimulus: `
       <div class="instructions" style="text-align:center;">
         <p>Good work!</p>
-        <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS}</p>
+        <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS} blocks.</p>
         <hr/>
         <p>The next scale is:</p>
         <h3>${scale.left} ↔ ${scale.right}</h3>
@@ -494,13 +494,13 @@ timeline.push({
            </p>
           <div class="scale-grid">
 
-  ${stimuli.scales
+  ${blocks
     .map(
-      (s) => `
+      (b) => `
 
     <div class="scale-cell">
 
-      ${s.left} ↔ ${s.right}
+      ${b.scale.left} ↔ ${b.scale.right}
 
     </div>
 
@@ -510,7 +510,7 @@ timeline.push({
 
 </div>
           <hr />
-          <p>To make your rating, slide the cursor along the respnse scale and click the mouse to record your response.</p>
+          <p>To make your rating, slide the cursor along the response scale and click the mouse to record your response.</p>
           <p>So you know what the endpoints of each scale means to you in the context of these test words, please look at the words and determine which one you associate with the left and right endpoints of each scale. When you see those words, please click near the left/right endpoints of the respective scale.</p>
           <p>If you think a word is not strongly associated with either endpoint of the scale, please click near the midpoint of the scale. Please use the full range of the scale.</p>
           <p>You will be asked to rate each word for a given scale before moving on to the next scale.</p>
@@ -520,29 +520,13 @@ timeline.push({
       choices: ["Next"],
     },
 
-    // ---------------- PRACTICE TRIALS ----------------
-
-    /* // 1. Instructions for practice
-
-    {
-      type: HtmlButtonResponsePlugin,
-      stimulus: `
-    <div class="instructions">
-      <p>
-        Below in an example of what the response scale will look like for the first block of trials. Please slide the cursor along any point of the scale and click to begin the experiment.
-      </p>
-    </div>
-  `,
-      choices: ["Continue"],
-    },*/
-
     // ---------------- SINGLE PRACTICE TRIAL ----------------
 
     {
       type: HtmlSliderResponsePlugin,
       stimulus: `
     <div class="instructions practice-trial">
-      <p>Below in an example of what the response scale will look like for the first block of trials. <p/> 
+      <p>Below in an example of what the response scale will look like for the first block of trials. </p> 
       <p>Please slide the cursor along any point of the scale and click to begin the experiment.</p>
       <div class="slider-wrapper practice-slider">
         <div class="slider-tick left"></div>

@@ -308,15 +308,17 @@
 
     /* ----------- word ------------*/
     .word-grid {
+
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px 16px;
-      margin-top: 10px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px 10px;
+      margin-top: 4px;
     }
 
     .word-cell {
       text-align: center;
-      padding: 4px;
+      padding: 1px;
+      line-height: 1.2;
     }
 
 
@@ -325,14 +327,21 @@
     .scale-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 8px 20px;
-      margin-top: 10px;
+      gap: 2px 12px;
+      margin-top: 4px;
     }
 
     .scale-cell {
       text-align: center;
       padding: 4px;
+      white-space: nowrap;
     }
+
+    /*.scale-cell {
+      text-align: center;
+      padding: 1px;
+      line-height: 1.2;
+    }*/
 
     /* practice slider specific */
     .practice-slider {
