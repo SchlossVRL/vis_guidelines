@@ -358,10 +358,11 @@ function makeBreak(scale, blockIndex) {
     stimulus: `
       <div class="instructions" style="text-align:center;">
         <p>Good work!</p>
+        <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS}</p>
+        <hr/>
         <p>The next scale is:</p>
         <h3>${scale.left} ↔ ${scale.right}</h3>
-        <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS}</p>
-        <p>Click continue when ready.</p>
+        <p>Please click "Continue" when you are ready to start the next block.</p>
       </div>
     `,
     choices: ["Continue"],
@@ -476,18 +477,16 @@ timeline.push({
           <h2>Instructions</h2>
           <p>For this study, please think back to times you have read the results
           or discussion of a VIS paper and you came across words describing the
-          contributions or results of the work. We will present you with examples
-          of the types of words used to describe contributions or results, and we
-          are interested in your judgments about how you rate these words on a series of descriptive scales.</p>
-          <p>During this experiment, you will see the following words, one at a time:
-           </p>
+          contributions or results of the work. We will present you with the words that describe contributions or results, listed below and your task will be to rate them on a series of scales. </p>
+          <p>The words you will be asked to rate are:</p>
+          
           <div class="word-grid">
 
   ${stimuli.words.map((w) => `<div class="word-cell">${w}</div>`).join("")}
 
 </div>
            <p>
-           For each word, you will be asked to rate where you think it falls on each of the response scales with the following endpoints:
+           During the experiment you will see each word one at a time, and will be asked it on each of the folllowing scales:
            </p>
           <div class="scale-grid">
 
@@ -507,15 +506,14 @@ timeline.push({
 
 </div>
           <hr />
-          <p>Each trial will include one word and one response scale. You will be asked to make your rating by sliding the cursor along a slider response scale.</p>
-          <p>Before beginning, please look at the words and scales. For each scale, think about the word you associate most with the left endpoint. When you see that word for that response scale, please click near the left of the scale.</p>
-          <p>Now, please think about the word you associate most with the right endpoint of each scale. When you see that word for that response scale, please click near the right of the scale.</p>
+          <p>To make your rating, slide the cursor along the respnse scale and click the mouse to record your response.</p>
+          <p>So you know what the endpoints of each scale means to you in the context of these test words, please look at the words and determine which one you associate with the left and right endpoints of each scale. When you see those words, please click near the left/right endpoints of the respective scale.</p>
           <p>If you think a word is not strongly associated with either endpoint of the scale, please click near the midpoint of the scale. Please use the full range of the scale.</p>
           <p>You will be asked to rate each word for a given scale before moving on to the next scale.</p>
-          <p>Click "Begin" to learn how to use the slider and start the practice trials.</p>
+          <p>Please "Next" when you are ready to proceed.</p>
         </div>
       `,
-      choices: ["Begin"],
+      choices: ["Next"],
     },
 
     // ---------------- PRACTICE TRIALS ----------------
@@ -527,19 +525,7 @@ timeline.push({
       stimulus: `
     <div class="instructions">
       <p>
-        To move the slider, drag your cursor to the location of the scale
-        where you would like to make your rating and then click. When you click the slider, your response will be recorded and the next trial will begin.
-      </p>
-      <p>
-        We are interested in your initial impressions of each map for the given concept,
-        so please go with your first intuition.
-      </p>
-      <p>
-        Before you begin the experiment, there will be four training trials for you to
-        practice using the scale.
-      </p>
-      <p>
-        When you are ready to start the training trials, please click "Continue".
+        Below in an example of what the response scale will look like for the first block of trials. Please slide the cursor along any point of the scale and click to begin the experiment.
       </p>
     </div>
   `,

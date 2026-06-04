@@ -1,0 +1,8 @@
+[fit] complete in 2520.1s (42.00 min)
+[fit] 483 history entries recorded
+  snapshot[   0]: {'score_test': 0.5272727012634277, 'loss_test': 0.6931471824645996, 'score_train': 0.5131446123123169, 'loss_train': 0.6931471824645996}
+  snapshot[ 120]: {'score_test': 0.6525252461433411, 'loss_test': 0.6257768273353577, 'score_train': 0.65166836977005, 'loss_train': 0.6161342859268188}
+  snapshot[ 241]: {'score_test': 0.6585858464241028, 'loss_test': 0.6260003447532654, 'score_train': 0.6511628031730652, 'loss_train': 0.6161323189735413}
+  snapshot[ 362]: {'score_test': 0.6565656661987305, 'loss_test': 0.6256549954414368, 'score_train': 0.6536905765533447, 'loss_train': 0.6161375045776367}
+  snapshot[ 482]: {'score_test': 0.6545454263687134, 'loss_test': 0.6258093118667603, 'score_train': 0.6511628031730652, 'loss_train': 0.6161342263221741}
+[fit] wrote embedding -> results/embedding.csv

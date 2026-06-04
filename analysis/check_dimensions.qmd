@@ -17,13 +17,81 @@ library(factoextra)
 library(ggplot2)
 
 ```
+# Check loss
+```{r}
+d3 <- read_csv("log_3.csv")
+```
 
+```{r}
+names(d3) <- gsub("^X\\.|\\.$", "", names(d3))
+```
+
+```{r}
+d3 <- d3 %>% 
+  mutate(
+    dim = 3
+  )
+```
+
+```{r}
+d2 <- read_csv("log_2.csv")
+```
+
+```{r}
+names(d2) <- gsub("^X\\.|\\.$", "", names(d2))
+```
+
+```{r}
+d2 <- d2 %>% 
+  mutate(
+    dim = 2
+  )
+```
+
+```{r}
+d1 <- read_csv("log_1.csv")
+```
+
+```{r}
+names(d1) <- gsub("^X\\.|\\.$", "", names(d1))
+```
+
+```{r}
+d1 <- d1 %>% 
+  mutate(
+    dim = 1
+  )
+```
+
+```{r}
+d <- rbind(d1, d2, d3)
+```
+
+```{r}
+#just want final step loss
+d <- d %>% 
+  filter(step == "482")
+```
+
+```{r}
+p_loss <- ggplot(d, aes(x = dim, y = loss_test)) +
+  geom_line() +
+  geom_point(size = 2) +
+  labs(
+    title = "Embedding Dimension vs Test Loss",
+    x = "Embedding dimension",
+    y = "Test loss"
+  ) +
+  theme_classic()
+
+p_loss
+```
 
 # 3 Dimension Embedding
 ```{r}
 #load in embedding
 
-em3 <- read_csv("../results/embedding_3_14.csv")
+em3 <- read_csv("../results/embedding_3.csv")
 
 ```
 
@@ -32,13 +100,12 @@ em3 <- read_csv("../results/embedding_3_14.csv")
 
 colors <-  tibble(
   word = em3$word,
-  color = c("black", "black", "black", "black", "#763673", "#495E81", "#557AB3", "#5D5D99", "#7D70AC", "#776CB8", "#9554B9", "#A84BB1", "#8448A5", "#C565A3", "#88519C", "#6D5B9C")
+  color = c("black", "black", "black", "black", "#7C3478", "#43597E", "#5479B2", "#6756B2", "#635392", "#7064B4", "#924DB6", "#A74BB1", "#924DB6", "#C55D9F", "#71285B", "#814597", "#675698")
 )
 ```
 
 ```{r}
 #remove labels, so just embedding matrix
-
 em3_matrix <- em3 %>%
   select(starts_with("dim_"))
 ```
@@ -160,15 +227,23 @@ ggsave("../plots/dime3_pca_variance.png", plot = p3_variance, width = 6, height 
 ```
 
 ##Plot in PCA space
+
+```{r}
+pca_scores3 <- pca_scores3 %>%
+  left_join(colors, by = "word")
+```
+
 ```{r}
 # PC1 vs PC2
 
 p3_pc12 <- ggplot(pca_scores3,
        aes(x = PC1,
            y = PC2,
-           label = word)) +
+           label = word,
+           color = color)) +
   geom_point(size = 3) +
   geom_text(vjust = -0.5) +
+  scale_color_identity() +
   labs(
     title = "PCA Space: PC1 vs PC2",
     x = "PC1",
@@ -192,9 +267,11 @@ p3_pc12
 p3_pc13 <- ggplot(pca_scores3,
        aes(x = PC1,
            y = PC3,
-           label = word)) +
+           label = word,
+           color = color)) +
   geom_point(size = 3) +
   geom_text(vjust = -0.5) +
+  scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
   #            color = "grey50") +
@@ -334,14 +411,21 @@ ggsave("../plots/dime2_pca_variance.png", plot = p2_variance, width = 6, height 
 
 ##Plot in PCA space
 ```{r}
+pca_scores2 <- pca_scores2 %>%
+  left_join(colors, by = "word")
+```
+
+```{r}
 # PC1 vs PC2
 
 p2_pc12 <- ggplot(pca_scores2,
        aes(x = PC1,
            y = PC2,
-           label = word)) +
+           label = word,
+           color = color)) +
   geom_point(size = 3) +
   geom_text(vjust = -0.5) +
+  scale_color_identity() +
   labs(
     title = "PCA Space: PC1 vs PC2",
     x = "PC1",
