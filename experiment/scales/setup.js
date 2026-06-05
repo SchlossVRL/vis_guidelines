@@ -356,7 +356,7 @@ function makeSliderTrial(
 
 // Insert a break screen after each of these completed-trial counts.
 
-function makeBreak(scale, blockIndex) {
+/*function makeBreak(scale, blockIndex) {
   return {
     type: HtmlButtonResponsePlugin,
     stimulus: `
@@ -364,6 +364,31 @@ function makeBreak(scale, blockIndex) {
         <p>Good work!</p>
         <p>You have completed ${blockIndex} of ${TOTAL_BLOCKS} blocks.</p>
         <hr/>
+        <p>The next scale is:</p>
+        <h3>${scale.left} ↔ ${scale.right}</h3>
+        <p>Please click "Continue" when you are ready to start the next block.</p>
+      </div>
+    `,
+    choices: ["Continue"],
+  };
+}*/
+function makeBreakProgress(blockIndex) {
+  return {
+    type: HtmlButtonResponsePlugin,
+    stimulus: `
+      <div class="instructions" style="text-align:center;">
+        <p>Good job! You have completed ${blockIndex} of ${TOTAL_BLOCKS} blocks.</p>
+      </div>
+    `,
+    choices: ["Continue"],
+  };
+}
+
+function makeBreakNextScale(scale) {
+  return {
+    type: HtmlButtonResponsePlugin,
+    stimulus: `
+      <div class="instructions" style="text-align:center;">
         <p>The next scale is:</p>
         <h3>${scale.left} ↔ ${scale.right}</h3>
         <p>Please click "Continue" when you are ready to start the next block.</p>
@@ -761,7 +786,12 @@ timeline.push({
 
       // break screen at start of each block
 
-      blockTimeline.push(makeBreak(block.scale, bIndex));
+      //blockTimeline.push(makeBreak(block.scale, bIndex));
+      if (bIndex > 0) {
+        blockTimeline.push(makeBreakProgress(bIndex));
+      }
+
+      blockTimeline.push(makeBreakNextScale(block.scale));
 
       // trials
       block.trials.forEach((t, i) => {
