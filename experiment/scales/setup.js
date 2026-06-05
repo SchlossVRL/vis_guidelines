@@ -331,7 +331,8 @@ function makeSliderTrial(
           if (locked) return;
           locked = true;
           document.removeEventListener("mousemove", updateSlider);
-          document.removeEventListener("click", finishTrial);
+          //document.removeEventListener("click", finishTrial);
+          slider.removeEventListener("click", finishTrial);
           jsPsych.finishTrial({
             response: Number(slider.value),
             word,
@@ -344,7 +345,8 @@ function makeSliderTrial(
           });
         };
         document.addEventListener("mousemove", updateSlider);
-        document.addEventListener("click", finishTrial, { once: true });
+        //document.addEventListener("click", finishTrial, { once: true });
+        slider.addEventListener("click", finishTrial, { once: true });
       }, 0);
     },
 
@@ -584,14 +586,14 @@ timeline.push({
 
 </div>
           <hr />
-          <p>To make your rating, slide the cursor along the response scale and click the mouse to record your response.</p>
           <p>So you know what the endpoints of each scale means to you in the context of these test words, please look at the words and determine which one you associate with the left and right endpoints of each scale. When you see those words, please click near the left/right endpoints of the respective scale.</p>
           <p>If you think a word is not strongly associated with either endpoint of the scale, please click near the midpoint of the scale. Please use the full range of the scale.</p>
           <p>You will be asked to rate each word for a given scale before moving on to the next scale.</p>
         </div>
         
       <div class="instructions practice-trial">
-      <p>Below in an example of what the response scale will look like for the first block of trials. Please slide the cursor along any point of the scale and click to begin the experiment.</p>
+      <p>To make your rating, slide the cursor along the response scale and click the mouse to record your response.</p>
+      <p>Below in an example of what the response scale will look like. Please slide the cursor along any point of the scale and click to begin the experiment.</p>
       <div class="slider-wrapper practice-slider">
         <div class="slider-tick left"></div>
         <div class="slider-tick center"></div>
@@ -639,14 +641,16 @@ timeline.push({
 
             locked = true;
             document.removeEventListener("mousemove", updateSlider);
-            document.removeEventListener("click", finishTrial);
+            //document.removeEventListener("click", finishTrial);
+            slider.removeEventListener("click", finishTrial);
             jsPsych.finishTrial({
               response: Number(slider.value),
               practice: true,
             });
           };
           document.addEventListener("mousemove", updateSlider);
-          document.addEventListener("click", finishTrial, { once: true });
+          //document.addEventListener("click", finishTrial, { once: true });
+          slider.addEventListener("click", finishTrial, { once: true });
         }, 0);
       },
     },
