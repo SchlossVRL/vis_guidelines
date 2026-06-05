@@ -80,7 +80,7 @@ def iso_or_none(ts: Any) -> str | None:
 
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--collection", default="vis-guidelines-pilot-v2")
+    p.add_argument("--collection", nargs="+", default="vis-guidelines-pilot-v2")
     p.add_argument(
         "--credentials",
         required=True,
@@ -119,66 +119,72 @@ def main() -> None:
     n_skipped_incomplete = 0
     n_unknown_word = 0
 
-    for snap in db.collection(args.collection).stream():
-        data = snap.to_dict() or {}
+    for collection_name in args.collection:
+        for snap in db.collection(collection_name).stream():
+            data = snap.to_dict() or {}
 
-        if not args.include_non_consenting and data.get("consent") is not True:
-            n_skipped_no_consent += 1
-            continue
-        if not args.include_incomplete and data.get("completedAt") is None:
-            n_skipped_incomplete += 1
-            continue
-        
-        #get deomographics data to exclude for less than 1 year vis experience
-        demographics = data.get("demographics") or {}
-
-        #skip participants with less than 1 year of experience in VIS
-        vis_exp = demographics.get("years_in_vis")
-
-        try:
-            years = float(vis_exp)
-            if years < 1:
+            if not args.include_non_consenting and data.get("consent") is not True:
+                n_skipped_no_consent += 1
                 continue
-        except (TypeError, ValueError):
-            pass
+            if not args.include_incomplete and data.get("completedAt") is None:
+                n_skipped_incomplete += 1
+                continue
+        
+            #get deomographics data to exclude for less than 1 year vis experience
+            demographics = data.get("demographics") or {}
 
-        pid = data.get("participantId") or snap.id
-        trials = data.get("trials", []) or []
-        #demographics = data.get("demographics") or {}
+            #skip participants with less than 1 year of experience in VIS
+            vis_exp = demographics.get("years_in_vis")
 
-        p_row: dict[str, Any] = {
-            "participant_id": pid,
-            "collection": data.get("collection"),
-            "consent": data.get("consent"),
-            "started_at": iso_or_none(data.get("startedAt")),
-            "consented_at": iso_or_none(data.get("consentedAt")),
-            "completed_at": iso_or_none(data.get("completedAt")),
-            "n_trials": len(trials),
-            "user_agent": data.get("userAgent"),
-        }
-        # Demographic fields land as demo_<field> columns; pandas will fill NaN
-        # for participants who don't have a given field.
-        for k, v in demographics.items():
-            p_row[f"demo_{k}"] = v
-        participant_rows.append(p_row)
+            try:
+                years = float(vis_exp)
+                if years < 1:
+                    continue
+            except (TypeError, ValueError):
+                pass
 
-        for t in trials:
-            trial_rows.append(
-                {
-                    "participant_id": pid,
-                    "collection": data.get("collection"),
-                    "trial_index": t.get("trial_index"),
-                    "type": t.get("type"),
-                    "head": t.get("head"),
-                    "left": t.get("left"),
-                    "right": t.get("right"),
-                    "winner": t.get("winner"),
-                    "loser": t.get("loser"),
-                    "response_side": t.get("response_side"),
-                    "response_source": t.get("response_source"),
-                    "rt": t.get("rt"),
-                }
-            )
+            # skip participants with fewer than 100 trials
+            n_trials = len(data.get("trials", []) or [])
+            if n_trials < 100:
+                continue
+
+            pid = data.get("participantId") or snap.id
+            trials = data.get("trials", []) or []
+            #demographics = data.get("demographics") or {}
+
+            p_row: dict[str, Any] = {
+                "participant_id": pid,
+                "collection": data.get("collection"),
+                "consent": data.get("consent"),
+                "started_at": iso_or_none(data.get("startedAt")),
+                "consented_at": iso_or_none(data.get("consentedAt")),
+                "completed_at": iso_or_none(data.get("completedAt")),
+                "n_trials": len(trials),
+                "user_agent": data.get("userAgent"),
+            }
+            # Demographic fields land as demo_<field> columns; pandas will fill NaN
+            # for participants who don't have a given field.
+            for k, v in demographics.items():
+                p_row[f"demo_{k}"] = v
+            participant_rows.append(p_row)
+
+            for t in trials:
+                trial_rows.append(
+                    {
+                        "participant_id": pid,
+                        "collection": data.get("collection"),
+                        "trial_index": t.get("trial_index"),
+                        "type": t.get("type"),
+                        "head": t.get("head"),
+                        "left": t.get("left"),
+                        "right": t.get("right"),
+                        "winner": t.get("winner"),
+                        "loser": t.get("loser"),
+                        "response_side": t.get("response_side"),
+                        "response_source": t.get("response_source"),
+                        "rt": t.get("rt"),
+                    }
+                )
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
