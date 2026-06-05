@@ -463,7 +463,6 @@ timeline.push({
         </div>
       `,
       questions: [
-        { prompt: "Age", name: "age", rows: 1, columns: 3, required: false },
         {
           prompt: "Gender",
           name: "gender",

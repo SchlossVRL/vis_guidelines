@@ -1,8 +1,8 @@
-[fit] complete in 2440.5s (40.67 min)
-[fit] 483 history entries recorded
-  snapshot[   0]: {'score_test': 0.6060606241226196, 'loss_test': 0.6931471824645996, 'score_train': 0.5510616898536682, 'loss_train': 0.6931471228599548}
-  snapshot[ 120]: {'score_test': 0.6101009845733643, 'loss_test': 0.6537750363349915, 'score_train': 0.6193124651908875, 'loss_train': 0.6543411612510681}
-  snapshot[ 241]: {'score_test': 0.6141414046287537, 'loss_test': 0.6539604067802429, 'score_train': 0.6208291053771973, 'loss_train': 0.6543416976928711}
-  snapshot[ 362]: {'score_test': 0.6141414046287537, 'loss_test': 0.6543371677398682, 'score_train': 0.6213346719741821, 'loss_train': 0.6543475985527039}
-  snapshot[ 482]: {'score_test': 0.6101009845733643, 'loss_test': 0.6541393995285034, 'score_train': 0.6203235387802124, 'loss_train': 0.6543498635292053}
-[fit] wrote embedding -> results/embedding_1.csv
+[fit] complete in 2212.7s (36.88 min)
+[fit] 503 history entries recorded
+  snapshot[   0]: {'score_test': 0.5854166746139526, 'loss_test': 0.6931472420692444, 'score_train': 0.5588541626930237, 'loss_train': 0.6931471228599548}
+  snapshot[ 125]: {'score_test': 0.6312500238418579, 'loss_test': 0.6379778385162354, 'score_train': 0.6307291388511658, 'loss_train': 0.6464971899986267}
+  snapshot[ 251]: {'score_test': 0.6270833611488342, 'loss_test': 0.6377242207527161, 'score_train': 0.6317708492279053, 'loss_train': 0.6465004086494446}
+  snapshot[ 377]: {'score_test': 0.6270833611488342, 'loss_test': 0.6378785371780396, 'score_train': 0.6322916746139526, 'loss_train': 0.6464993357658386}
+  snapshot[ 502]: {'score_test': 0.6333333253860474, 'loss_test': 0.6379756927490234, 'score_train': 0.6333333253860474, 'loss_train': 0.6465011835098267}
+[fit] wrote embedding -> results/embedding_1d.csv

@@ -4,6 +4,21 @@ author: "Anna Chinni"
 format: pdf
 editor: visual
 ---
+1. loose vs strict
+
+theoretical vs. practical
+broad vs. specific
+assimilated knowledge vs. direct evidence
+
+
+2. Intuition-based vs. evidence-based X
+3. Prescriptive vs. suggestive X
+4. Rigid vs. flexible X
+5. Situationally specific vs. broadly applicable X
+6. Learned from authority vs. learned by experience X
+abstract vs. concrete X
+authority-based vs. experience-based X
+
 
 ```{r}
 #Housekeeping
@@ -85,7 +100,7 @@ d <- rbind(d1, d2, d3, d4)
 ```{r}
 #just want final step loss
 d <- d %>% 
-  filter(step == "482")
+  filter(step == "502")
 ```
 
 ```{r}
@@ -104,14 +119,16 @@ p_loss
 ```{r}
 ggsave("../plots/dimensions_loss.png", plot = p_loss, width = 6, height = 5, dpi = 300)
 ```
-# 3 Dimension Embedding
+
+#load in embeddings
+
 ```{r}
 #load in embedding
-
-em3 <- read_csv("../results/embedding_3.csv")
-
+em4 <- read_csv("../results/embedding_4d.csv")
+em3 <- read_csv("../results/embedding_3d.csv")
+em2 <- read_csv("../results/embedding_2d.csv")
+em1 <- read_csv("../results/embedding_1d.csv")
 ```
-
 ```{r}
 #create color code
 
@@ -120,6 +137,198 @@ colors <-  tibble(
   color = c("black", "black", "black", "black", "#7C3478", "#43597E", "#5479B2", "#6756B2", "#635392", "#7064B4", "#924DB6", "#A74BB1", "#924DB6", "#C55D9F", "#71285B", "#814597", "#675698")
 )
 ```
+
+#load in raw data
+```{r}
+data <- read_csv('../data/trials.csv')
+```
+#check how well each model predicts judgements
+```{r}
+add_embedding_distances <- function(data, em, prefix) {
+
+  # get dimension columns
+  dim_cols <- grep("^dim_", names(em), value = TRUE)
+
+  # rename embeddings for joins
+  em_head  <- em %>% rename_with(~ paste0("h_", .), all_of(dim_cols))
+  em_win   <- em %>% rename_with(~ paste0("w_", .), all_of(dim_cols))
+  em_lose  <- em %>% rename_with(~ paste0("l_", .), all_of(dim_cols))
+
+  # join coordinates
+  df <- data %>%
+    left_join(em_head, by = c("head" = "word")) %>%
+    left_join(em_win,  by = c("winner" = "word")) %>%
+    left_join(em_lose, by = c("loser" = "word"))
+
+  # compute vectors of column names
+  h_cols <- paste0("h_", dim_cols)
+  w_cols <- paste0("w_", dim_cols)
+  l_cols <- paste0("l_", dim_cols)
+
+  # Euclidean distances
+  df[[paste0(prefix, "_dist_head_winner")]] <-
+    sqrt(rowSums((df[h_cols] - df[w_cols])^2))
+
+  df[[paste0(prefix, "_dist_head_loser")]] <-
+    sqrt(rowSums((df[h_cols] - df[l_cols])^2))
+
+  df
+}
+```
+```{r}
+data1 <- add_embedding_distances(data, em1, "em1")
+
+data2 <- add_embedding_distances(data, em2, "em2")
+
+data3 <- add_embedding_distances(data, em3, "em3")
+
+data4 <- add_embedding_distances(data, em4, "em4")
+```
+
+```{r}
+data1 <- data1 %>% 
+  select(participant_id, trial_index, head, left, right, winner, loser, em1_dist_head_winner, em1_dist_head_loser)
+
+data2 <- data2 %>% 
+  select(participant_id, trial_index, head, left, right, winner, loser, em2_dist_head_winner, em2_dist_head_loser)
+
+data3 <- data3 %>% 
+  select(participant_id, trial_index, head, left, right, winner, loser, em3_dist_head_winner, em3_dist_head_loser)
+
+data4 <- data4 %>% 
+  select(participant_id, trial_index, head, left, right, winner, loser, em4_dist_head_winner, em4_dist_head_loser)
+```
+
+```{r}
+data_all <- data %>%
+  left_join(data1, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
+  left_join(data2, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
+  left_join(data3, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
+  left_join(data4, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser"))
+```
+
+```{r}
+data_all <- data_all %>% 
+  mutate(
+    em1_acc = if_else(em1_dist_head_winner < em1_dist_head_loser, 1, 0),
+    em2_acc = if_else(em2_dist_head_winner < em1_dist_head_loser, 1, 0),
+    em3_acc = if_else(em3_dist_head_winner < em1_dist_head_loser, 1, 0),
+    em4_acc = if_else(em4_dist_head_winner < em1_dist_head_loser, 1, 0)
+  )
+```
+
+```{r}
+prop_acc_all <- tibble(
+  em1 = mean(data_all$em1_acc),
+  em2 = mean(data_all$em2_acc),
+  em3 = mean(data_all$em3_acc),
+  em4 = mean(data_all$em4_acc)
+)
+```
+
+```{r}
+data_filtered <- data_all %>% 
+  filter(type == "random")
+```
+
+```{r}
+prop_acc_filtered <- tibble(
+  em1 = mean(data_filtered$em1_acc),
+  em2 = mean(data_filtered$em2_acc),
+  em3 = mean(data_filtered$em3_acc),
+  em4 = mean(data_filtered$em4_acc)
+)
+```
+
+
+```{r}
+val <- data %>% 
+  filter(type == "validation")
+```
+
+```{r}
+majority_votes <- val %>%
+  group_by(head, left, right) %>%
+  count(winner, name = "n") %>%
+  arrange(head, left, right, desc(n)) %>%
+  slice(1) %>%
+  ungroup() %>%
+  rename(majority = winner)
+```
+
+```{r}
+val <- val %>% 
+  left_join(majority_votes %>% select(head, left, right, majority), by = c("head", "left", "right"))
+```
+
+```{r}
+val <- val %>% 
+  mutate(
+    maj_agree = if_else(winner == majority, 1, 0),
+    prop_agree = mean(maj_agree)
+  )
+```
+
+```{r}
+val_sum <- val %>% 
+  group_by(head, left, right) %>% 
+  summarise(
+    prop_agree = mean(maj_agree)
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+prop_acc_filtered <- prop_acc_filtered %>% 
+  mutate(
+    human = unique(val$prop_agree)
+  )
+```
+
+```{r}
+prop_long <- prop_acc_filtered %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "model",
+    values_to = "prop_agree"
+  )
+```
+
+```{r}
+models <- prop_long %>% filter(model != "human")
+
+human  <- prop_long %>% filter(model == "human")
+```
+## plot
+```{r}
+p_agree <- ggplot(models,
+       aes(x = model,
+           y = prop_agree)) +
+  geom_hline(yintercept = human$prop_agree, linetype = "dashed") +
+  annotate(
+  "text",
+  x = Inf,
+  y = human$prop_agree,
+  label = "Human agreement",
+  vjust = 1.5,
+  hjust = 1.1
+)+
+  geom_col(width = 0.5, fill = "steelblue") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+ 
+  labs(
+    title = "Model Predictions",
+    x = "Model",
+    y = "Proportion agree with human judgement"
+  ) +
+ theme_classic()
+
+p_agree
+```
+```{r}
+ggsave("../plots/embedding_pred.png", plot = p_agree, width = 6, height = 5, dpi = 300)
+```
+
+# 3 Dimension Embedding
 
 ```{r}
 #remove labels, so just embedding matrix
@@ -312,22 +521,55 @@ p3_pc13 <- ggplot(pca_scores3,
 p3_pc13
 ```
 ```{r}
-ggsave("../plots/dim3_pca_pc1_pc2.png", plot = p3_pc12, width = 6, height = 5, dpi = 300)
+# PC1 vs PC3
 
-ggsave("../plots/dim3_pca_pc1_pc3.png", plot = p3_pc13, width = 6, height = 5, dpi = 300)
+p3_pc23 <- ggplot(pca_scores3,
+       aes(x = PC2,
+           y = PC3,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC2 vs PC3",
+    x = "PC2",
+    y = "PC3"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
 
-ggsave("../plots/dim3_pca_pc1_pc2.pdf", plot = p3_pc12, width = 6, height = 5)
+p3_pc23
+```
 
-ggsave("../plots/dim3_pca_pc1_pc3.pdf", plot = p3_pc13, width = 6, height = 5)
+
+```{r}
+ggsave("../plots/dim3_pca_pc1_pc2.png", plot = p3_pc12, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim3_pca_pc1_pc3.png", plot = p3_pc13, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim3_pca_pc2_pc3.png", plot = p3_pc23, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim3_pca_pc1_pc2.pdf", plot = p3_pc12, width = 10, height = 9)
+
+ggsave("../plots/dim3_pca_pc1_pc3.pdf", plot = p3_pc13, width = 10, height = 9)
+
+ggsave("../plots/dim3_pca_pc2_pc3.pdf", plot = p3_pc23, width = 10, height = 9)
 ```
 
 # 2 Dimension Embedding
-```{r}
-#load in embedding
-
-em2 <- read_csv("../results/embedding_2_14.csv")
-
-```
 
 ```{r}
 #remove labels, so just embedding matrix
@@ -470,13 +712,6 @@ ggsave("../plots/dim2_pca_pc1_pc2.pdf", plot = p2_pc12, width = 6, height = 5)
 
 # 1 Dimension Embedding
 ```{r}
-#load in embedding
-
-em1 <- read_csv("../results/embedding_1.csv")
-
-```
-
-```{r}
 #remove labels, so just embedding matrix
 
 em1_matrix <- em1 %>%
@@ -484,112 +719,41 @@ em1_matrix <- em1 %>%
 ```
 
 ```{r}
-#run PCA
-pca_result1 <- prcomp(em1_matrix, center = TRUE, scale. = TRUE)
-
+em1_plot <- em1 %>% 
+  mutate(y = 0)
 ```
 
 ```{r}
-# PCA scores
-pca_scores1 <- as.data.frame(pca_result1$x)
+em1_plot <- em1_plot %>%
+  mutate(y_jitter = jitter(y, amount = 0.05))
 ```
 
 ```{r}
-# Add words back in
-pca_scores1$word <- em1$word
-
+em1_plot <- em1_plot %>% 
+  left_join(colors, by = "word")
 ```
 
+##Plot 
 ```{r}
-# Eigenvalues
-
-eigenvalues1 <- (pca_result1$sdev)^2
-
-```
-
-```{r}
-pca_df1 <- data.frame(
-  Principal_Component = 1:length(eigenvalues1),
-  Eigenvalue = eigenvalues1
-)
-
-```
-
-```{r}
-# Scree plot
-
-ggplot(pca_df1,
-       aes(x = Principal_Component,
-           y = Eigenvalue)) +
-  geom_line() +
-  geom_point() +
-  labs(title = "Principal Components vs Eigenvalues",
-       x = "Principal Component",
-       y = "Eigenvalue") +
-  theme_minimal()
-
-```
-
-```{r}
-# Variance explained
-
-explained_variance1 <- pca_result1$sdev^2 /
-  sum(pca_result1$sdev^2)
-cumulative_variance1 <- cumsum(explained_variance1)
-explained_variance_df1 <- data.frame(
-  Dimension = 1:length(explained_variance1),
-  ExplainedVariance = explained_variance1,
-  CumulativeVariance = cumulative_variance1
-)
-
-print(explained_variance_df1)
-
-# Plot cumulative variance explained
-
-p3_variance <- ggplot(explained_variance_df1,
-       aes(x = Dimension)) +
-  geom_line(aes(y = CumulativeVariance),
-            color = "blue") +
-  geom_point(aes(y = CumulativeVariance),
-             color = "blue") +
-  labs(
-    title = "Cumulative Variance Explained by PCA",
-    x = "Number of Dimensions",
-    y = "Cumulative Variance Explained"
-  ) +
- theme_classic() +
-  theme(
-    panel.border = element_rect(
-      color = "black",
-      fill = NA,
-      linewidth = 1
-    )
-  )
-
-p1_variance
-
-```
-```{r}
-ggsave("../plots/dime1_pca_variance.png", plot = p3_variance, width = 6, height = 5, dpi = 300)
-```
-
-##Plot in PCA space
-```{r}
-# PC1 vs PC2
-
-p3_pc12 <- ggplot(pca_scores3,
-       aes(x = PC1,
-           y = PC2,
-           label = word)) +
+p_d1 <- ggplot(em1_plot,
+       aes(x = dim_0,
+           y = y_jitter,
+           label = word,
+           color = color)) +
+  #geom_jitter(height = 0.15, width = 0, size = 3) +
   geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_text(vjust = -0.5, size = 5) +
+  scale_y_continuous(limits = c(-.25, .25), expand = c(0,0))+ 
+  scale_color_identity() +
   labs(
-    title = "PCA Space: PC1 vs PC2",
-    x = "PC1",
-    y = "PC2"
+    title = "1 Dimension Embedding",
+    x = "",
+    y = ""
   ) +
 theme_classic() +
   theme(
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
     panel.border = element_rect(
       color = "black",
       fill = NA,
@@ -597,44 +761,14 @@ theme_classic() +
     )
   )
 
-p3_pc12
+
+p_d1
 ```
 
 ```{r}
-# PC1 vs PC3
+ggsave("../plots/dim1_embedding.png", plot = p_d1, width = 14, height = 13, dpi = 300)
 
-p3_pc13 <- ggplot(pca_scores3,
-       aes(x = PC1,
-           y = PC3,
-           label = word)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
-  # geom_hline(yintercept = 0,
-  #            linetype = "dashed",
-  #            color = "grey50") +
-  # geom_vline(xintercept = 0,
-  #            linetype = "dashed",
-  #            color = "grey50") +
-  labs(
-    title = "PCA Space: PC1 vs PC3",
-    x = "PC1",
-    y = "PC3"
-  ) +
- theme_classic() +
-  theme(
-    panel.border = element_rect(
-      color = "black",
-      fill = NA,
-      linewidth = 1
-    )
-  )
-
-p3_pc13
-```
-```{r}
-ggsave("../plots/dim3_pca_pc1_pc2.png", plot = p3_pc12, width = 6, height = 5, dpi = 300)
-
-ggsave("../plots/dim3_pca_pc1_pc3.png", plot = p3_pc13, width = 6, height = 5, dpi = 300)
+ggsave("../plots/dim1_embedding.pdf", plot = p_d1, width = 14, height = 13)
 ```
 
 #Participnts and Timing

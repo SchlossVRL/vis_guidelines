@@ -131,29 +131,19 @@
       "right": "strict"
     },
     {
-      "id": "evidence_based",
-      "left": "intuition-based",
-      "right": "evidence-based"
+      "id": "theory_practical",
+      "left": "theoretical",
+      "right": "practical"
     },
     {
-      "id": "prescriptiveness",
-      "left": "suggestive",
-      "right": "prescriptive"
-    },
-    {
-      "id": "flexibility",
-      "left": "rigid",
-      "right": "flexible"
+      "id": "assim_direct",
+      "left": "assimilated knowledge",
+      "right": "direct evidence"
     },
     {
       "id": "broadness",
-      "left": "situationally specific",
-      "right": "broadly applicable"
-    },
-    {
-      "id": "authority_driven",
-      "left": "learned by experience",
-      "right": "learned from authority"
+      "left": "specific",
+      "right": "broad"
     }
   ]
 }
