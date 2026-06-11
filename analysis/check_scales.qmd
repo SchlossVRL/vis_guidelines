@@ -1,0 +1,156 @@
+---
+title: "Scales"
+author: "Anna Chinni"
+format: pdf
+editor: visual
+---
+
+
+# Setup
+```{r}
+#Housekeeping
+rm(list = ls())
+graphics.off()
+
+#load libraries
+library(tidyverse)
+library(ggplot2)
+library(skimr)
+library(reshape2)
+library(GPArotation)
+library(psy)
+library(plotrix)
+library(FactoMineR)
+library(tidytext)
+```
+
+
+```{r}
+#load in data
+demo <- read_csv("../data/scales/participants.csv")
+
+d <- read_csv("../data/scales/trials.csv")
+
+pca1 <- read_csv("pca_1_dim.csv")
+pca2 <- read_csv("pca_2_dim.csv")
+pca3 <- read_csv("pca_3_dim.csv")
+
+em1 <- read_csv("../results/embedding_1d.csv")
+em2 <- read_csv("../results/embedding_2d.csv")
+em3 <- read_csv("../results/embedding_3d.csv")
+```
+
+```{r}
+scales <- tibble(
+  scale_id = c("strictness", "theory_practical", "assim_direct", "broadness"),
+  low = c("loose", "theoretical", "assimilated knowledge", "specific"),
+  high = c("strict", "practical", "direct evidence", "broad")
+)
+```
+```{r}
+cat("We have data from", nrow(demo), "participants\n")
+```
+
+```{r}
+d <- d %>% 
+  mutate(
+    response_align = if_else(scale_reversed == TRUE, response*(-1), response)
+  )
+```
+
+```{r}
+d <- d %>% 
+  mutate(response_align_scaled = ((response_align + 200) * 1)/400)
+```
+
+```{r}
+d_sum <- d %>% 
+  group_by(scale_id, word) %>% 
+  summarize(
+    avg_rating = mean(response_align_scaled),
+    sd_rating = sd(response_align_scaled),
+    n = n(),
+    se_rating = sd_rating/sqrt(n),
+    ci_lower = avg_rating - 1.96 * se_rating,
+    ci_upper = avg_rating + 1.96 * se_rating
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+d_sum <- d_sum %>% 
+  left_join(scales, by = "scale_id")
+```
+
+```{r}
+d_plot <- d_sum %>%
+  mutate(word = reorder_within(word, avg_rating, scale_id))
+```
+
+```{r}
+d_plot <- d_plot %>% 
+  mutate(
+    word_label = str_extract(word, "^[^_]+")
+  )
+```
+
+
+# Plot ratings
+```{r}
+p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
+  geom_hline(yintercept = 0.5, color = "grey80", linewidth = 0.5) +
+  geom_errorbar(
+    aes(ymin = avg_rating - se_rating,
+        ymax = avg_rating + se_rating),
+    height = 0.2,
+    width = .2,
+    color = "darkgrey"
+  ) +
+  geom_point(size = 2, color = "darkgrey") +
+  facet_wrap(~ scale_id, ncol = 1, scales = "free_x") +
+  scale_x_reordered() +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
+  scale_x_discrete(expand = expansion(mult = c(0.01, 0.01))) +
+  labs(x = NULL, y = NULL) +
+  geom_text(
+    aes(label = word_label),
+    #hjust = 1,
+    #vjust = .5,
+    nudge_y = 0.05,
+    size = 4,
+    show.legend = FALSE
+  ) +
+  geom_text(
+    data = scales,
+    aes(x = -Inf, y = -Inf, label = low),
+    inherit.aes = FALSE,
+    hjust = 0, vjust = -.5,
+    size = 6
+  ) +
+  geom_text(
+    data = scales,
+    aes(x = -Inf, y = Inf, label = high),
+    inherit.aes = FALSE,
+    hjust = 0, vjust = -.5,
+    size = 6
+  ) +
+  coord_cartesian(clip = "off") +
+  theme_classic() +
+  theme(
+    plot.margin = margin(10, 30, 10, 30),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.line.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    strip.text = element_blank(),
+    #strip.text = element_text(face = "bold"),
+    panel.spacing = unit(4, "lines")
+  )
+
+p_scales
+```
+
+```{r}
+dim3 <- d_sum %>% 
+  left_join(pca3, by = "word" )
+```

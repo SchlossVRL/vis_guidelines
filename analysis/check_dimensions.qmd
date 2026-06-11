@@ -596,6 +596,10 @@ pca_scores2$word <- em2$word
 ```
 
 ```{r}
+write.csv(pca_scores2, "pca_2_dim.csv", row.names = FALSE)
+```
+
+```{r}
 # Eigenvalues
 
 eigenvalues2 <- (pca_result2$sdev)^2
@@ -716,6 +720,27 @@ ggsave("../plots/dim2_pca_pc1_pc2.pdf", plot = p2_pc12, width = 6, height = 5)
 
 em1_matrix <- em1 %>%
   select(starts_with("dim_"))
+```
+
+```{r}
+#run PCA
+pca_result1 <- prcomp(em1_matrix, center = TRUE, scale. = TRUE)
+
+```
+
+```{r}
+# PCA scores
+pca_scores1 <- as.data.frame(pca_result1$x)
+```
+
+```{r}
+# Add words back in
+pca_scores1$word <- em1$word
+
+```
+
+```{r}
+write.csv(pca_scores1, "pca_1_dim.csv", row.names = FALSE)
 ```
 
 ```{r}
