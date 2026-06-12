@@ -34,17 +34,21 @@ d <- read_csv("../data/scales/trials.csv")
 pca1 <- read_csv("pca_1_dim.csv")
 pca2 <- read_csv("pca_2_dim.csv")
 pca3 <- read_csv("pca_3_dim.csv")
+pca4 <- read_csv("pca_4_dim.csv")
+#pca5 <- read_csv("pca_5_dim.csv")
 
-em1 <- read_csv("../results/embedding_1d.csv")
-em2 <- read_csv("../results/embedding_2d.csv")
-em3 <- read_csv("../results/embedding_3d.csv")
+# em1 <- read_csv("../results/embedding_1d.csv")
+# em2 <- read_csv("../results/embedding_2d.csv")
+# em3 <- read_csv("../results/embedding_3d.csv")
+# em4 <- read_csv("../results/embedding_4d.csv")
+# em5 <- read_csv("../results/embedding_5d.csv")
 ```
 
 ```{r}
 scales <- tibble(
   scale_id = c("strictness", "theory_practical", "assim_direct", "broadness"),
-  low = c("loose", "theoretical", "assimilated knowledge", "specific"),
-  high = c("strict", "practical", "direct evidence", "broad")
+  low = c("loose", "theoretical", "direct evidence", "specific"),
+  high = c("strict", "practical", "assimilated knowledge", "broad")
 )
 ```
 ```{r}
@@ -59,9 +63,23 @@ d <- d %>%
 ```
 
 ```{r}
+#switch so assimilated direct is the same direction as PC2
+d <- d %>% 
+  mutate(
+    response_align = if_else(scale_id == "strictness", response_align*(-1), response_align)
+  )
+
+d <- d %>% 
+  mutate(
+    response_align = if_else(scale_id == "broadness", response_align*(-1), response_align)
+  )
+```
+
+```{r}
 d <- d %>% 
   mutate(response_align_scaled = ((response_align + 200) * 1)/400)
 ```
+
 
 ```{r}
 d_sum <- d %>% 
@@ -129,7 +147,7 @@ p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
   ) +
   geom_text(
     data = scales,
-    aes(x = -Inf, y = Inf, label = high),
+    aes(x = -Inf, y = .95, label = high),
     inherit.aes = FALSE,
     hjust = 0, vjust = -.5,
     size = 6
@@ -150,7 +168,427 @@ p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
 p_scales
 ```
 
+# 4 Dimensions
+```{r}
+dim4 <- d_sum %>% 
+  left_join(pca4, by = "word" )
+```
+
+```{r}
+dim4 <- dim4 %>% 
+  mutate(
+    scale_id = factor(scale_id, levels = c("theory_practical", "broadness", "assim_direct", "strictness"))
+  )
+```
+
+```{r}
+dim4_corr <- dim4 %>% 
+  group_by(scale_id) %>%
+  summarise(
+    cor_PC1 = cor.test(avg_rating, PC1, method = "pearson")$estimate,
+    p_PC1   = cor.test(avg_rating, PC1, method = "pearson")$p.value,
+    cor_PC2 = cor.test(avg_rating, PC2, method = "pearson")$estimate,
+    p_PC2   = cor.test(avg_rating, PC2, method = "pearson")$p.value,
+    cor_PC3 = cor.test(avg_rating, PC3, method = "pearson")$estimate,
+    p_PC3   = cor.test(avg_rating, PC3, method = "pearson")$p.value,
+    cor_PC4 = cor.test(avg_rating, PC4, method = "pearson")$estimate,
+    p_PC4   = cor.test(avg_rating, PC4, method = "pearson")$p.value
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+dim4_corr_long <- dim4_corr %>%
+  select(scale_id, starts_with("cor_")) %>%
+  pivot_longer(
+    cols = starts_with("cor_"),
+    names_to = "PC",
+    values_to = "correlation"
+  ) %>%
+  mutate(
+    PC = str_remove(PC, "cor_")
+  )
+```
+
+```{r}
+dim4_corr_long <- dim4_corr %>%
+  pivot_longer(
+    -scale_id,
+    names_to = c(".value", "PC"),
+    names_sep = "_"
+  )
+```
+
+```{r}
+dim4_corr_long <- dim4_corr_long %>%
+  mutate(
+    label = paste0(
+      round(cor, 2),
+      "\n(",
+      round(p, 3),
+      ")"
+    )
+  )
+```
+
+```{r}
+p4 <- ggplot(dim4_corr_long,
+       aes(x = PC,
+           y = scale_id,
+           fill = cor)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = label),
+            size = 4,
+            lineheight = 0.9) +
+  scale_fill_gradient2(
+    low = "#af8dc3",
+    high = "#7fbf7b",
+    mid = "#f7f7f7",
+    midpoint = 0,
+    limits = c(-1, 1),
+    name = "r"
+  ) +
+  theme_minimal(base_size = 12) +
+  labs(
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    panel.grid = element_blank()
+  )
+
+p4
+```
+
+# 3 Dimensions
 ```{r}
 dim3 <- d_sum %>% 
   left_join(pca3, by = "word" )
 ```
+
+```{r}
+dim3 <- dim3 %>% 
+  mutate(
+    scale_id = factor(scale_id, levels = c("broadness", "theory_practical", "assim_direct", "strictness"))
+  )
+```
+
+```{r}
+dim3_corr <- dim3 %>% 
+  group_by(scale_id) %>%
+  summarise(
+    cor_PC1 = cor.test(avg_rating, PC1, method = "pearson")$estimate,
+    p_PC1   = cor.test(avg_rating, PC1, method = "pearson")$p.value,
+    cor_PC2 = cor.test(avg_rating, PC2, method = "pearson")$estimate,
+    p_PC2   = cor.test(avg_rating, PC2, method = "pearson")$p.value,
+    cor_PC3 = cor.test(avg_rating, PC3, method = "pearson")$estimate,
+    p_PC3   = cor.test(avg_rating, PC3, method = "pearson")$p.value
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+dim3_corr_long <- dim3_corr %>%
+  select(scale_id, starts_with("cor_")) %>%
+  pivot_longer(
+    cols = starts_with("cor_"),
+    names_to = "PC",
+    values_to = "correlation"
+  ) %>%
+  mutate(
+    PC = str_remove(PC, "cor_")
+  )
+```
+
+```{r}
+dim3_corr_long <- dim3_corr %>%
+  pivot_longer(
+    -scale_id,
+    names_to = c(".value", "PC"),
+    names_sep = "_"
+  )
+```
+
+```{r}
+dim3_corr_long <- dim3_corr_long %>%
+  mutate(
+    label = paste0(
+      round(cor, 2),
+      "\n(",
+      round(p, 3),
+      ")"
+    )
+  )
+```
+
+```{r}
+p3 <- ggplot(dim3_corr_long,
+       aes(x = PC,
+           y = scale_id,
+           fill = cor)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = label),
+            size = 4,
+            lineheight = 0.9) +
+  scale_fill_gradient2(
+    low = "#af8dc3",
+    high = "#7fbf7b",
+    mid = "#f7f7f7",
+    midpoint = 0,
+    limits = c(-1, 1),
+    name = "r"
+  ) +
+  theme_minimal(base_size = 12) +
+  labs(
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    panel.grid = element_blank()
+  )
+
+p3
+```
+
+
+# 2 Dimensions
+```{r}
+dim2 <- d_sum %>% 
+  left_join(pca2, by = "word" )
+```
+
+```{r}
+dim2_corr <- dim2 %>% 
+  group_by(scale_id) %>%
+  summarise(
+    cor_PC1 = cor.test(avg_rating, PC1, method = "pearson")$estimate,
+    p_PC1   = cor.test(avg_rating, PC1, method = "pearson")$p.value,
+    cor_PC2 = cor.test(avg_rating, PC2, method = "pearson")$estimate,
+    p_PC2   = cor.test(avg_rating, PC2, method = "pearson")$p.value
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+dim2_corr_long <- dim2_corr %>%
+  select(scale_id, starts_with("cor_")) %>%
+  pivot_longer(
+    cols = starts_with("cor_"),
+    names_to = "PC",
+    values_to = "correlation"
+  ) %>%
+  mutate(
+    PC = str_remove(PC, "cor_")
+  )
+```
+
+```{r}
+dim2_corr_long <- dim2_corr %>%
+  pivot_longer(
+    -scale_id,
+    names_to = c(".value", "PC"),
+    names_sep = "_"
+  )
+```
+
+```{r}
+dim2_corr_long <- dim2_corr_long %>%
+  mutate(
+    label = paste0(
+      round(cor, 2),
+      "\n(",
+      round(p, 3),
+      ")"
+    )
+  )
+```
+
+```{r}
+p2 <- ggplot(dim2_corr_long,
+       aes(x = PC,
+           y = scale_id,
+           fill = cor)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = label),
+            size = 4,
+            lineheight = 0.9) +
+  scale_fill_gradient2(
+    low = "#af8dc3",
+    high = "#7fbf7b",
+    mid = "#f7f7f7",
+    midpoint = 0,
+    limits = c(-1, 1),
+    name = "r"
+  ) +
+  theme_minimal(base_size = 12) +
+  labs(
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    panel.grid = element_blank()
+  )
+
+p2
+```
+
+# 1 Dimensions
+```{r}
+dim1 <- d_sum %>% 
+  left_join(pca1, by = "word" )
+```
+
+```{r}
+dim1_corr <- dim1 %>% 
+  group_by(scale_id) %>%
+  summarise(
+    cor_PC1 = cor.test(avg_rating, PC1, method = "pearson")$estimate,
+    p_PC1   = cor.test(avg_rating, PC1, method = "pearson")$p.value
+  ) %>% 
+  ungroup()
+```
+
+```{r}
+dim1_corr_long <- dim1_corr %>%
+  select(scale_id, starts_with("cor_")) %>%
+  pivot_longer(
+    cols = starts_with("cor_"),
+    names_to = "PC",
+    values_to = "correlation"
+  ) %>%
+  mutate(
+    PC = str_remove(PC, "cor_")
+  )
+```
+
+```{r}
+dim1_corr_long <- dim1_corr %>%
+  pivot_longer(
+    -scale_id,
+    names_to = c(".value", "PC"),
+    names_sep = "_"
+  )
+```
+
+```{r}
+dim1_corr_long <- dim1_corr_long %>%
+  mutate(
+    label = paste0(
+      round(cor, 2),
+      "\n(",
+      round(p, 3),
+      ")"
+    )
+  )
+```
+
+```{r}
+p1 <- ggplot(dim1_corr_long,
+       aes(x = PC,
+           y = scale_id,
+           fill = cor)) +
+  geom_tile(color = "white") +
+  geom_text(aes(label = label),
+            size = 4,
+            lineheight = 0.9) +
+  scale_fill_gradient2(
+    low = "#af8dc3",
+    high = "#7fbf7b",
+    mid = "#f7f7f7",
+    midpoint = 0,
+    limits = c(-1, 1),
+    name = "r"
+  ) +
+  theme_minimal(base_size = 12) +
+  labs(
+    x = NULL,
+    y = NULL
+  ) +
+  theme(
+    panel.grid = element_blank()
+  )
+
+p1
+```
+
+```{r}
+d_strict <- dim3 %>%
+  filter(scale_id == "strictness")
+
+d_assim <- dim3 %>%
+  filter(scale_id == "assim_direct")
+
+d_theory <- dim3 %>%
+  filter(scale_id == "theory_practical")
+  
+```
+
+```{r}
+d_strict <- d_strict %>%
+  mutate(word = reorder_within(word, PC1, scale_id))
+```
+
+```{r}
+d_strict <- d_strict %>% 
+  mutate(
+    word_label = str_extract(word, "^[^_]+")
+  )
+```
+
+
+```{r}
+p_strict <- ggplot(d_strict, aes(y = avg_rating, x = word)) +
+  geom_hline(yintercept = 0.5, color = "grey80", linewidth = 0.5) +
+  geom_errorbar(
+    aes(ymin = avg_rating - se_rating,
+        ymax = avg_rating + se_rating),
+    height = 0.2,
+    width = .2,
+    color = "darkgrey"
+  ) +
+  geom_point(size = 2, color = "darkgrey") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
+  scale_x_discrete(expand = expansion(mult = c(0.01, 0.01))) +
+  labs(x = NULL, y = NULL) +
+  geom_text(
+    aes(label = word_label),
+    #hjust = 1,
+    #vjust = .5,
+    nudge_y = 0.05,
+    size = 4,
+    show.legend = FALSE
+  ) +
+  geom_text(
+    data = d_strict,
+    aes(x = -Inf, y = -Inf, label = low),
+    inherit.aes = FALSE,
+    hjust = 0, vjust = -.5,
+    size = 6
+  ) +
+  geom_text(
+    data = d_strict,
+    aes(x = -Inf, y = .95, label = high),
+    inherit.aes = FALSE,
+    hjust = 0, vjust = -.5,
+    size = 6
+  ) +
+  coord_cartesian(clip = "off") +
+  theme_classic() +
+  theme(
+    plot.margin = margin(10, 30, 10, 30),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.line.x = element_blank(),
+    panel.grid.major.x = element_blank(),
+    strip.text = element_blank(),
+    #strip.text = element_text(face = "bold"),
+    panel.spacing = unit(4, "lines")
+  )
+
+p_strict
+```
+
+```{r}
+
+```
+

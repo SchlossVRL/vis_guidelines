@@ -1,0 +1,8 @@
+[fit] complete in 3884.2s (64.74 min)
+[fit] 503 history entries recorded
+  snapshot[   0]: {'score_test': 0.5541666746139526, 'loss_test': 0.6931470632553101, 'score_train': 0.5557291507720947, 'loss_train': 0.6931471228599548}
+  snapshot[ 125]: {'score_test': 0.6937500238418579, 'loss_test': 0.5791739821434021, 'score_train': 0.6755208373069763, 'loss_train': 0.5915940403938293}
+  snapshot[ 251]: {'score_test': 0.6916666626930237, 'loss_test': 0.5786565542221069, 'score_train': 0.6755208373069763, 'loss_train': 0.5913445353507996}
+  snapshot[ 377]: {'score_test': 0.6937500238418579, 'loss_test': 0.5785799026489258, 'score_train': 0.6760416626930237, 'loss_train': 0.5912436246871948}
+  snapshot[ 502]: {'score_test': 0.6937500238418579, 'loss_test': 0.5784698128700256, 'score_train': 0.6755208373069763, 'loss_train': 0.5911827087402344}
+[fit] wrote embedding -> results/embedding_5d.csv

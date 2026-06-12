@@ -1,5 +1,5 @@
 # read file
-lines <- readLines("../log_4.txt")
+lines <- readLines("../log_5.txt")
 
 # keep only snapshot lines
 snapshot_lines <- grep("snapshot\\[", lines, value = TRUE)
@@ -31,6 +31,6 @@ df <- do.call(rbind, lapply(parsed, as.data.frame))
 df <- cbind(step = steps, df)
 
 # write CSV
-write.csv(df, "log_4.csv", row.names = FALSE)
+write.csv(df, "log_5.csv", row.names = FALSE)
 
 print("Saved to snapshots.csv")

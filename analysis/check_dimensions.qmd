@@ -34,6 +34,21 @@ library(ggplot2)
 ```
 # Check loss
 ```{r}
+d5 <- read_csv("log_5.csv")
+```
+
+```{r}
+names(d5) <- gsub("^X\\.|\\.$", "", names(d5))
+```
+
+```{r}
+d5 <- d5 %>% 
+  mutate(
+    dim = 5
+  )
+```
+
+```{r}
 d4 <- read_csv("log_4.csv")
 ```
 
@@ -94,7 +109,7 @@ d1 <- d1 %>%
 ```
 
 ```{r}
-d <- rbind(d1, d2, d3, d4)
+d <- rbind(d1, d2, d3, d4, d5)
 ```
 
 ```{r}
@@ -124,6 +139,7 @@ ggsave("../plots/dimensions_loss.png", plot = p_loss, width = 6, height = 5, dpi
 
 ```{r}
 #load in embedding
+em5 <- read_csv("../results/embedding_5d.csv")
 em4 <- read_csv("../results/embedding_4d.csv")
 em3 <- read_csv("../results/embedding_3d.csv")
 em2 <- read_csv("../results/embedding_2d.csv")
@@ -183,6 +199,8 @@ data2 <- add_embedding_distances(data, em2, "em2")
 data3 <- add_embedding_distances(data, em3, "em3")
 
 data4 <- add_embedding_distances(data, em4, "em4")
+
+data5 <- add_embedding_distances(data, em5, "em5")
 ```
 
 ```{r}
@@ -197,6 +215,9 @@ data3 <- data3 %>%
 
 data4 <- data4 %>% 
   select(participant_id, trial_index, head, left, right, winner, loser, em4_dist_head_winner, em4_dist_head_loser)
+
+data5 <- data5 %>% 
+  select(participant_id, trial_index, head, left, right, winner, loser, em5_dist_head_winner, em5_dist_head_loser)
 ```
 
 ```{r}
@@ -204,16 +225,18 @@ data_all <- data %>%
   left_join(data1, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
   left_join(data2, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
   left_join(data3, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
-  left_join(data4, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser"))
+  left_join(data4, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser")) %>%
+  left_join(data5, by = c("participant_id", "trial_index", "head", "left", "right", "winner", "loser"))
 ```
 
 ```{r}
 data_all <- data_all %>% 
   mutate(
     em1_acc = if_else(em1_dist_head_winner < em1_dist_head_loser, 1, 0),
-    em2_acc = if_else(em2_dist_head_winner < em1_dist_head_loser, 1, 0),
-    em3_acc = if_else(em3_dist_head_winner < em1_dist_head_loser, 1, 0),
-    em4_acc = if_else(em4_dist_head_winner < em1_dist_head_loser, 1, 0)
+    em2_acc = if_else(em2_dist_head_winner < em2_dist_head_loser, 1, 0),
+    em3_acc = if_else(em3_dist_head_winner < em3_dist_head_loser, 1, 0),
+    em4_acc = if_else(em4_dist_head_winner < em4_dist_head_loser, 1, 0),
+    em5_acc = if_else(em5_dist_head_winner < em5_dist_head_loser, 1, 0)
   )
 ```
 
@@ -222,7 +245,8 @@ prop_acc_all <- tibble(
   em1 = mean(data_all$em1_acc),
   em2 = mean(data_all$em2_acc),
   em3 = mean(data_all$em3_acc),
-  em4 = mean(data_all$em4_acc)
+  em4 = mean(data_all$em4_acc),
+  em5 = mean(data_all$em5_acc)
 )
 ```
 
@@ -236,7 +260,8 @@ prop_acc_filtered <- tibble(
   em1 = mean(data_filtered$em1_acc),
   em2 = mean(data_filtered$em2_acc),
   em3 = mean(data_filtered$em3_acc),
-  em4 = mean(data_filtered$em4_acc)
+  em4 = mean(data_filtered$em4_acc),
+  em5 = mean(data_filtered$em5_acc)
 )
 ```
 
@@ -326,6 +351,436 @@ p_agree
 ```
 ```{r}
 ggsave("../plots/embedding_pred.png", plot = p_agree, width = 6, height = 5, dpi = 300)
+```
+
+# 5 Dimension Embedding
+
+```{r}
+#remove labels, so just embedding matrix
+em5_matrix <- em5 %>%
+  select(starts_with("dim_"))
+```
+
+```{r}
+#run PCA
+pca_result5 <- prcomp(em5_matrix, center = TRUE, scale. = TRUE)
+
+```
+
+```{r}
+# PCA scores
+pca_scores5 <- as.data.frame(pca_result5$x)
+```
+
+```{r}
+# Add words back in
+pca_scores5$word <- em5$word
+
+```
+
+```{r}
+write.csv(pca_scores5, "pca_5_dim.csv", row.names = FALSE)
+```
+
+```{r}
+# Eigenvalues
+
+eigenvalues5 <- (pca_result5$sdev)^2
+
+```
+
+```{r}
+pca_df5 <- data.frame(
+  Principal_Component = 1:length(eigenvalues5),
+  Eigenvalue = eigenvalues5
+)
+
+```
+
+
+```{r}
+# Scree plot
+
+ggplot(pca_df5,
+       aes(x = Principal_Component,
+           y = Eigenvalue)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Principal Components vs Eigenvalues",
+       x = "Principal Component",
+       y = "Eigenvalue") +
+  theme_minimal()
+
+```
+
+```{r}
+# Variance explained
+
+explained_variance5 <- pca_result5$sdev^2 /
+  sum(pca_result5$sdev^2)
+cumulative_variance5 <- cumsum(explained_variance5)
+explained_variance_df5 <- data.frame(
+  Dimension = 1:length(explained_variance5),
+  ExplainedVariance = explained_variance5,
+  CumulativeVariance = cumulative_variance5
+)
+
+print(explained_variance_df5)
+
+# Plot cumulative variance explained
+
+p5_variance <- ggplot(explained_variance_df5,
+       aes(x = Dimension)) +
+  geom_line(aes(y = CumulativeVariance),
+            color = "blue") +
+  geom_point(aes(y = CumulativeVariance),
+             color = "blue") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
+  labs(
+    title = "Cumulative Variance Explained by PCA",
+    x = "Number of Dimensions",
+    y = "Cumulative Variance Explained"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p5_variance
+
+```
+
+# 4 Dimension Embedding
+
+```{r}
+#remove labels, so just embedding matrix
+em4_matrix <- em4 %>%
+  select(starts_with("dim_"))
+```
+
+```{r}
+#run PCA
+pca_result4 <- prcomp(em4_matrix, center = TRUE, scale. = TRUE)
+
+```
+
+```{r}
+# PCA scores
+pca_scores4 <- as.data.frame(pca_result4$x)
+```
+
+```{r}
+# Add words back in
+pca_scores4$word <- em4$word
+
+```
+
+```{r}
+write.csv(pca_scores4, "pca_4_dim.csv", row.names = FALSE)
+```
+
+```{r}
+# Eigenvalues
+
+eigenvalues4 <- (pca_result4$sdev)^2
+
+```
+
+```{r}
+pca_df4 <- data.frame(
+  Principal_Component = 1:length(eigenvalues4),
+  Eigenvalue = eigenvalues4
+)
+
+```
+
+
+```{r}
+# Scree plot
+
+ggplot(pca_df4,
+       aes(x = Principal_Component,
+           y = Eigenvalue)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "Principal Components vs Eigenvalues",
+       x = "Principal Component",
+       y = "Eigenvalue") +
+  theme_minimal()
+
+```
+
+```{r}
+# Variance explained
+
+explained_variance4 <- pca_result4$sdev^2 /
+  sum(pca_result4$sdev^2)
+cumulative_variance4 <- cumsum(explained_variance4)
+explained_variance_df4 <- data.frame(
+  Dimension = 1:length(explained_variance4),
+  ExplainedVariance = explained_variance4,
+  CumulativeVariance = cumulative_variance4
+)
+
+print(explained_variance_df4)
+
+# Plot cumulative variance explained
+
+p4_variance <- ggplot(explained_variance_df4,
+       aes(x = Dimension)) +
+  geom_line(aes(y = CumulativeVariance),
+            color = "blue") +
+  geom_point(aes(y = CumulativeVariance),
+             color = "blue") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
+  labs(
+    title = "Cumulative Variance Explained by PCA",
+    x = "Number of Dimensions",
+    y = "Cumulative Variance Explained"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_variance
+
+```
+```{r}
+pca_scores4 <- pca_scores4 %>%
+  left_join(colors, by = "word")
+```
+
+```{r}
+# PC1 vs PC2
+
+p4_pc12 <- ggplot(pca_scores4,
+       aes(x = PC1,
+           y = PC2,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  labs(
+    title = "PCA Space: PC1 vs PC2",
+    x = "PC1",
+    y = "PC2"
+  ) +
+theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc12
+```
+
+```{r}
+# PC1 vs PC3
+
+p4_pc13 <- ggplot(pca_scores4,
+       aes(x = PC1,
+           y = PC3,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC1 vs PC3",
+    x = "PC1",
+    y = "PC3"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc13
+```
+
+```{r}
+# PC1 vs PC4
+
+p4_pc14 <- ggplot(pca_scores4,
+       aes(x = PC1,
+           y = PC4,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC1 vs PC4",
+    x = "PC1",
+    y = "PC4"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc14
+```
+
+```{r}
+# PC2 vs PC3
+
+p4_pc23 <- ggplot(pca_scores4,
+       aes(x = PC2,
+           y = PC3,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC2 vs PC3",
+    x = "PC2",
+    y = "PC3"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc23
+```
+
+```{r}
+# PC2 vs PC4
+
+p4_pc24 <- ggplot(pca_scores4,
+       aes(x = PC2,
+           y = PC4,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC2 vs PC4",
+    x = "PC2",
+    y = "PC4"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc24
+```
+
+```{r}
+# PC2 vs PC4
+
+p4_pc34 <- ggplot(pca_scores4,
+       aes(x = PC3,
+           y = PC4,
+           label = word,
+           color = color)) +
+  geom_point(size = 3) +
+  geom_text(vjust = -0.5) +
+  scale_color_identity() +
+  # geom_hline(yintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  # geom_vline(xintercept = 0,
+  #            linetype = "dashed",
+  #            color = "grey50") +
+  labs(
+    title = "PCA Space: PC3 vs PC4",
+    x = "PC3",
+    y = "PC4"
+  ) +
+ theme_classic() +
+  theme(
+    panel.border = element_rect(
+      color = "black",
+      fill = NA,
+      linewidth = 1
+    )
+  )
+
+p4_pc34
+```
+
+```{r}
+ggsave("../plots/dim4_pca_pc1_pc2.png", plot = p4_pc12, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc1_pc3.png", plot = p4_pc13, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc1_pc4.png", plot = p4_pc14, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc2_pc3.png", plot = p4_pc23, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 9, dpi = 300)
+
+ggsave("../plots/dim4_pca_pc1_pc2.pdf", plot = p4_pc12, width = 10, height = 9)
+
+ggsave("../plots/dim4_pca_pc1_pc3.pdf", plot = p4_pc13, width = 10, height = 9)
+
+ggsave("../plots/dim4_pca_pc1_pc4.pdf", plot = p4_pc14, width = 10, height = 9)
+
+ggsave("../plots/dim4_pca_pc2_pc3.pdf", plot = p4_pc23, width = 10, height = 9)
+
+ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 9)
+
+ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 9)
 ```
 
 # 3 Dimension Embedding
@@ -431,6 +886,7 @@ p3_variance <- ggplot(explained_variance_df3,
             color = "blue") +
   geom_point(aes(y = CumulativeVariance),
              color = "blue") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
   labs(
     title = "Cumulative Variance Explained by PCA",
     x = "Number of Dimensions",
@@ -651,6 +1107,7 @@ p2_variance <- ggplot(explained_variance_df2,
             color = "blue") +
   geom_point(aes(y = CumulativeVariance),
              color = "blue") +
+  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
   labs(
     title = "Cumulative Variance Explained by PCA",
     x = "Number of Dimensions",
