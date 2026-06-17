@@ -44,13 +44,7 @@ pca4 <- read_csv("pca_4_dim.csv")
 # em5 <- read_csv("../results/embedding_5d.csv")
 ```
 
-```{r}
-scales <- tibble(
-  scale_id = c("strictness", "theory_practical", "assim_direct", "broadness"),
-  low = c("loose", "theoretical", "direct evidence", "specific"),
-  high = c("strict", "practical", "assimilated knowledge", "broad")
-)
-```
+
 ```{r}
 cat("We have data from", nrow(demo), "participants\n")
 ```
@@ -61,6 +55,13 @@ d <- d %>%
     response_align = if_else(scale_reversed == TRUE, response*(-1), response)
   )
 ```
+
+At this point scales are ordered as:
+
+loose to strict
+theoretical to practical
+assimilated knowledge to direct evidence
+specific to broad
 
 ```{r}
 #switch so assimilated direct is the same direction as PC2
@@ -75,9 +76,23 @@ d <- d %>%
   )
 ```
 
+Now scales are ordered as:
+strict to loose
+theoretical to practical
+assimilated knowledge to direct evidence
+broad to specific
+
 ```{r}
 d <- d %>% 
   mutate(response_align_scaled = ((response_align + 200) * 1)/400)
+```
+
+```{r}
+scales <- tibble(
+  scale_id = c("strictness", "theory_practical", "assim_direct", "broadness"),
+  low = c("strict", "theoretical", "assimilated knowledge", "broad"),
+  high = c("loose", "practical", "direct evidence", "specific")
+)
 ```
 
 
@@ -232,12 +247,25 @@ dim4_corr_long <- dim4_corr_long %>%
 ```
 
 ```{r}
+dim4_corr_long <- dim4_corr_long %>%
+  mutate(
+    sig = case_when(
+      p < .001 ~ "***",
+      p < .01  ~ "**",
+      p < .05  ~ "*",
+      TRUE     ~ ""
+    ),
+    label2 = paste0(round(cor, 2), sig)
+  )
+```
+
+```{r}
 p4 <- ggplot(dim4_corr_long,
        aes(x = PC,
            y = scale_id,
            fill = cor)) +
   geom_tile(color = "white") +
-  geom_text(aes(label = label),
+  geom_text(aes(label = label2),
             size = 4,
             lineheight = 0.9) +
   scale_fill_gradient2(
@@ -254,11 +282,20 @@ p4 <- ggplot(dim4_corr_long,
     y = NULL
   ) +
   theme(
-    panel.grid = element_blank()
+    panel.grid = element_blank(),
+    # panel.border = element_rect(
+    #   color = "black",
+    #   fill = NA,
+    #   linewidth = 1
+    # )
   )
 
 p4
 ```
+```{r}
+ggsave("../plots/dim4_correlations.pdf", plot = p4, width = 4.5, height = 2)
+```
+
 
 # 3 Dimensions
 ```{r}

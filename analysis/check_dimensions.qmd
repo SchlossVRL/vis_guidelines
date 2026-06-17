@@ -758,29 +758,29 @@ p4_pc34
 ```
 
 ```{r}
-ggsave("../plots/dim4_pca_pc1_pc2.png", plot = p4_pc12, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc1_pc2.png", plot = p4_pc12, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc1_pc3.png", plot = p4_pc13, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc1_pc3.png", plot = p4_pc13, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc1_pc4.png", plot = p4_pc14, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc1_pc4.png", plot = p4_pc14, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc2_pc3.png", plot = p4_pc23, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc2_pc3.png", plot = p4_pc23, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 9, dpi = 300)
+ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc1_pc2.pdf", plot = p4_pc12, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc1_pc2.pdf", plot = p4_pc12, width = 10, height = 10)
 
-ggsave("../plots/dim4_pca_pc1_pc3.pdf", plot = p4_pc13, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc1_pc3.pdf", plot = p4_pc13, width = 10, height = 10)
 
-ggsave("../plots/dim4_pca_pc1_pc4.pdf", plot = p4_pc14, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc1_pc4.pdf", plot = p4_pc14, width = 10, height = 10)
 
-ggsave("../plots/dim4_pca_pc2_pc3.pdf", plot = p4_pc23, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc2_pc3.pdf", plot = p4_pc23, width = 10, height = 10)
 
-ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 10)
 
-ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 9)
+ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 10)
 ```
 
 # 3 Dimension Embedding
