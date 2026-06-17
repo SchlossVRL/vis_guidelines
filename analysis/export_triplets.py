@@ -42,6 +42,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 
 
+
 TRIAL_COLUMNS = [
     "participant_id",
     "collection",
@@ -118,6 +119,9 @@ def main() -> None:
     n_skipped_no_consent = 0
     n_skipped_incomplete = 0
     n_unknown_word = 0
+    n_skipped_vis_experience = 0
+    n_skipped_too_few_trials = 0
+
 
     for collection_name in args.collection:
         for snap in db.collection(collection_name).stream():
@@ -139,6 +143,7 @@ def main() -> None:
             try:
                 years = float(vis_exp)
                 if years < 1:
+                    n_skipped_vis_experience += 1
                     continue
             except (TypeError, ValueError):
                 pass
@@ -146,6 +151,7 @@ def main() -> None:
             # skip participants with fewer than 100 trials
             n_trials = len(data.get("trials", []) or [])
             if n_trials < 100:
+                n_skipped_too_few_trials += 1
                 continue
 
             pid = data.get("participantId") or snap.id
@@ -237,6 +243,8 @@ def main() -> None:
         f"sessions used         : {len(participant_rows)}\n"
         f"  skipped (no consent): {n_skipped_no_consent}\n"
         f"  skipped (incomplete): {n_skipped_incomplete}\n"
+        f"  skipped (<1 yr VIS) : {n_skipped_vis_experience}\n"
+        f"  skipped (<100 trials): {n_skipped_too_few_trials}\n"
         f"trials exported       : {len(trial_rows)}\n"
         f"salmon triplets       : {len(salmon_rows)} "
         f"(skipped {n_unknown_word} with unknown words, "

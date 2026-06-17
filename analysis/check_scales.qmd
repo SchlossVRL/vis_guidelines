@@ -31,6 +31,8 @@ demo <- read_csv("../data/scales/participants.csv")
 
 d <- read_csv("../data/scales/trials.csv")
 
+c_p <- read_csv("../data/participants.csv")
+
 pca1 <- read_csv("pca_1_dim.csv")
 pca2 <- read_csv("pca_2_dim.csv")
 pca3 <- read_csv("pca_3_dim.csv")
