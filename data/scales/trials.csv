@@ -1,72 +1,72 @@
 participant_id,collection,block,trial_index,word,scale_id,scale_left_display,scale_right_display,scale_reversed,response
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,5,style guide,broadness,specific,broad,False,-44
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,6,requirement,broadness,specific,broad,False,105
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,7,design pattern,broadness,specific,broad,False,101
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,8,best practice,broadness,specific,broad,False,-109
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,9,heuristic,broadness,specific,broad,False,200
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,10,guardrail,broadness,specific,broad,False,199
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,11,guideline,broadness,specific,broad,False,33
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,12,standard,broadness,specific,broad,False,101
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,13,principle,broadness,specific,broad,False,164
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,14,rule of thumb,broadness,specific,broad,False,-63
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,15,consideration,broadness,specific,broad,False,24
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,16,convention,broadness,specific,broad,False,31
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,17,implication,broadness,specific,broad,False,-35
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,18,recommendation,broadness,specific,broad,False,-93
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,19,common practice,broadness,specific,broad,False,63
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,20,norm,broadness,specific,broad,False,61
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,0,21,paradigm,broadness,specific,broad,False,166
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,24,recommendation,strictness,strict,loose,True,32
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,25,standard,strictness,strict,loose,True,-2
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,26,implication,strictness,strict,loose,True,-33
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,27,norm,strictness,strict,loose,True,22
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,28,style guide,strictness,strict,loose,True,-91
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,29,heuristic,strictness,strict,loose,True,97
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,30,consideration,strictness,strict,loose,True,-55
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,31,requirement,strictness,strict,loose,True,-152
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,32,design pattern,strictness,strict,loose,True,-182
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,33,convention,strictness,strict,loose,True,94
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,34,guardrail,strictness,strict,loose,True,197
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,35,paradigm,strictness,strict,loose,True,198
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,36,rule of thumb,strictness,strict,loose,True,-81
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,37,best practice,strictness,strict,loose,True,-195
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,38,common practice,strictness,strict,loose,True,-85
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,39,principle,strictness,strict,loose,True,65
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,1,40,guideline,strictness,strict,loose,True,-51
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,43,design pattern,assim_direct,direct evidence,assimilated knowledge,True,-51
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,44,best practice,assim_direct,direct evidence,assimilated knowledge,True,-195
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,45,principle,assim_direct,direct evidence,assimilated knowledge,True,-195
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,46,implication,assim_direct,direct evidence,assimilated knowledge,True,-199
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,47,requirement,assim_direct,direct evidence,assimilated knowledge,True,-100
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,48,paradigm,assim_direct,direct evidence,assimilated knowledge,True,105
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,49,guardrail,assim_direct,direct evidence,assimilated knowledge,True,150
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,50,heuristic,assim_direct,direct evidence,assimilated knowledge,True,43
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,51,rule of thumb,assim_direct,direct evidence,assimilated knowledge,True,-64
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,52,recommendation,assim_direct,direct evidence,assimilated knowledge,True,-105
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,53,convention,assim_direct,direct evidence,assimilated knowledge,True,89
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,54,consideration,assim_direct,direct evidence,assimilated knowledge,True,30
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,55,norm,assim_direct,direct evidence,assimilated knowledge,True,165
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,56,common practice,assim_direct,direct evidence,assimilated knowledge,True,-1
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,57,style guide,assim_direct,direct evidence,assimilated knowledge,True,-42
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,58,guideline,assim_direct,direct evidence,assimilated knowledge,True,-87
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,2,59,standard,assim_direct,direct evidence,assimilated knowledge,True,62
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,62,requirement,theory_practical,practical,theoretical,True,-56
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,63,guideline,theory_practical,practical,theoretical,True,193
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,64,rule of thumb,theory_practical,practical,theoretical,True,38
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,65,paradigm,theory_practical,practical,theoretical,True,198
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,66,consideration,theory_practical,practical,theoretical,True,-98
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,67,norm,theory_practical,practical,theoretical,True,89
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,68,best practice,theory_practical,practical,theoretical,True,-195
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,69,standard,theory_practical,practical,theoretical,True,40
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,70,guardrail,theory_practical,practical,theoretical,True,161
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,71,implication,theory_practical,practical,theoretical,True,-44
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,72,common practice,theory_practical,practical,theoretical,True,-163
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,73,recommendation,theory_practical,practical,theoretical,True,-48
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,74,design pattern,theory_practical,practical,theoretical,True,131
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,75,principle,theory_practical,practical,theoretical,True,194
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,76,style guide,theory_practical,practical,theoretical,True,186
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,77,heuristic,theory_practical,practical,theoretical,True,31
-1uigbTZHyATe3SywPO32FpzD8vH3,vis-guidelines-scale-true-run,3,78,convention,theory_practical,practical,theoretical,True,38
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,5,principle,broadness,specific,broad,False,188
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,6,guideline,broadness,specific,broad,False,104
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,7,design pattern,broadness,specific,broad,False,20
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,8,heuristic,broadness,specific,broad,False,71
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,9,requirement,broadness,specific,broad,False,51
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,10,norm,broadness,specific,broad,False,152
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,11,style guide,broadness,specific,broad,False,-68
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,12,guardrail,broadness,specific,broad,False,-46
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,13,common practice,broadness,specific,broad,False,1
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,14,consideration,broadness,specific,broad,False,158
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,15,standard,broadness,specific,broad,False,45
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,16,paradigm,broadness,specific,broad,False,21
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,17,convention,broadness,specific,broad,False,80
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,18,rule of thumb,broadness,specific,broad,False,111
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,19,best practice,broadness,specific,broad,False,-18
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,20,recommendation,broadness,specific,broad,False,-46
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,0,21,implication,broadness,specific,broad,False,-150
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,24,requirement,strictness,loose,strict,False,93
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,25,heuristic,strictness,loose,strict,False,164
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,26,consideration,strictness,loose,strict,False,40
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,27,convention,strictness,loose,strict,False,21
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,28,style guide,strictness,loose,strict,False,174
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,29,implication,strictness,loose,strict,False,160
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,30,norm,strictness,loose,strict,False,147
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,31,recommendation,strictness,loose,strict,False,60
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,32,guideline,strictness,loose,strict,False,177
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,33,design pattern,strictness,loose,strict,False,82
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,34,rule of thumb,strictness,loose,strict,False,-73
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,35,standard,strictness,loose,strict,False,6
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,36,paradigm,strictness,loose,strict,False,-103
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,37,best practice,strictness,loose,strict,False,26
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,38,principle,strictness,loose,strict,False,184
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,39,common practice,strictness,loose,strict,False,95
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,1,40,guardrail,strictness,loose,strict,False,128
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,43,design pattern,assim_direct,assimilated knowledge,direct evidence,False,148
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,44,convention,assim_direct,assimilated knowledge,direct evidence,False,-124
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,45,best practice,assim_direct,assimilated knowledge,direct evidence,False,-138
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,46,standard,assim_direct,assimilated knowledge,direct evidence,False,-148
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,47,guardrail,assim_direct,assimilated knowledge,direct evidence,False,158
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,48,consideration,assim_direct,assimilated knowledge,direct evidence,False,-146
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,49,guideline,assim_direct,assimilated knowledge,direct evidence,False,160
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,50,recommendation,assim_direct,assimilated knowledge,direct evidence,False,154
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,51,heuristic,assim_direct,assimilated knowledge,direct evidence,False,154
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,52,norm,assim_direct,assimilated knowledge,direct evidence,False,-149
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,53,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-162
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,54,requirement,assim_direct,assimilated knowledge,direct evidence,False,149
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,55,style guide,assim_direct,assimilated knowledge,direct evidence,False,164
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,56,implication,assim_direct,assimilated knowledge,direct evidence,False,164
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,57,paradigm,assim_direct,assimilated knowledge,direct evidence,False,0
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,58,common practice,assim_direct,assimilated knowledge,direct evidence,False,-179
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,2,59,principle,assim_direct,assimilated knowledge,direct evidence,False,158
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,62,guardrail,theory_practical,practical,theoretical,True,-194
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,63,common practice,theory_practical,practical,theoretical,True,46
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,64,rule of thumb,theory_practical,practical,theoretical,True,126
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,65,consideration,theory_practical,practical,theoretical,True,108
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,66,norm,theory_practical,practical,theoretical,True,-20
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,67,guideline,theory_practical,practical,theoretical,True,-177
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,68,design pattern,theory_practical,practical,theoretical,True,-141
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,69,best practice,theory_practical,practical,theoretical,True,-170
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,70,requirement,theory_practical,practical,theoretical,True,-189
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,71,implication,theory_practical,practical,theoretical,True,-190
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,72,convention,theory_practical,practical,theoretical,True,134
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,73,paradigm,theory_practical,practical,theoretical,True,156
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,74,recommendation,theory_practical,practical,theoretical,True,-172
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,75,standard,theory_practical,practical,theoretical,True,2
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,76,heuristic,theory_practical,practical,theoretical,True,136
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,77,principle,theory_practical,practical,theoretical,True,146
+1KUI9n7vaeW4S7BRWGVI36Au3EF3,vis-guidelines-scale-true-run,3,78,style guide,theory_practical,practical,theoretical,True,-198
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,0,5,requirement,assim_direct,direct evidence,assimilated knowledge,True,-115
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,0,6,norm,assim_direct,direct evidence,assimilated knowledge,True,-139
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,0,7,convention,assim_direct,direct evidence,assimilated knowledge,True,153
@@ -135,6 +135,74 @@ participant_id,collection,block,trial_index,word,scale_id,scale_left_display,sca
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,3,76,principle,strictness,loose,strict,False,172
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,3,77,common practice,strictness,loose,strict,False,-1
 2NVAqL4ehKhgT1gGoM6IxyN3TlE3,vis-guidelines-scale-true-run,3,78,recommendation,strictness,loose,strict,False,-47
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,5,recommendation,strictness,strict,loose,True,107
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,6,requirement,strictness,strict,loose,True,-198
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,7,convention,strictness,strict,loose,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,8,guardrail,strictness,strict,loose,True,-29
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,9,principle,strictness,strict,loose,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,10,common practice,strictness,strict,loose,True,184
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,11,standard,strictness,strict,loose,True,-52
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,12,implication,strictness,strict,loose,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,13,best practice,strictness,strict,loose,True,-19
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,14,paradigm,strictness,strict,loose,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,15,guideline,strictness,strict,loose,True,-85
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,16,design pattern,strictness,strict,loose,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,17,norm,strictness,strict,loose,True,-137
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,18,heuristic,strictness,strict,loose,True,96
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,19,consideration,strictness,strict,loose,True,13
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,20,rule of thumb,strictness,strict,loose,True,97
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,0,21,style guide,strictness,strict,loose,True,-96
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,24,rule of thumb,assim_direct,direct evidence,assimilated knowledge,True,104
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,25,design pattern,assim_direct,direct evidence,assimilated knowledge,True,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,26,norm,assim_direct,direct evidence,assimilated knowledge,True,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,27,recommendation,assim_direct,direct evidence,assimilated knowledge,True,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,28,requirement,assim_direct,direct evidence,assimilated knowledge,True,-104
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,29,paradigm,assim_direct,direct evidence,assimilated knowledge,True,-40
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,30,style guide,assim_direct,direct evidence,assimilated knowledge,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,31,implication,assim_direct,direct evidence,assimilated knowledge,True,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,32,standard,assim_direct,direct evidence,assimilated knowledge,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,33,best practice,assim_direct,direct evidence,assimilated knowledge,True,163
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,34,heuristic,assim_direct,direct evidence,assimilated knowledge,True,164
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,35,guardrail,assim_direct,direct evidence,assimilated knowledge,True,1
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,36,guideline,assim_direct,direct evidence,assimilated knowledge,True,0
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,37,convention,assim_direct,direct evidence,assimilated knowledge,True,126
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,38,common practice,assim_direct,direct evidence,assimilated knowledge,True,161
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,39,principle,assim_direct,direct evidence,assimilated knowledge,True,-159
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,1,40,consideration,assim_direct,direct evidence,assimilated knowledge,True,-112
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,43,best practice,theory_practical,theoretical,practical,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,44,principle,theory_practical,theoretical,practical,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,45,norm,theory_practical,theoretical,practical,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,46,design pattern,theory_practical,theoretical,practical,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,47,standard,theory_practical,theoretical,practical,False,198
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,48,rule of thumb,theory_practical,theoretical,practical,False,121
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,49,style guide,theory_practical,theoretical,practical,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,50,paradigm,theory_practical,theoretical,practical,False,-199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,51,convention,theory_practical,theoretical,practical,False,-199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,52,recommendation,theory_practical,theoretical,practical,False,92
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,53,common practice,theory_practical,theoretical,practical,False,-77
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,54,guardrail,theory_practical,theoretical,practical,False,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,55,requirement,theory_practical,theoretical,practical,False,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,56,guideline,theory_practical,theoretical,practical,False,-198
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,57,consideration,theory_practical,theoretical,practical,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,58,implication,theory_practical,theoretical,practical,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,2,59,heuristic,theory_practical,theoretical,practical,False,94
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,62,paradigm,broadness,specific,broad,False,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,63,requirement,broadness,specific,broad,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,64,style guide,broadness,specific,broad,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,65,principle,broadness,specific,broad,False,-199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,66,rule of thumb,broadness,specific,broad,False,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,67,design pattern,broadness,specific,broad,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,68,standard,broadness,specific,broad,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,69,norm,broadness,specific,broad,False,-198
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,70,recommendation,broadness,specific,broad,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,71,convention,broadness,specific,broad,False,-1
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,72,best practice,broadness,specific,broad,False,200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,73,guardrail,broadness,specific,broad,False,-200
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,74,consideration,broadness,specific,broad,False,1
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,75,heuristic,broadness,specific,broad,False,199
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,76,implication,broadness,specific,broad,False,-198
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,77,common practice,broadness,specific,broad,False,99
+3yvQ3Lwu0MRx7ycm4CJriumWYcV2,vis-guidelines-scale-true-run,3,78,guideline,broadness,specific,broad,False,-199
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,0,5,paradigm,strictness,loose,strict,False,-83
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,0,6,principle,strictness,loose,strict,False,99
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,0,7,best practice,strictness,loose,strict,False,199
@@ -203,6 +271,74 @@ participant_id,collection,block,trial_index,word,scale_id,scale_left_display,sca
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,3,76,requirement,theory_practical,theoretical,practical,False,77
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,3,77,paradigm,theory_practical,theoretical,practical,False,-52
 7YVtl7WBlye43pZqYFmQK3ZYPjg1,vis-guidelines-scale-true-run,3,78,style guide,theory_practical,theoretical,practical,False,57
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,5,style guide,theory_practical,practical,theoretical,True,-117
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,6,paradigm,theory_practical,practical,theoretical,True,10
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,7,implication,theory_practical,practical,theoretical,True,-58
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,8,convention,theory_practical,practical,theoretical,True,2
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,9,rule of thumb,theory_practical,practical,theoretical,True,-132
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,10,best practice,theory_practical,practical,theoretical,True,-150
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,11,principle,theory_practical,practical,theoretical,True,147
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,12,standard,theory_practical,practical,theoretical,True,137
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,13,common practice,theory_practical,practical,theoretical,True,-92
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,14,heuristic,theory_practical,practical,theoretical,True,-98
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,15,guideline,theory_practical,practical,theoretical,True,-136
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,16,consideration,theory_practical,practical,theoretical,True,0
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,17,recommendation,theory_practical,practical,theoretical,True,0
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,18,requirement,theory_practical,practical,theoretical,True,0
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,19,norm,theory_practical,practical,theoretical,True,107
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,20,guardrail,theory_practical,practical,theoretical,True,97
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,0,21,design pattern,theory_practical,practical,theoretical,True,-99
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,24,common practice,broadness,broad,specific,True,-35
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,25,design pattern,broadness,broad,specific,True,-34
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,26,guideline,broadness,broad,specific,True,75
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,27,standard,broadness,broad,specific,True,54
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,28,implication,broadness,broad,specific,True,56
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,29,recommendation,broadness,broad,specific,True,74
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,30,guardrail,broadness,broad,specific,True,78
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,31,principle,broadness,broad,specific,True,88
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,32,requirement,broadness,broad,specific,True,95
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,33,style guide,broadness,broad,specific,True,65
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,34,best practice,broadness,broad,specific,True,-67
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,35,consideration,broadness,broad,specific,True,50
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,36,heuristic,broadness,broad,specific,True,79
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,37,paradigm,broadness,broad,specific,True,-10
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,38,rule of thumb,broadness,broad,specific,True,136
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,39,norm,broadness,broad,specific,True,188
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,1,40,convention,broadness,broad,specific,True,-3
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,43,norm,strictness,strict,loose,True,-186
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,44,requirement,strictness,strict,loose,True,-185
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,45,principle,strictness,strict,loose,True,-132
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,46,standard,strictness,strict,loose,True,-113
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,47,design pattern,strictness,strict,loose,True,89
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,48,rule of thumb,strictness,strict,loose,True,68
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,49,guideline,strictness,strict,loose,True,-44
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,50,convention,strictness,strict,loose,True,179
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,51,common practice,strictness,strict,loose,True,170
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,52,consideration,strictness,strict,loose,True,154
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,53,best practice,strictness,strict,loose,True,137
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,54,implication,strictness,strict,loose,True,53
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,55,style guide,strictness,strict,loose,True,81
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,56,paradigm,strictness,strict,loose,True,0
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,57,recommendation,strictness,strict,loose,True,160
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,58,guardrail,strictness,strict,loose,True,-73
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,2,59,heuristic,strictness,strict,loose,True,84
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,62,requirement,assim_direct,assimilated knowledge,direct evidence,False,88
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,63,guideline,assim_direct,assimilated knowledge,direct evidence,False,-94
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,64,implication,assim_direct,assimilated knowledge,direct evidence,False,12
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,65,standard,assim_direct,assimilated knowledge,direct evidence,False,84
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,66,best practice,assim_direct,assimilated knowledge,direct evidence,False,-74
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,67,consideration,assim_direct,assimilated knowledge,direct evidence,False,4
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,68,recommendation,assim_direct,assimilated knowledge,direct evidence,False,-57
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,69,paradigm,assim_direct,assimilated knowledge,direct evidence,False,45
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,70,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-38
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,71,style guide,assim_direct,assimilated knowledge,direct evidence,False,-81
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,72,guardrail,assim_direct,assimilated knowledge,direct evidence,False,137
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,73,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-1
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,74,convention,assim_direct,assimilated knowledge,direct evidence,False,-104
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,75,principle,assim_direct,assimilated knowledge,direct evidence,False,185
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,76,design pattern,assim_direct,assimilated knowledge,direct evidence,False,-24
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,77,common practice,assim_direct,assimilated knowledge,direct evidence,False,-70
+CHQinQu2J1V2XpmnXBpaGdZy34G3,vis-guidelines-scale-true-run,3,78,norm,assim_direct,assimilated knowledge,direct evidence,False,118
 DruNyv3cxQaLk3ogbGklxTVIJIg2,vis-guidelines-scale-true-run,0,5,best practice,broadness,specific,broad,False,-95
 DruNyv3cxQaLk3ogbGklxTVIJIg2,vis-guidelines-scale-true-run,0,6,principle,broadness,specific,broad,False,1
 DruNyv3cxQaLk3ogbGklxTVIJIg2,vis-guidelines-scale-true-run,0,7,paradigm,broadness,specific,broad,False,-122
@@ -339,6 +475,142 @@ F7lvZyKHuPgIHsAUkldQcpG0ku22,vis-guidelines-scale-true-run,3,75,guardrail,assim_
 F7lvZyKHuPgIHsAUkldQcpG0ku22,vis-guidelines-scale-true-run,3,76,standard,assim_direct,assimilated knowledge,direct evidence,False,-105
 F7lvZyKHuPgIHsAUkldQcpG0ku22,vis-guidelines-scale-true-run,3,77,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-105
 F7lvZyKHuPgIHsAUkldQcpG0ku22,vis-guidelines-scale-true-run,3,78,norm,assim_direct,assimilated knowledge,direct evidence,False,-105
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,5,principle,strictness,strict,loose,True,49
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,6,heuristic,strictness,strict,loose,True,-132
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,7,paradigm,strictness,strict,loose,True,0
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,8,guideline,strictness,strict,loose,True,-147
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,9,best practice,strictness,strict,loose,True,-129
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,10,consideration,strictness,strict,loose,True,84
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,11,guardrail,strictness,strict,loose,True,47
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,12,norm,strictness,strict,loose,True,-165
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,13,implication,strictness,strict,loose,True,-182
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,14,requirement,strictness,strict,loose,True,-161
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,15,standard,strictness,strict,loose,True,56
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,16,convention,strictness,strict,loose,True,18
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,17,design pattern,strictness,strict,loose,True,26
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,18,rule of thumb,strictness,strict,loose,True,114
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,19,common practice,strictness,strict,loose,True,-3
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,20,style guide,strictness,strict,loose,True,-44
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,0,21,recommendation,strictness,strict,loose,True,-34
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,24,standard,broadness,broad,specific,True,-144
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,25,convention,broadness,broad,specific,True,32
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,26,requirement,broadness,broad,specific,True,122
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,27,paradigm,broadness,broad,specific,True,-132
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,28,norm,broadness,broad,specific,True,140
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,29,implication,broadness,broad,specific,True,131
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,30,best practice,broadness,broad,specific,True,-90
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,31,rule of thumb,broadness,broad,specific,True,-183
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,32,guideline,broadness,broad,specific,True,157
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,33,principle,broadness,broad,specific,True,98
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,34,consideration,broadness,broad,specific,True,-22
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,35,heuristic,broadness,broad,specific,True,142
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,36,recommendation,broadness,broad,specific,True,81
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,37,guardrail,broadness,broad,specific,True,-102
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,38,design pattern,broadness,broad,specific,True,52
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,39,style guide,broadness,broad,specific,True,129
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,1,40,common practice,broadness,broad,specific,True,-60
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,43,style guide,assim_direct,direct evidence,assimilated knowledge,True,53
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,44,recommendation,assim_direct,direct evidence,assimilated knowledge,True,81
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,45,paradigm,assim_direct,direct evidence,assimilated knowledge,True,-76
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,46,common practice,assim_direct,direct evidence,assimilated knowledge,True,32
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,47,norm,assim_direct,direct evidence,assimilated knowledge,True,-124
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,48,heuristic,assim_direct,direct evidence,assimilated knowledge,True,-153
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,49,guideline,assim_direct,direct evidence,assimilated knowledge,True,-120
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,50,principle,assim_direct,direct evidence,assimilated knowledge,True,-160
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,51,implication,assim_direct,direct evidence,assimilated knowledge,True,-64
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,52,design pattern,assim_direct,direct evidence,assimilated knowledge,True,12
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,53,best practice,assim_direct,direct evidence,assimilated knowledge,True,108
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,54,requirement,assim_direct,direct evidence,assimilated knowledge,True,-164
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,55,convention,assim_direct,direct evidence,assimilated knowledge,True,28
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,56,standard,assim_direct,direct evidence,assimilated knowledge,True,89
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,57,rule of thumb,assim_direct,direct evidence,assimilated knowledge,True,173
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,58,guardrail,assim_direct,direct evidence,assimilated knowledge,True,-63
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,2,59,consideration,assim_direct,direct evidence,assimilated knowledge,True,-103
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,62,requirement,theory_practical,practical,theoretical,True,101
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,63,rule of thumb,theory_practical,practical,theoretical,True,-115
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,64,design pattern,theory_practical,practical,theoretical,True,-1
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,65,implication,theory_practical,practical,theoretical,True,91
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,66,consideration,theory_practical,practical,theoretical,True,158
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,67,norm,theory_practical,practical,theoretical,True,86
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,68,guardrail,theory_practical,practical,theoretical,True,-40
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,69,standard,theory_practical,practical,theoretical,True,-75
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,70,heuristic,theory_practical,practical,theoretical,True,48
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,71,paradigm,theory_practical,practical,theoretical,True,178
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,72,guideline,theory_practical,practical,theoretical,True,0
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,73,style guide,theory_practical,practical,theoretical,True,-64
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,74,convention,theory_practical,practical,theoretical,True,17
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,75,recommendation,theory_practical,practical,theoretical,True,-125
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,76,common practice,theory_practical,practical,theoretical,True,-140
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,77,best practice,theory_practical,practical,theoretical,True,-111
+Fpw6uWxOZfdlyJ1ULOkCvAyoSLl2,vis-guidelines-scale-true-run,3,78,principle,theory_practical,practical,theoretical,True,35
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,5,principle,assim_direct,assimilated knowledge,direct evidence,False,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,6,style guide,assim_direct,assimilated knowledge,direct evidence,False,101
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,7,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-107
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,8,best practice,assim_direct,assimilated knowledge,direct evidence,False,-199
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,9,requirement,assim_direct,assimilated knowledge,direct evidence,False,198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,10,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-112
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,11,guardrail,assim_direct,assimilated knowledge,direct evidence,False,0
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,12,recommendation,assim_direct,assimilated knowledge,direct evidence,False,0
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,13,common practice,assim_direct,assimilated knowledge,direct evidence,False,-200
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,14,consideration,assim_direct,assimilated knowledge,direct evidence,False,99
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,15,implication,assim_direct,assimilated knowledge,direct evidence,False,200
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,16,design pattern,assim_direct,assimilated knowledge,direct evidence,False,97
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,17,norm,assim_direct,assimilated knowledge,direct evidence,False,-200
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,18,paradigm,assim_direct,assimilated knowledge,direct evidence,False,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,19,convention,assim_direct,assimilated knowledge,direct evidence,False,-103
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,20,guideline,assim_direct,assimilated knowledge,direct evidence,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,0,21,standard,assim_direct,assimilated knowledge,direct evidence,False,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,24,best practice,broadness,specific,broad,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,25,common practice,broadness,specific,broad,False,107
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,26,norm,broadness,specific,broad,False,-105
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,27,paradigm,broadness,specific,broad,False,-93
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,28,heuristic,broadness,specific,broad,False,108
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,29,principle,broadness,specific,broad,False,-102
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,30,requirement,broadness,specific,broad,False,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,31,recommendation,broadness,specific,broad,False,196
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,32,convention,broadness,specific,broad,False,104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,33,rule of thumb,broadness,specific,broad,False,102
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,34,consideration,broadness,specific,broad,False,199
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,35,design pattern,broadness,specific,broad,False,0
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,36,style guide,broadness,specific,broad,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,37,standard,broadness,specific,broad,False,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,38,guardrail,broadness,specific,broad,False,-99
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,39,implication,broadness,specific,broad,False,109
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,1,40,guideline,broadness,specific,broad,False,105
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,43,guardrail,strictness,strict,loose,True,-101
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,44,requirement,strictness,strict,loose,True,-200
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,45,heuristic,strictness,strict,loose,True,110
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,46,common practice,strictness,strict,loose,True,-1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,47,norm,strictness,strict,loose,True,0
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,48,recommendation,strictness,strict,loose,True,-115
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,49,style guide,strictness,strict,loose,True,107
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,50,implication,strictness,strict,loose,True,107
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,51,rule of thumb,strictness,strict,loose,True,198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,52,principle,strictness,strict,loose,True,-195
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,53,convention,strictness,strict,loose,True,106
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,54,consideration,strictness,strict,loose,True,106
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,55,standard,strictness,strict,loose,True,-103
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,56,paradigm,strictness,strict,loose,True,-198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,57,best practice,strictness,strict,loose,True,104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,58,design pattern,strictness,strict,loose,True,104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,2,59,guideline,strictness,strict,loose,True,104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,62,guideline,theory_practical,theoretical,practical,False,197
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,63,guardrail,theory_practical,theoretical,practical,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,64,rule of thumb,theory_practical,theoretical,practical,False,198
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,65,principle,theory_practical,theoretical,practical,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,66,consideration,theory_practical,theoretical,practical,False,104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,67,standard,theory_practical,theoretical,practical,False,-1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,68,paradigm,theory_practical,theoretical,practical,False,0
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,69,norm,theory_practical,theoretical,practical,False,-104
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,70,convention,theory_practical,theoretical,practical,False,108
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,71,requirement,theory_practical,theoretical,practical,False,-102
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,72,style guide,theory_practical,theoretical,practical,False,1
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,73,best practice,theory_practical,theoretical,practical,False,107
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,74,heuristic,theory_practical,theoretical,practical,False,197
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,75,design pattern,theory_practical,theoretical,practical,False,99
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,76,implication,theory_practical,theoretical,practical,False,-98
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,77,recommendation,theory_practical,theoretical,practical,False,2
+Hd3rgEZckCcmGyM4ZSVclIxY8BC2,vis-guidelines-scale-true-run,3,78,common practice,theory_practical,theoretical,practical,False,198
 IYGHf922OufQb5BZNSSQbaYdtEb2,vis-guidelines-scale-true-run,0,5,principle,theory_practical,theoretical,practical,False,-155
 IYGHf922OufQb5BZNSSQbaYdtEb2,vis-guidelines-scale-true-run,0,6,best practice,theory_practical,theoretical,practical,False,183
 IYGHf922OufQb5BZNSSQbaYdtEb2,vis-guidelines-scale-true-run,0,7,standard,theory_practical,theoretical,practical,False,34
@@ -475,6 +747,142 @@ M90FNPZWtufAOOCGyhLNGleRsyr1,vis-guidelines-scale-true-run,3,75,best practice,st
 M90FNPZWtufAOOCGyhLNGleRsyr1,vis-guidelines-scale-true-run,3,76,heuristic,strictness,strict,loose,True,1
 M90FNPZWtufAOOCGyhLNGleRsyr1,vis-guidelines-scale-true-run,3,77,guideline,strictness,strict,loose,True,41
 M90FNPZWtufAOOCGyhLNGleRsyr1,vis-guidelines-scale-true-run,3,78,common practice,strictness,strict,loose,True,86
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,5,guideline,strictness,strict,loose,True,-102
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,6,guardrail,strictness,strict,loose,True,-150
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,7,common practice,strictness,strict,loose,True,143
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,8,heuristic,strictness,strict,loose,True,70
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,9,recommendation,strictness,strict,loose,True,110
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,10,style guide,strictness,strict,loose,True,99
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,11,implication,strictness,strict,loose,True,-104
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,12,consideration,strictness,strict,loose,True,1
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,13,requirement,strictness,strict,loose,True,-130
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,14,paradigm,strictness,strict,loose,True,-32
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,15,principle,strictness,strict,loose,True,-52
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,16,design pattern,strictness,strict,loose,True,-63
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,17,rule of thumb,strictness,strict,loose,True,176
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,18,standard,strictness,strict,loose,True,-104
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,19,convention,strictness,strict,loose,True,104
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,20,norm,strictness,strict,loose,True,-95
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,0,21,best practice,strictness,strict,loose,True,2
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,24,common practice,broadness,broad,specific,True,-90
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,25,guideline,broadness,broad,specific,True,0
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,26,convention,broadness,broad,specific,True,0
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,27,guardrail,broadness,broad,specific,True,41
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,28,paradigm,broadness,broad,specific,True,48
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,29,design pattern,broadness,broad,specific,True,61
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,30,implication,broadness,broad,specific,True,75
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,31,consideration,broadness,broad,specific,True,-72
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,32,best practice,broadness,broad,specific,True,20
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,33,heuristic,broadness,broad,specific,True,29
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,34,style guide,broadness,broad,specific,True,-32
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,35,principle,broadness,broad,specific,True,-94
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,36,recommendation,broadness,broad,specific,True,-63
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,37,standard,broadness,broad,specific,True,86
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,38,requirement,broadness,broad,specific,True,114
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,39,rule of thumb,broadness,broad,specific,True,-124
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,1,40,norm,broadness,broad,specific,True,40
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,43,design pattern,assim_direct,assimilated knowledge,direct evidence,False,-147
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,44,implication,assim_direct,assimilated knowledge,direct evidence,False,86
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,45,principle,assim_direct,assimilated knowledge,direct evidence,False,-70
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,46,style guide,assim_direct,assimilated knowledge,direct evidence,False,38
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,47,requirement,assim_direct,assimilated knowledge,direct evidence,False,55
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,48,consideration,assim_direct,assimilated knowledge,direct evidence,False,-82
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,49,guideline,assim_direct,assimilated knowledge,direct evidence,False,25
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,50,best practice,assim_direct,assimilated knowledge,direct evidence,False,-119
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,51,common practice,assim_direct,assimilated knowledge,direct evidence,False,-84
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,52,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-125
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,53,convention,assim_direct,assimilated knowledge,direct evidence,False,-58
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,54,norm,assim_direct,assimilated knowledge,direct evidence,False,-91
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,55,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,68
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,56,recommendation,assim_direct,assimilated knowledge,direct evidence,False,-34
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,57,standard,assim_direct,assimilated knowledge,direct evidence,False,-60
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,58,paradigm,assim_direct,assimilated knowledge,direct evidence,False,-91
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,2,59,guardrail,assim_direct,assimilated knowledge,direct evidence,False,66
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,62,implication,theory_practical,theoretical,practical,False,97
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,63,paradigm,theory_practical,theoretical,practical,False,-143
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,64,heuristic,theory_practical,theoretical,practical,False,-92
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,65,guardrail,theory_practical,theoretical,practical,False,142
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,66,guideline,theory_practical,theoretical,practical,False,91
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,67,design pattern,theory_practical,theoretical,practical,False,-121
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,68,requirement,theory_practical,theoretical,practical,False,51
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,69,style guide,theory_practical,theoretical,practical,False,107
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,70,norm,theory_practical,theoretical,practical,False,-40
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,71,recommendation,theory_practical,theoretical,practical,False,24
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,72,best practice,theory_practical,theoretical,practical,False,71
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,73,convention,theory_practical,theoretical,practical,False,-53
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,74,common practice,theory_practical,theoretical,practical,False,166
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,75,rule of thumb,theory_practical,theoretical,practical,False,181
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,76,principle,theory_practical,theoretical,practical,False,-126
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,77,consideration,theory_practical,theoretical,practical,False,-64
+N0I2dyEsXXcctE2c6wvjppWfNAo2,vis-guidelines-scale-true-run,3,78,standard,theory_practical,theoretical,practical,False,-1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,5,norm,strictness,strict,loose,True,1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,6,consideration,strictness,strict,loose,True,-180
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,7,design pattern,strictness,strict,loose,True,75
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,8,guardrail,strictness,strict,loose,True,-172
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,9,heuristic,strictness,strict,loose,True,102
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,10,requirement,strictness,strict,loose,True,-200
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,11,paradigm,strictness,strict,loose,True,-108
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,12,recommendation,strictness,strict,loose,True,107
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,13,principle,strictness,strict,loose,True,-99
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,14,convention,strictness,strict,loose,True,-57
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,15,implication,strictness,strict,loose,True,-142
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,16,standard,strictness,strict,loose,True,-177
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,17,best practice,strictness,strict,loose,True,-32
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,18,common practice,strictness,strict,loose,True,59
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,19,rule of thumb,strictness,strict,loose,True,188
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,20,guideline,strictness,strict,loose,True,-1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,0,21,style guide,strictness,strict,loose,True,62
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,24,requirement,broadness,broad,specific,True,192
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,25,best practice,broadness,broad,specific,True,-111
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,26,standard,broadness,broad,specific,True,148
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,27,guideline,broadness,broad,specific,True,-101
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,28,consideration,broadness,broad,specific,True,79
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,29,principle,broadness,broad,specific,True,69
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,30,common practice,broadness,broad,specific,True,-134
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,31,style guide,broadness,broad,specific,True,-22
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,32,norm,broadness,broad,specific,True,0
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,33,heuristic,broadness,broad,specific,True,90
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,34,implication,broadness,broad,specific,True,96
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,35,convention,broadness,broad,specific,True,97
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,36,guardrail,broadness,broad,specific,True,97
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,37,paradigm,broadness,broad,specific,True,-111
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,38,rule of thumb,broadness,broad,specific,True,-138
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,39,design pattern,broadness,broad,specific,True,-103
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,1,40,recommendation,broadness,broad,specific,True,-26
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,43,paradigm,assim_direct,assimilated knowledge,direct evidence,False,44
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,44,recommendation,assim_direct,assimilated knowledge,direct evidence,False,44
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,45,design pattern,assim_direct,assimilated knowledge,direct evidence,False,-79
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,46,convention,assim_direct,assimilated knowledge,direct evidence,False,-83
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,47,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-94
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,48,guideline,assim_direct,assimilated knowledge,direct evidence,False,-90
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,49,implication,assim_direct,assimilated knowledge,direct evidence,False,102
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,50,common practice,assim_direct,assimilated knowledge,direct evidence,False,-132
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,51,norm,assim_direct,assimilated knowledge,direct evidence,False,-90
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,52,requirement,assim_direct,assimilated knowledge,direct evidence,False,85
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,53,style guide,assim_direct,assimilated knowledge,direct evidence,False,83
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,54,best practice,assim_direct,assimilated knowledge,direct evidence,False,-88
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,55,consideration,assim_direct,assimilated knowledge,direct evidence,False,68
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,56,standard,assim_direct,assimilated knowledge,direct evidence,False,67
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,57,heuristic,assim_direct,assimilated knowledge,direct evidence,False,84
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,58,guardrail,assim_direct,assimilated knowledge,direct evidence,False,81
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,2,59,principle,assim_direct,assimilated knowledge,direct evidence,False,78
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,62,principle,theory_practical,practical,theoretical,True,151
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,63,rule of thumb,theory_practical,practical,theoretical,True,145
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,64,style guide,theory_practical,practical,theoretical,True,148
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,65,requirement,theory_practical,practical,theoretical,True,-115
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,66,best practice,theory_practical,practical,theoretical,True,-1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,67,guardrail,theory_practical,practical,theoretical,True,-113
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,68,paradigm,theory_practical,practical,theoretical,True,-113
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,69,convention,theory_practical,practical,theoretical,True,-122
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,70,heuristic,theory_practical,practical,theoretical,True,-125
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,71,common practice,theory_practical,practical,theoretical,True,0
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,72,consideration,theory_practical,practical,theoretical,True,0
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,73,implication,theory_practical,practical,theoretical,True,0
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,74,guideline,theory_practical,practical,theoretical,True,96
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,75,design pattern,theory_practical,practical,theoretical,True,-143
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,76,recommendation,theory_practical,practical,theoretical,True,1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,77,norm,theory_practical,practical,theoretical,True,1
+N0qG1qXDzIbkXLtDozdOX7dGjOz2,vis-guidelines-scale-true-run,3,78,standard,theory_practical,practical,theoretical,True,1
 NIKgxApAh8X87m9atrVSKzjpR1T2,vis-guidelines-scale-true-run,0,5,guideline,assim_direct,direct evidence,assimilated knowledge,True,-105
 NIKgxApAh8X87m9atrVSKzjpR1T2,vis-guidelines-scale-true-run,0,6,requirement,assim_direct,direct evidence,assimilated knowledge,True,-109
 NIKgxApAh8X87m9atrVSKzjpR1T2,vis-guidelines-scale-true-run,0,7,principle,assim_direct,direct evidence,assimilated knowledge,True,177
@@ -747,6 +1155,210 @@ TvjzqeUXzJfmrTDVq0BFTXQ9Shs1,vis-guidelines-scale-true-run,3,75,requirement,broa
 TvjzqeUXzJfmrTDVq0BFTXQ9Shs1,vis-guidelines-scale-true-run,3,76,style guide,broadness,broad,specific,True,190
 TvjzqeUXzJfmrTDVq0BFTXQ9Shs1,vis-guidelines-scale-true-run,3,77,rule of thumb,broadness,broad,specific,True,-140
 TvjzqeUXzJfmrTDVq0BFTXQ9Shs1,vis-guidelines-scale-true-run,3,78,guideline,broadness,broad,specific,True,-165
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,5,common practice,broadness,specific,broad,False,192
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,6,guideline,broadness,specific,broad,False,-42
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,7,design pattern,broadness,specific,broad,False,181
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,8,best practice,broadness,specific,broad,False,193
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,9,guardrail,broadness,specific,broad,False,-21
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,10,standard,broadness,specific,broad,False,80
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,11,consideration,broadness,specific,broad,False,-76
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,12,rule of thumb,broadness,specific,broad,False,169
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,13,paradigm,broadness,specific,broad,False,192
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,14,principle,broadness,specific,broad,False,189
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,15,implication,broadness,specific,broad,False,-4
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,16,requirement,broadness,specific,broad,False,-92
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,17,norm,broadness,specific,broad,False,-134
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,18,style guide,broadness,specific,broad,False,-188
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,19,heuristic,broadness,specific,broad,False,-176
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,20,convention,broadness,specific,broad,False,93
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,0,21,recommendation,broadness,specific,broad,False,109
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,24,standard,strictness,loose,strict,False,192
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,25,principle,strictness,loose,strict,False,-2
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,26,convention,strictness,loose,strict,False,-115
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,27,implication,strictness,loose,strict,False,0
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,28,consideration,strictness,loose,strict,False,-51
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,29,heuristic,strictness,loose,strict,False,168
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,30,common practice,strictness,loose,strict,False,-59
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,31,best practice,strictness,loose,strict,False,-57
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,32,guardrail,strictness,loose,strict,False,175
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,33,style guide,strictness,loose,strict,False,189
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,34,norm,strictness,loose,strict,False,195
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,35,rule of thumb,strictness,loose,strict,False,-195
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,36,guideline,strictness,loose,strict,False,127
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,37,recommendation,strictness,loose,strict,False,-127
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,38,paradigm,strictness,loose,strict,False,-156
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,39,design pattern,strictness,loose,strict,False,143
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,1,40,requirement,strictness,loose,strict,False,196
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,43,guideline,theory_practical,theoretical,practical,False,105
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,44,consideration,theory_practical,theoretical,practical,False,156
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,45,rule of thumb,theory_practical,theoretical,practical,False,145
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,46,recommendation,theory_practical,theoretical,practical,False,106
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,47,heuristic,theory_practical,theoretical,practical,False,-87
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,48,design pattern,theory_practical,theoretical,practical,False,152
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,49,style guide,theory_practical,theoretical,practical,False,192
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,50,implication,theory_practical,theoretical,practical,False,-1
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,51,guardrail,theory_practical,theoretical,practical,False,55
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,52,best practice,theory_practical,theoretical,practical,False,193
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,53,convention,theory_practical,theoretical,practical,False,43
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,54,norm,theory_practical,theoretical,practical,False,95
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,55,requirement,theory_practical,theoretical,practical,False,138
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,56,common practice,theory_practical,theoretical,practical,False,195
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,57,standard,theory_practical,theoretical,practical,False,-79
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,58,paradigm,theory_practical,theoretical,practical,False,-147
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,2,59,principle,theory_practical,theoretical,practical,False,-91
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,62,consideration,assim_direct,assimilated knowledge,direct evidence,False,72
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,63,paradigm,assim_direct,assimilated knowledge,direct evidence,False,126
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,64,style guide,assim_direct,assimilated knowledge,direct evidence,False,-2
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,65,convention,assim_direct,assimilated knowledge,direct evidence,False,-175
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,66,guideline,assim_direct,assimilated knowledge,direct evidence,False,141
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,67,requirement,assim_direct,assimilated knowledge,direct evidence,False,160
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,68,guardrail,assim_direct,assimilated knowledge,direct evidence,False,192
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,69,design pattern,assim_direct,assimilated knowledge,direct evidence,False,-164
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,70,implication,assim_direct,assimilated knowledge,direct evidence,False,0
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,71,standard,assim_direct,assimilated knowledge,direct evidence,False,-168
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,72,principle,assim_direct,assimilated knowledge,direct evidence,False,103
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,73,recommendation,assim_direct,assimilated knowledge,direct evidence,False,-139
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,74,best practice,assim_direct,assimilated knowledge,direct evidence,False,-178
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,75,common practice,assim_direct,assimilated knowledge,direct evidence,False,-196
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,76,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-196
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,77,norm,assim_direct,assimilated knowledge,direct evidence,False,0
+V1Q8sMHLdbZBXwml07K0OD7GVup2,vis-guidelines-scale-true-run,3,78,heuristic,assim_direct,assimilated knowledge,direct evidence,False,188
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,5,norm,strictness,strict,loose,True,-90
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,6,consideration,strictness,strict,loose,True,117
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,7,heuristic,strictness,strict,loose,True,-31
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,8,requirement,strictness,strict,loose,True,-37
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,9,guideline,strictness,strict,loose,True,39
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,10,principle,strictness,strict,loose,True,-26
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,11,style guide,strictness,strict,loose,True,-5
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,12,guardrail,strictness,strict,loose,True,-42
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,13,implication,strictness,strict,loose,True,-2
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,14,design pattern,strictness,strict,loose,True,72
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,15,common practice,strictness,strict,loose,True,60
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,16,convention,strictness,strict,loose,True,22
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,17,rule of thumb,strictness,strict,loose,True,46
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,18,paradigm,strictness,strict,loose,True,-87
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,19,best practice,strictness,strict,loose,True,-36
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,20,recommendation,strictness,strict,loose,True,36
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,0,21,standard,strictness,strict,loose,True,-186
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,24,recommendation,theory_practical,practical,theoretical,True,-70
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,25,style guide,theory_practical,practical,theoretical,True,-110
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,26,principle,theory_practical,practical,theoretical,True,33
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,27,implication,theory_practical,practical,theoretical,True,-2
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,28,requirement,theory_practical,practical,theoretical,True,-116
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,29,rule of thumb,theory_practical,practical,theoretical,True,-145
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,30,norm,theory_practical,practical,theoretical,True,-4
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,31,heuristic,theory_practical,practical,theoretical,True,-118
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,32,guideline,theory_practical,practical,theoretical,True,-178
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,33,paradigm,theory_practical,practical,theoretical,True,131
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,34,guardrail,theory_practical,practical,theoretical,True,46
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,35,consideration,theory_practical,practical,theoretical,True,-50
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,36,convention,theory_practical,practical,theoretical,True,89
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,37,design pattern,theory_practical,practical,theoretical,True,91
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,38,common practice,theory_practical,practical,theoretical,True,-140
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,39,standard,theory_practical,practical,theoretical,True,-156
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,1,40,best practice,theory_practical,practical,theoretical,True,-82
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,43,design pattern,assim_direct,direct evidence,assimilated knowledge,True,114
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,44,consideration,assim_direct,direct evidence,assimilated knowledge,True,112
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,45,best practice,assim_direct,direct evidence,assimilated knowledge,True,141
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,46,implication,assim_direct,direct evidence,assimilated knowledge,True,152
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,47,heuristic,assim_direct,direct evidence,assimilated knowledge,True,103
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,48,common practice,assim_direct,direct evidence,assimilated knowledge,True,-38
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,49,standard,assim_direct,direct evidence,assimilated knowledge,True,181
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,50,requirement,assim_direct,direct evidence,assimilated knowledge,True,-42
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,51,convention,assim_direct,direct evidence,assimilated knowledge,True,-18
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,52,principle,assim_direct,direct evidence,assimilated knowledge,True,157
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,53,recommendation,assim_direct,direct evidence,assimilated knowledge,True,55
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,54,guideline,assim_direct,direct evidence,assimilated knowledge,True,121
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,55,rule of thumb,assim_direct,direct evidence,assimilated knowledge,True,97
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,56,guardrail,assim_direct,direct evidence,assimilated knowledge,True,26
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,57,paradigm,assim_direct,direct evidence,assimilated knowledge,True,118
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,58,style guide,assim_direct,direct evidence,assimilated knowledge,True,-44
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,2,59,norm,assim_direct,direct evidence,assimilated knowledge,True,184
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,62,guideline,broadness,broad,specific,True,158
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,63,principle,broadness,broad,specific,True,91
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,64,heuristic,broadness,broad,specific,True,149
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,65,best practice,broadness,broad,specific,True,63
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,66,norm,broadness,broad,specific,True,15
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,67,consideration,broadness,broad,specific,True,-49
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,68,design pattern,broadness,broad,specific,True,-179
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,69,rule of thumb,broadness,broad,specific,True,67
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,70,recommendation,broadness,broad,specific,True,-45
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,71,requirement,broadness,broad,specific,True,90
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,72,implication,broadness,broad,specific,True,80
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,73,common practice,broadness,broad,specific,True,22
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,74,paradigm,broadness,broad,specific,True,-183
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,75,style guide,broadness,broad,specific,True,-155
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,76,standard,broadness,broad,specific,True,61
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,77,guardrail,broadness,broad,specific,True,-73
+VP5zIqhg3wRVAUrqsN9MBXXIw982,vis-guidelines-scale-true-run,3,78,convention,broadness,broad,specific,True,-145
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,5,consideration,assim_direct,direct evidence,assimilated knowledge,True,103
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,6,common practice,assim_direct,direct evidence,assimilated knowledge,True,-123
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,7,guardrail,assim_direct,direct evidence,assimilated knowledge,True,156
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,8,guideline,assim_direct,direct evidence,assimilated knowledge,True,169
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,9,implication,assim_direct,direct evidence,assimilated knowledge,True,63
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,10,style guide,assim_direct,direct evidence,assimilated knowledge,True,146
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,11,rule of thumb,assim_direct,direct evidence,assimilated knowledge,True,98
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,12,convention,assim_direct,direct evidence,assimilated knowledge,True,-80
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,13,recommendation,assim_direct,direct evidence,assimilated knowledge,True,75
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,14,standard,assim_direct,direct evidence,assimilated knowledge,True,-1
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,15,best practice,assim_direct,direct evidence,assimilated knowledge,True,175
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,16,paradigm,assim_direct,direct evidence,assimilated knowledge,True,175
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,17,requirement,assim_direct,direct evidence,assimilated knowledge,True,192
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,18,design pattern,assim_direct,direct evidence,assimilated knowledge,True,-172
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,19,heuristic,assim_direct,direct evidence,assimilated knowledge,True,93
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,20,norm,assim_direct,direct evidence,assimilated knowledge,True,190
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,0,21,principle,assim_direct,direct evidence,assimilated knowledge,True,190
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,24,standard,strictness,loose,strict,False,190
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,25,implication,strictness,loose,strict,False,-55
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,26,style guide,strictness,loose,strict,False,-105
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,27,guardrail,strictness,loose,strict,False,152
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,28,convention,strictness,loose,strict,False,197
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,29,principle,strictness,loose,strict,False,198
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,30,guideline,strictness,loose,strict,False,-69
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,31,recommendation,strictness,loose,strict,False,-162
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,32,norm,strictness,loose,strict,False,192
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,33,rule of thumb,strictness,loose,strict,False,168
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,34,requirement,strictness,loose,strict,False,192
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,35,consideration,strictness,loose,strict,False,51
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,36,best practice,strictness,loose,strict,False,-98
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,37,common practice,strictness,loose,strict,False,-106
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,38,design pattern,strictness,loose,strict,False,-64
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,39,heuristic,strictness,loose,strict,False,73
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,1,40,paradigm,strictness,loose,strict,False,136
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,43,guardrail,theory_practical,theoretical,practical,False,0
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,44,norm,theory_practical,theoretical,practical,False,89
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,45,guideline,theory_practical,theoretical,practical,False,166
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,46,recommendation,theory_practical,theoretical,practical,False,-114
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,47,requirement,theory_practical,theoretical,practical,False,-119
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,48,standard,theory_practical,theoretical,practical,False,-120
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,49,common practice,theory_practical,theoretical,practical,False,91
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,50,style guide,theory_practical,theoretical,practical,False,170
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,51,implication,theory_practical,theoretical,practical,False,-144
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,52,rule of thumb,theory_practical,theoretical,practical,False,-154
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,53,consideration,theory_practical,theoretical,practical,False,79
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,54,convention,theory_practical,theoretical,practical,False,-188
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,55,heuristic,theory_practical,theoretical,practical,False,-1
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,56,paradigm,theory_practical,theoretical,practical,False,89
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,57,best practice,theory_practical,theoretical,practical,False,196
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,58,design pattern,theory_practical,theoretical,practical,False,196
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,2,59,principle,theory_practical,theoretical,practical,False,-72
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,62,common practice,broadness,broad,specific,True,-155
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,63,convention,broadness,broad,specific,True,-186
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,64,standard,broadness,broad,specific,True,-190
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,65,rule of thumb,broadness,broad,specific,True,-174
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,66,principle,broadness,broad,specific,True,-143
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,67,norm,broadness,broad,specific,True,-154
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,68,implication,broadness,broad,specific,True,153
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,69,guardrail,broadness,broad,specific,True,2
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,70,consideration,broadness,broad,specific,True,164
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,71,best practice,broadness,broad,specific,True,192
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,72,paradigm,broadness,broad,specific,True,-114
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,73,guideline,broadness,broad,specific,True,-1
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,74,style guide,broadness,broad,specific,True,186
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,75,requirement,broadness,broad,specific,True,104
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,76,heuristic,broadness,broad,specific,True,-126
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,77,design pattern,broadness,broad,specific,True,-154
+WXdPMj0wifRnq9R2l331X9fjdYO2,vis-guidelines-scale-true-run,3,78,recommendation,broadness,broad,specific,True,105
 YFhFoWQOpYYOX2knT5bGCscFX0l1,vis-guidelines-scale-true-run,0,5,guardrail,assim_direct,assimilated knowledge,direct evidence,False,46
 YFhFoWQOpYYOX2knT5bGCscFX0l1,vis-guidelines-scale-true-run,0,6,norm,assim_direct,assimilated knowledge,direct evidence,False,24
 YFhFoWQOpYYOX2knT5bGCscFX0l1,vis-guidelines-scale-true-run,0,7,convention,assim_direct,assimilated knowledge,direct evidence,False,-35
@@ -883,6 +1495,74 @@ bk73M8zzHof39pqiE07AFyiMCst2,vis-guidelines-scale-true-run,3,75,best practice,st
 bk73M8zzHof39pqiE07AFyiMCst2,vis-guidelines-scale-true-run,3,76,guardrail,strictness,loose,strict,False,-4
 bk73M8zzHof39pqiE07AFyiMCst2,vis-guidelines-scale-true-run,3,77,paradigm,strictness,loose,strict,False,-44
 bk73M8zzHof39pqiE07AFyiMCst2,vis-guidelines-scale-true-run,3,78,style guide,strictness,loose,strict,False,46
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,5,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-170
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,6,implication,assim_direct,assimilated knowledge,direct evidence,False,-79
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,7,guideline,assim_direct,assimilated knowledge,direct evidence,False,136
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,8,best practice,assim_direct,assimilated knowledge,direct evidence,False,138
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,9,common practice,assim_direct,assimilated knowledge,direct evidence,False,-78
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,10,principle,assim_direct,assimilated knowledge,direct evidence,False,128
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,11,requirement,assim_direct,assimilated knowledge,direct evidence,False,185
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,12,guardrail,assim_direct,assimilated knowledge,direct evidence,False,-135
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,13,paradigm,assim_direct,assimilated knowledge,direct evidence,False,114
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,14,consideration,assim_direct,assimilated knowledge,direct evidence,False,-65
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,15,standard,assim_direct,assimilated knowledge,direct evidence,False,142
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,16,style guide,assim_direct,assimilated knowledge,direct evidence,False,-171
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,17,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-151
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,18,design pattern,assim_direct,assimilated knowledge,direct evidence,False,64
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,19,recommendation,assim_direct,assimilated knowledge,direct evidence,False,98
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,20,convention,assim_direct,assimilated knowledge,direct evidence,False,-98
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,0,21,norm,assim_direct,assimilated knowledge,direct evidence,False,-81
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,24,recommendation,theory_practical,theoretical,practical,False,200
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,25,heuristic,theory_practical,theoretical,practical,False,141
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,26,principle,theory_practical,theoretical,practical,False,-65
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,27,best practice,theory_practical,theoretical,practical,False,197
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,28,requirement,theory_practical,theoretical,practical,False,-150
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,29,paradigm,theory_practical,theoretical,practical,False,-102
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,30,norm,theory_practical,theoretical,practical,False,148
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,31,implication,theory_practical,theoretical,practical,False,194
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,32,common practice,theory_practical,theoretical,practical,False,194
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,33,style guide,theory_practical,theoretical,practical,False,191
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,34,guideline,theory_practical,theoretical,practical,False,186
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,35,convention,theory_practical,theoretical,practical,False,187
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,36,rule of thumb,theory_practical,theoretical,practical,False,189
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,37,consideration,theory_practical,theoretical,practical,False,48
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,38,design pattern,theory_practical,theoretical,practical,False,-54
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,39,standard,theory_practical,theoretical,practical,False,-29
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,1,40,guardrail,theory_practical,theoretical,practical,False,195
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,43,implication,strictness,loose,strict,False,-140
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,44,style guide,strictness,loose,strict,False,104
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,45,guardrail,strictness,loose,strict,False,12
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,46,rule of thumb,strictness,loose,strict,False,21
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,47,best practice,strictness,loose,strict,False,-49
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,48,standard,strictness,loose,strict,False,64
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,49,norm,strictness,loose,strict,False,58
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,50,recommendation,strictness,loose,strict,False,-90
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,51,consideration,strictness,loose,strict,False,-172
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,52,guideline,strictness,loose,strict,False,-27
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,53,common practice,strictness,loose,strict,False,-104
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,54,design pattern,strictness,loose,strict,False,-30
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,55,paradigm,strictness,loose,strict,False,29
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,56,principle,strictness,loose,strict,False,-49
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,57,convention,strictness,loose,strict,False,-50
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,58,requirement,strictness,loose,strict,False,54
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,2,59,heuristic,strictness,loose,strict,False,-104
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,62,common practice,broadness,specific,broad,False,33
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,63,guideline,broadness,specific,broad,False,-122
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,64,requirement,broadness,specific,broad,False,-141
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,65,standard,broadness,specific,broad,False,67
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,66,implication,broadness,specific,broad,False,173
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,67,guardrail,broadness,specific,broad,False,-124
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,68,rule of thumb,broadness,specific,broad,False,33
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,69,norm,broadness,specific,broad,False,43
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,70,consideration,broadness,specific,broad,False,41
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,71,paradigm,broadness,specific,broad,False,-37
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,72,principle,broadness,specific,broad,False,104
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,73,design pattern,broadness,specific,broad,False,-124
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,74,convention,broadness,specific,broad,False,117
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,75,best practice,broadness,specific,broad,False,-179
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,76,style guide,broadness,specific,broad,False,-177
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,77,heuristic,broadness,specific,broad,False,35
+cKTBtLGMX1Qw8b0vJGrW4O2n9ZV2,vis-guidelines-scale-true-run,3,78,recommendation,broadness,specific,broad,False,-28
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,0,5,rule of thumb,theory_practical,practical,theoretical,True,1
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,0,6,guardrail,theory_practical,practical,theoretical,True,1
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,0,7,recommendation,theory_practical,practical,theoretical,True,-55
@@ -951,6 +1631,74 @@ eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,3,75,consideration,st
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,3,76,implication,strictness,loose,strict,False,1
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,3,77,guideline,strictness,loose,strict,False,1
 eLBFCZqQCHeQ95TSFi4nL3vLQC22,vis-guidelines-scale-true-run,3,78,recommendation,strictness,loose,strict,False,1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,5,consideration,broadness,specific,broad,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,6,rule of thumb,broadness,specific,broad,False,195
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,7,implication,broadness,specific,broad,False,-176
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,8,guideline,broadness,specific,broad,False,200
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,9,norm,broadness,specific,broad,False,200
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,10,best practice,broadness,specific,broad,False,200
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,11,guardrail,broadness,specific,broad,False,-133
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,12,paradigm,broadness,specific,broad,False,199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,13,design pattern,broadness,specific,broad,False,199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,14,style guide,broadness,specific,broad,False,199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,15,requirement,broadness,specific,broad,False,-117
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,16,standard,broadness,specific,broad,False,199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,17,principle,broadness,specific,broad,False,198
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,18,common practice,broadness,specific,broad,False,198
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,19,recommendation,broadness,specific,broad,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,20,convention,broadness,specific,broad,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,0,21,heuristic,broadness,specific,broad,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,24,common practice,strictness,strict,loose,True,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,25,design pattern,strictness,strict,loose,True,-101
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,26,rule of thumb,strictness,strict,loose,True,-93
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,27,style guide,strictness,strict,loose,True,-155
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,28,implication,strictness,strict,loose,True,-181
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,29,convention,strictness,strict,loose,True,-104
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,30,norm,strictness,strict,loose,True,-134
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,31,principle,strictness,strict,loose,True,-122
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,32,standard,strictness,strict,loose,True,-122
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,33,consideration,strictness,strict,loose,True,1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,34,best practice,strictness,strict,loose,True,-113
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,35,heuristic,strictness,strict,loose,True,1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,36,paradigm,strictness,strict,loose,True,-98
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,37,requirement,strictness,strict,loose,True,-98
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,38,recommendation,strictness,strict,loose,True,-98
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,39,guideline,strictness,strict,loose,True,-98
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,1,40,guardrail,strictness,strict,loose,True,-98
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,43,requirement,assim_direct,assimilated knowledge,direct evidence,False,195
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,44,guardrail,assim_direct,assimilated knowledge,direct evidence,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,45,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-123
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,46,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-114
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,47,principle,assim_direct,assimilated knowledge,direct evidence,False,-114
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,48,standard,assim_direct,assimilated knowledge,direct evidence,False,1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,49,guideline,assim_direct,assimilated knowledge,direct evidence,False,1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,50,recommendation,assim_direct,assimilated knowledge,direct evidence,False,110
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,51,norm,assim_direct,assimilated knowledge,direct evidence,False,-105
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,52,best practice,assim_direct,assimilated knowledge,direct evidence,False,-105
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,53,common practice,assim_direct,assimilated knowledge,direct evidence,False,-105
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,54,design pattern,assim_direct,assimilated knowledge,direct evidence,False,2
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,55,consideration,assim_direct,assimilated knowledge,direct evidence,False,2
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,56,paradigm,assim_direct,assimilated knowledge,direct evidence,False,-102
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,57,implication,assim_direct,assimilated knowledge,direct evidence,False,103
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,58,convention,assim_direct,assimilated knowledge,direct evidence,False,-1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,2,59,style guide,assim_direct,assimilated knowledge,direct evidence,False,-1
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,62,style guide,theory_practical,theoretical,practical,False,199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,63,paradigm,theory_practical,theoretical,practical,False,-199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,64,heuristic,theory_practical,theoretical,practical,False,90
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,65,rule of thumb,theory_practical,theoretical,practical,False,90
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,66,principle,theory_practical,theoretical,practical,False,-188
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,67,standard,theory_practical,theoretical,practical,False,-192
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,68,guardrail,theory_practical,theoretical,practical,False,116
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,69,convention,theory_practical,theoretical,practical,False,100
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,70,recommendation,theory_practical,theoretical,practical,False,103
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,71,guideline,theory_practical,theoretical,practical,False,103
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,72,common practice,theory_practical,theoretical,practical,False,100
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,73,requirement,theory_practical,theoretical,practical,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,74,design pattern,theory_practical,theoretical,practical,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,75,norm,theory_practical,theoretical,practical,False,0
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,76,consideration,theory_practical,theoretical,practical,False,-199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,77,best practice,theory_practical,theoretical,practical,False,-199
+eUrgQmr0EwTfb6BsvSSodp277pB3,vis-guidelines-scale-true-run,3,78,implication,theory_practical,theoretical,practical,False,2
 fomLXOMNySS0F0EUL4tkHh3UhGA3,vis-guidelines-scale-true-run,0,5,guideline,theory_practical,theoretical,practical,False,180
 fomLXOMNySS0F0EUL4tkHh3UhGA3,vis-guidelines-scale-true-run,0,6,standard,theory_practical,theoretical,practical,False,180
 fomLXOMNySS0F0EUL4tkHh3UhGA3,vis-guidelines-scale-true-run,0,7,guardrail,theory_practical,theoretical,practical,False,180
@@ -1427,6 +2175,74 @@ kHbeeSEpqGQKyoWtksWwTEuntIB2,vis-guidelines-scale-true-run,3,75,style guide,theo
 kHbeeSEpqGQKyoWtksWwTEuntIB2,vis-guidelines-scale-true-run,3,76,requirement,theory_practical,theoretical,practical,False,0
 kHbeeSEpqGQKyoWtksWwTEuntIB2,vis-guidelines-scale-true-run,3,77,recommendation,theory_practical,theoretical,practical,False,0
 kHbeeSEpqGQKyoWtksWwTEuntIB2,vis-guidelines-scale-true-run,3,78,guardrail,theory_practical,theoretical,practical,False,0
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,5,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-153
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,6,norm,assim_direct,assimilated knowledge,direct evidence,False,-162
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,7,guideline,assim_direct,assimilated knowledge,direct evidence,False,-160
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,8,convention,assim_direct,assimilated knowledge,direct evidence,False,-159
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,9,guardrail,assim_direct,assimilated knowledge,direct evidence,False,134
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,10,design pattern,assim_direct,assimilated knowledge,direct evidence,False,120
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,11,common practice,assim_direct,assimilated knowledge,direct evidence,False,-194
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,12,requirement,assim_direct,assimilated knowledge,direct evidence,False,193
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,13,best practice,assim_direct,assimilated knowledge,direct evidence,False,-109
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,14,consideration,assim_direct,assimilated knowledge,direct evidence,False,-2
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,15,implication,assim_direct,assimilated knowledge,direct evidence,False,22
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,16,recommendation,assim_direct,assimilated knowledge,direct evidence,False,39
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,17,standard,assim_direct,assimilated knowledge,direct evidence,False,56
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,18,paradigm,assim_direct,assimilated knowledge,direct evidence,False,-83
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,19,principle,assim_direct,assimilated knowledge,direct evidence,False,-94
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,20,style guide,assim_direct,assimilated knowledge,direct evidence,False,-137
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,0,21,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,-190
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,24,paradigm,strictness,strict,loose,True,-192
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,25,recommendation,strictness,strict,loose,True,52
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,26,consideration,strictness,strict,loose,True,29
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,27,standard,strictness,strict,loose,True,-144
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,28,principle,strictness,strict,loose,True,-174
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,29,norm,strictness,strict,loose,True,-198
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,30,convention,strictness,strict,loose,True,-26
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,31,design pattern,strictness,strict,loose,True,-48
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,32,best practice,strictness,strict,loose,True,-15
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,33,rule of thumb,strictness,strict,loose,True,77
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,34,guideline,strictness,strict,loose,True,34
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,35,style guide,strictness,strict,loose,True,-83
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,36,implication,strictness,strict,loose,True,-157
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,37,common practice,strictness,strict,loose,True,83
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,38,guardrail,strictness,strict,loose,True,-156
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,39,requirement,strictness,strict,loose,True,-198
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,1,40,heuristic,strictness,strict,loose,True,30
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,43,rule of thumb,theory_practical,theoretical,practical,False,95
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,44,guideline,theory_practical,theoretical,practical,False,115
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,45,convention,theory_practical,theoretical,practical,False,128
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,46,guardrail,theory_practical,theoretical,practical,False,162
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,47,requirement,theory_practical,theoretical,practical,False,-41
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,48,principle,theory_practical,theoretical,practical,False,-145
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,49,design pattern,theory_practical,theoretical,practical,False,-149
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,50,best practice,theory_practical,theoretical,practical,False,60
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,51,paradigm,theory_practical,theoretical,practical,False,-196
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,52,consideration,theory_practical,theoretical,practical,False,-99
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,53,norm,theory_practical,theoretical,practical,False,134
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,54,implication,theory_practical,theoretical,practical,False,-125
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,55,heuristic,theory_practical,theoretical,practical,False,122
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,56,standard,theory_practical,theoretical,practical,False,54
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,57,common practice,theory_practical,theoretical,practical,False,129
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,58,style guide,theory_practical,theoretical,practical,False,113
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,2,59,recommendation,theory_practical,theoretical,practical,False,123
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,62,guideline,broadness,broad,specific,True,60
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,63,recommendation,broadness,broad,specific,True,63
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,64,rule of thumb,broadness,broad,specific,True,68
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,65,guardrail,broadness,broad,specific,True,163
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,66,design pattern,broadness,broad,specific,True,153
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,67,standard,broadness,broad,specific,True,186
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,68,common practice,broadness,broad,specific,True,-54
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,69,norm,broadness,broad,specific,True,67
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,70,convention,broadness,broad,specific,True,113
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,71,principle,broadness,broad,specific,True,130
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,72,consideration,broadness,broad,specific,True,82
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,73,heuristic,broadness,broad,specific,True,115
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,74,style guide,broadness,broad,specific,True,-138
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,75,paradigm,broadness,broad,specific,True,188
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,76,best practice,broadness,broad,specific,True,-36
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,77,implication,broadness,broad,specific,True,181
+kywKxyzwnORte9NmEeUFfWU9tM32,vis-guidelines-scale-true-run,3,78,requirement,broadness,broad,specific,True,188
 o4WTP1K2vdUxynCimDDyKYjm8Gr1,vis-guidelines-scale-true-run,0,5,style guide,theory_practical,practical,theoretical,True,-198
 o4WTP1K2vdUxynCimDDyKYjm8Gr1,vis-guidelines-scale-true-run,0,6,guideline,theory_practical,practical,theoretical,True,-197
 o4WTP1K2vdUxynCimDDyKYjm8Gr1,vis-guidelines-scale-true-run,0,7,design pattern,theory_practical,practical,theoretical,True,0
@@ -1971,3 +2787,71 @@ wBaoqAKxtnRljkR0nmXlBgPwIGf1,vis-guidelines-scale-true-run,3,75,norm,strictness,
 wBaoqAKxtnRljkR0nmXlBgPwIGf1,vis-guidelines-scale-true-run,3,76,standard,strictness,loose,strict,False,28
 wBaoqAKxtnRljkR0nmXlBgPwIGf1,vis-guidelines-scale-true-run,3,77,recommendation,strictness,loose,strict,False,-75
 wBaoqAKxtnRljkR0nmXlBgPwIGf1,vis-guidelines-scale-true-run,3,78,guardrail,strictness,loose,strict,False,-6
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,5,consideration,strictness,loose,strict,False,-49
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,6,style guide,strictness,loose,strict,False,-42
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,7,guardrail,strictness,loose,strict,False,57
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,8,principle,strictness,loose,strict,False,52
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,9,guideline,strictness,loose,strict,False,94
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,10,recommendation,strictness,loose,strict,False,18
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,11,requirement,strictness,loose,strict,False,149
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,12,standard,strictness,loose,strict,False,184
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,13,heuristic,strictness,loose,strict,False,-42
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,14,paradigm,strictness,loose,strict,False,131
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,15,common practice,strictness,loose,strict,False,20
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,16,implication,strictness,loose,strict,False,27
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,17,norm,strictness,loose,strict,False,163
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,18,convention,strictness,loose,strict,False,13
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,19,design pattern,strictness,loose,strict,False,-15
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,20,rule of thumb,strictness,loose,strict,False,67
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,0,21,best practice,strictness,loose,strict,False,-22
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,24,implication,assim_direct,assimilated knowledge,direct evidence,False,-28
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,25,recommendation,assim_direct,assimilated knowledge,direct evidence,False,-39
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,26,standard,assim_direct,assimilated knowledge,direct evidence,False,79
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,27,convention,assim_direct,assimilated knowledge,direct evidence,False,63
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,28,guardrail,assim_direct,assimilated knowledge,direct evidence,False,66
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,29,consideration,assim_direct,assimilated knowledge,direct evidence,False,-72
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,30,requirement,assim_direct,assimilated knowledge,direct evidence,False,107
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,31,rule of thumb,assim_direct,assimilated knowledge,direct evidence,False,120
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,32,heuristic,assim_direct,assimilated knowledge,direct evidence,False,-127
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,33,style guide,assim_direct,assimilated knowledge,direct evidence,False,-30
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,34,norm,assim_direct,assimilated knowledge,direct evidence,False,139
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,35,design pattern,assim_direct,assimilated knowledge,direct evidence,False,-22
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,36,principle,assim_direct,assimilated knowledge,direct evidence,False,99
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,37,paradigm,assim_direct,assimilated knowledge,direct evidence,False,103
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,38,common practice,assim_direct,assimilated knowledge,direct evidence,False,-21
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,39,guideline,assim_direct,assimilated knowledge,direct evidence,False,-27
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,1,40,best practice,assim_direct,assimilated knowledge,direct evidence,False,-16
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,43,heuristic,broadness,broad,specific,True,-77
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,44,guardrail,broadness,broad,specific,True,57
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,45,convention,broadness,broad,specific,True,68
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,46,style guide,broadness,broad,specific,True,-43
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,47,recommendation,broadness,broad,specific,True,120
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,48,common practice,broadness,broad,specific,True,-47
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,49,requirement,broadness,broad,specific,True,158
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,50,design pattern,broadness,broad,specific,True,-82
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,51,norm,broadness,broad,specific,True,117
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,52,best practice,broadness,broad,specific,True,-42
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,53,principle,broadness,broad,specific,True,131
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,54,rule of thumb,broadness,broad,specific,True,84
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,55,paradigm,broadness,broad,specific,True,110
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,56,consideration,broadness,broad,specific,True,-50
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,57,guideline,broadness,broad,specific,True,172
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,58,implication,broadness,broad,specific,True,-57
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,2,59,standard,broadness,broad,specific,True,97
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,62,heuristic,theory_practical,practical,theoretical,True,-105
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,63,common practice,theory_practical,practical,theoretical,True,-90
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,64,rule of thumb,theory_practical,practical,theoretical,True,89
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,65,requirement,theory_practical,practical,theoretical,True,127
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,66,norm,theory_practical,practical,theoretical,True,133
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,67,paradigm,theory_practical,practical,theoretical,True,-96
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,68,best practice,theory_practical,practical,theoretical,True,-150
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,69,guardrail,theory_practical,practical,theoretical,True,2
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,70,implication,theory_practical,practical,theoretical,True,-113
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,71,standard,theory_practical,practical,theoretical,True,99
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,72,design pattern,theory_practical,practical,theoretical,True,-119
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,73,principle,theory_practical,practical,theoretical,True,68
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,74,convention,theory_practical,practical,theoretical,True,89
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,75,consideration,theory_practical,practical,theoretical,True,-126
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,76,recommendation,theory_practical,practical,theoretical,True,-129
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,77,style guide,theory_practical,practical,theoretical,True,-129
+yItR2t01lnRiGNQwneukpvkRlXd2,vis-guidelines-scale-true-run,3,78,guideline,theory_practical,practical,theoretical,True,-129

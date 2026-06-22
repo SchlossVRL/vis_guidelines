@@ -265,6 +265,19 @@ prop_acc_filtered <- tibble(
 )
 ```
 
+```{r}
+data_val <- data_all %>% 
+  filter(type == "validation")
+
+prop_acc_val <- tibble(
+  em1 = mean(data_val$em1_acc),
+  em2 = mean(data_val$em2_acc),
+  em3 = mean(data_val$em3_acc),
+  em4 = mean(data_val$em4_acc),
+  em5 = mean(data_val$em5_acc)
+)
+  
+```
 
 ```{r}
 val <- data %>% 
@@ -567,8 +580,8 @@ p4_pc12 <- ggplot(pca_scores4,
            y = PC2,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   labs(
     title = "PCA Space: PC1 vs PC2",
@@ -595,8 +608,8 @@ p4_pc13 <- ggplot(pca_scores4,
            y = PC3,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
@@ -629,8 +642,8 @@ p4_pc14 <- ggplot(pca_scores4,
            y = PC4,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
@@ -663,8 +676,8 @@ p4_pc23 <- ggplot(pca_scores4,
            y = PC3,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
@@ -697,8 +710,8 @@ p4_pc24 <- ggplot(pca_scores4,
            y = PC4,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
@@ -731,8 +744,8 @@ p4_pc34 <- ggplot(pca_scores4,
            y = PC4,
            label = word,
            color = color)) +
-  geom_point(size = 3) +
-  geom_text(vjust = -0.5) +
+  geom_point(size = 1) +
+  geom_text(vjust = -0.5, size = 3) +
   scale_color_identity() +
   # geom_hline(yintercept = 0,
   #            linetype = "dashed",
@@ -770,17 +783,17 @@ ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 10,
 
 ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 10, dpi = 300)
 
-ggsave("../plots/dim4_pca_pc1_pc2.pdf", plot = p4_pc12, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc1_pc2.pdf", plot = p4_pc12, width = 3.5, height = 3.5)
 
-ggsave("../plots/dim4_pca_pc1_pc3.pdf", plot = p4_pc13, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc1_pc3.pdf", plot = p4_pc13, width = 3.5, height = 3.5)
 
-ggsave("../plots/dim4_pca_pc1_pc4.pdf", plot = p4_pc14, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc1_pc4.pdf", plot = p4_pc14, width = 3.5, height = 3.5)
 
-ggsave("../plots/dim4_pca_pc2_pc3.pdf", plot = p4_pc23, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc2_pc3.pdf", plot = p4_pc23, width = 3.5, height = 3.5)
 
-ggsave("../plots/dim4_pca_pc2_pc4.png", plot = p4_pc24, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc2_pc4.pdf", plot = p4_pc24, width = 3.5, height = 3.5)
 
-ggsave("../plots/dim4_pca_pc3_pc4.png", plot = p4_pc34, width = 10, height = 10)
+ggsave("../plots/dim4_pca_pc3_pc4.pdf", plot = p4_pc34, width = 3.5, height = 3.5)
 ```
 
 # 3 Dimension Embedding

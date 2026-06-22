@@ -5,8 +5,8 @@ format: pdf
 editor: visual
 ---
 
-
 # Setup
+
 ```{r}
 #Housekeeping
 rm(list = ls())
@@ -24,14 +24,11 @@ library(FactoMineR)
 library(tidytext)
 ```
 
-
 ```{r}
 #load in data
 demo <- read_csv("../data/scales/participants.csv")
 
 d <- read_csv("../data/scales/trials.csv")
-
-c_p <- read_csv("../data/participants.csv")
 
 pca1 <- read_csv("pca_1_dim.csv")
 pca2 <- read_csv("pca_2_dim.csv")
@@ -46,7 +43,6 @@ pca4 <- read_csv("pca_4_dim.csv")
 # em5 <- read_csv("../results/embedding_5d.csv")
 ```
 
-
 ```{r}
 cat("We have data from", nrow(demo), "participants\n")
 ```
@@ -60,10 +56,7 @@ d <- d %>%
 
 At this point scales are ordered as:
 
-loose to strict
-theoretical to practical
-assimilated knowledge to direct evidence
-specific to broad
+loose to strict theoretical to practical assimilated knowledge to direct evidence specific to broad
 
 ```{r}
 #switch so assimilated direct is the same direction as PC2
@@ -78,11 +71,7 @@ d <- d %>%
   )
 ```
 
-Now scales are ordered as:
-strict to loose
-theoretical to practical
-assimilated knowledge to direct evidence
-broad to specific
+Now scales are ordered as: strict to loose theoretical to practical assimilated knowledge to direct evidence broad to specific
 
 ```{r}
 d <- d %>% 
@@ -96,7 +85,6 @@ scales <- tibble(
   high = c("loose", "practical", "direct evidence", "specific")
 )
 ```
-
 
 ```{r}
 d_sum <- d %>% 
@@ -129,14 +117,14 @@ d_plot <- d_plot %>%
   )
 ```
 
-
 # Plot ratings
+
 ```{r}
 p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
   geom_hline(yintercept = 0.5, color = "grey80", linewidth = 0.5) +
   geom_errorbar(
-    aes(ymin = avg_rating - se_rating,
-        ymax = avg_rating + se_rating),
+    aes(ymin = avg_rating - sd_rating,
+        ymax = avg_rating + sd_rating),
     height = 0.2,
     width = .2,
     color = "darkgrey"
@@ -144,7 +132,7 @@ p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
   geom_point(size = 2, color = "darkgrey") +
   facet_wrap(~ scale_id, ncol = 1, scales = "free_x") +
   scale_x_reordered() +
-  scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
+  scale_y_continuous(limits = c(-0.05, 1.05), expand = c(0,0))+
   scale_x_discrete(expand = expansion(mult = c(0.01, 0.01))) +
   labs(x = NULL, y = NULL) +
   geom_text(
@@ -184,8 +172,36 @@ p_scales <- ggplot(d_plot, aes(y = avg_rating, x = word)) +
 
 p_scales
 ```
+```{r}
+ggsave("../plots/scales.pdf", plot = p_scales, width = 10, height = 8)
+```
+
+# Participant distributions
+```{r}
+ggplot(
+  d,
+  aes(
+    x = response_align_scaled,
+    y = word
+  )
+) +
+  geom_jitter(
+    width = 0,
+    height = 0.15,
+    alpha = 0.4,
+    size = 1.5
+  ) +
+  facet_wrap(~ scale_id, scales = "free_y") +
+  labs(
+    x = "Aligned response (scaled)",
+    y = NULL
+  ) +
+  theme_bw()
+```
+
 
 # 4 Dimensions
+
 ```{r}
 dim4 <- d_sum %>% 
   left_join(pca4, by = "word" )
@@ -268,7 +284,7 @@ p4 <- ggplot(dim4_corr_long,
            fill = cor)) +
   geom_tile(color = "white") +
   geom_text(aes(label = label2),
-            size = 4,
+            size = 2,
             lineheight = 0.9) +
   scale_fill_gradient2(
     low = "#af8dc3",
@@ -278,7 +294,7 @@ p4 <- ggplot(dim4_corr_long,
     limits = c(-1, 1),
     name = "r"
   ) +
-  theme_minimal(base_size = 12) +
+  theme_minimal(base_size = 9) +
   labs(
     x = NULL,
     y = NULL
@@ -294,12 +310,13 @@ p4 <- ggplot(dim4_corr_long,
 
 p4
 ```
+
 ```{r}
-ggsave("../plots/dim4_correlations.pdf", plot = p4, width = 4.5, height = 2)
+ggsave("../plots/dim4_correlations.pdf", plot = p4, width = 3, height = 1)
 ```
 
-
 # 3 Dimensions
+
 ```{r}
 dim3 <- d_sum %>% 
   left_join(pca3, by = "word" )
@@ -389,8 +406,8 @@ p3 <- ggplot(dim3_corr_long,
 p3
 ```
 
-
 # 2 Dimensions
+
 ```{r}
 dim2 <- d_sum %>% 
   left_join(pca2, by = "word" )
@@ -472,6 +489,7 @@ p2
 ```
 
 # 1 Dimensions
+
 ```{r}
 dim1 <- d_sum %>% 
   left_join(pca1, by = "word" )
@@ -574,7 +592,6 @@ d_strict <- d_strict %>%
   )
 ```
 
-
 ```{r}
 p_strict <- ggplot(d_strict, aes(y = avg_rating, x = word)) +
   geom_hline(yintercept = 0.5, color = "grey80", linewidth = 0.5) +
@@ -630,4 +647,3 @@ p_strict
 ```{r}
 
 ```
-

@@ -145,6 +145,25 @@ def main() -> None:
     print(f"[fit] complete in {elapsed:.1f}s ({elapsed / 60:.2f} min)")
     summarize_history(getattr(model, "history_", None))
 
+    def save_history(history, path):
+        if history is None:
+            print("[fit] no history to save")
+            return
+        if isinstance(history, pd.DataFrame):
+            df_hist = history.copy()
+        elif isinstance(history, list):
+            df_hist = pd.DataFrame(history)
+        elif isinstance(history, dict):
+            df_hist = pd.DataFrame(history)
+        else:
+            print(f"[fit] unsupported history type: {type(history)}")
+            return
+        df_hist.to_csv(path, index=False)
+        print(f"[fit] wrote history -> {path}")
+
+    history_out = out.with_name(f"{out.stem}_history.csv")
+    save_history(getattr(model, "history_", None), history_out)
+
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     em = pd.DataFrame(
