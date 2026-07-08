@@ -85,7 +85,7 @@ p_loss <- ggplot(df_sum, aes(x = dim, y = avg_loss)) +
     linewidth = 0.2 
   ) +
   geom_line() +
-  geom_point(size = 2) +
+  geom_point(size = .5) +
   labs(
     title = "Embedding Dimension vs Test Loss",
     x = "Numbers of Dimensions",
@@ -96,7 +96,7 @@ p_loss <- ggplot(df_sum, aes(x = dim, y = avg_loss)) +
 p_loss
 ```
 ```{r}
-ggsave("../plots/dimensions_loss.png", plot = p_loss, width = 6, height = 5, dpi = 300)
+ggsave("../plots/dimensions_loss.pdf", plot = p_loss, width = 3, height = 2)
 ```
 
 #load in embeddings
@@ -215,6 +215,44 @@ prop_acc_all <- tibble(
 ```
 
 ```{r}
+prop_acc_all2 <- data_all %>% 
+  summarize(
+  n = n(),
+  
+  em1_prop = mean(em1_acc),
+  em1_sd = sd(em1_acc),
+  em1_se = em1_sd/sqrt(n),
+  em1_ci_lower = em1_prop - 1.96 * em1_se,
+  em1_ci_upper = em1_prop + 1.96 * em1_se,
+  
+  em2_prop = mean(em2_acc),
+  em2_sd = sd(em2_acc),
+  em2_se = em2_sd/sqrt(n),
+  em2_ci_lower = em2_prop - 1.96 * em2_se,
+  em2_ci_upper = em2_prop + 1.96 * em2_se,
+  
+  em3_prop = mean(em3_acc),
+  em3_sd = sd(em3_acc),
+  em3_se = em3_sd/sqrt(n),
+  em3_ci_lower = em3_prop - 1.96 * em3_se,
+  em3_ci_upper = em3_prop + 1.96 * em3_se,
+  
+  em4_prop = mean(em4_acc),
+  em4_sd = sd(em4_acc),
+  em4_se = em4_sd/sqrt(n),
+  em4_ci_lower = em4_prop - 1.96 * em4_se,
+  em4_ci_upper = em4_prop + 1.96 * em4_se,
+  
+  em5_prop = mean(em5_acc),
+  em5_sd = sd(em5_acc),
+  em5_se = em5_sd/sqrt(n),
+  em5_ci_lower = em5_prop - 1.96 * em5_se,
+  em5_ci_upper = em5_prop + 1.96 * em5_se
+  )
+
+```
+
+```{r}
 data_filtered <- data_all %>% 
   filter(type == "random")
 ```
@@ -227,6 +265,44 @@ prop_acc_filtered <- tibble(
   em4 = mean(data_filtered$em4_acc),
   em5 = mean(data_filtered$em5_acc)
 )
+```
+
+```{r}
+prop_acc_filtered2 <- data_filtered %>% 
+  summarize(
+  n = n(),
+  
+  em1_prop = mean(em1_acc),
+  em1_sd = sd(em1_acc),
+  em1_se = em1_sd/sqrt(n),
+  em1_ci_lower = em1_prop - 1.96 * em1_se,
+  em1_ci_upper = em1_prop + 1.96 * em1_se,
+  
+  em2_prop = mean(em2_acc),
+  em2_sd = sd(em2_acc),
+  em2_se = em2_sd/sqrt(n),
+  em2_ci_lower = em2_prop - 1.96 * em2_se,
+  em2_ci_upper = em2_prop + 1.96 * em2_se,
+  
+  em3_prop = mean(em3_acc),
+  em3_sd = sd(em3_acc),
+  em3_se = em3_sd/sqrt(n),
+  em3_ci_lower = em3_prop - 1.96 * em3_se,
+  em3_ci_upper = em3_prop + 1.96 * em3_se,
+  
+  em4_prop = mean(em4_acc),
+  em4_sd = sd(em4_acc),
+  em4_se = em4_sd/sqrt(n),
+  em4_ci_lower = em4_prop - 1.96 * em4_se,
+  em4_ci_upper = em4_prop + 1.96 * em4_se,
+  
+  em5_prop = mean(em5_acc),
+  em5_sd = sd(em5_acc),
+  em5_se = em5_sd/sqrt(n),
+  em5_ci_lower = em5_prop - 1.96 * em5_se,
+  em5_ci_upper = em5_prop + 1.96 * em5_se
+  )
+
 ```
 
 ```{r}
@@ -281,6 +357,20 @@ val_sum <- val %>%
 ```
 
 ```{r}
+# val_sum <- val %>% 
+#   group_by(head, left, right) %>% 
+#   summarise(
+#     prop_agree = mean(maj_agree),
+#     sd_prop_agree = sd(maj_agree),
+#     n = n(),
+#     se_prop_agree = sd_prop_agree/sqrt(n),
+#     ci_lower = prop_agree - 1.96 * se_prop_agree,
+#     ci_upper = prop_agree + 1.96 * se_prop_agree
+#   ) %>% 
+#   ungroup()
+```
+
+```{r}
 prop_acc_filtered <- prop_acc_filtered %>% 
   mutate(
     human = unique(val$prop_agree)
@@ -288,34 +378,66 @@ prop_acc_filtered <- prop_acc_filtered %>%
 ```
 
 ```{r}
-prop_long <- prop_acc_filtered %>%
+# prop_acc_filtered2 <- prop_acc_filtered2 %>% 
+#   mutate(
+#     human = unique(val$prop_agree)
+#   )
+```
+
+```{r}
+# prop_long <- prop_acc_filtered %>%
+#   pivot_longer(
+#     cols = everything(),
+#     names_to = "model",
+#     values_to = "prop_agree"
+#   )
+```
+
+```{r}
+prop_long <- prop_acc_filtered2 %>%
   pivot_longer(
-    cols = everything(),
-    names_to = "model",
-    values_to = "prop_agree"
+    cols = -n,
+    names_to = c("model", "stat"),
+    names_pattern = "(em[0-9]+)_(.*)",
+    values_to = "value"
   )
 ```
 
 ```{r}
-models <- prop_long %>% filter(model != "human")
+prop_long <- prop_long %>%
+  pivot_wider(
+    names_from = stat,
+    values_from = value
+  )
+```
 
-human  <- prop_long %>% filter(model == "human")
+```{r}
+human  <- prop_acc_filtered %>% select(human)
+human <- human$human
 ```
 ## plot
 ```{r}
-p_agree <- ggplot(models,
+p_agree <- ggplot(prop_long,
        aes(x = model,
-           y = prop_agree)) +
-  geom_hline(yintercept = human$prop_agree, linetype = "dashed") +
+           y = prop)) +
+  geom_hline(yintercept = human, linetype = "dashed") +
   annotate(
   "text",
   x = Inf,
-  y = human$prop_agree,
+  y = human,
   label = "Human agreement",
   vjust = 1.5,
   hjust = 1.1
 )+
-  geom_col(width = 0.5, fill = "steelblue") +
+  geom_col(width = 0.5, fill = "grey") +
+  geom_errorbar(
+    aes(ymin = ci_lower,
+        ymax = ci_upper),
+    height = 0.2,
+    width = .1,
+    color = "black",
+    linewidth = 0.2 
+  ) +
   scale_y_continuous(limits = c(0, 1), expand = c(0,0))+ 
   labs(
     title = "Model Predictions",
@@ -327,7 +449,7 @@ p_agree <- ggplot(models,
 p_agree
 ```
 ```{r}
-ggsave("../plots/embedding_pred.png", plot = p_agree, width = 6, height = 5, dpi = 300)
+ggsave("../plots/embedding_pred.pdf", plot = p_agree, width = 3, height = 2)
 ```
 
 # 5 Dimension Embedding
@@ -382,7 +504,7 @@ ggplot(pca_df5,
        aes(x = Principal_Component,
            y = Eigenvalue)) +
   geom_line() +
-  geom_point() +
+  geom_point(size = .5) +
   labs(title = "Principal Components vs Eigenvalues",
        x = "Principal Component",
        y = "Eigenvalue") +
@@ -411,6 +533,7 @@ p5_variance <- ggplot(explained_variance_df5,
   geom_line(aes(y = CumulativeVariance),
             color = "blue") +
   geom_point(aes(y = CumulativeVariance),
+             size = .5,
              color = "blue") +
   scale_y_continuous(limits = c(0, 1), expand = c(0,0))+
   labs(
@@ -429,6 +552,10 @@ p5_variance <- ggplot(explained_variance_df5,
 
 p5_variance
 
+```
+
+```{r}
+ggsave("../plots/PCA_reduction.pdf", plot = p5_variance, width = 3, height = 2)
 ```
 
 # 4 Dimension Embedding
