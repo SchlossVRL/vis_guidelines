@@ -4,22 +4,8 @@ author: "Anna Chinni"
 format: pdf
 editor: visual
 ---
-1. loose vs strict
 
-theoretical vs. practical
-broad vs. specific
-assimilated knowledge vs. direct evidence
-
-
-2. Intuition-based vs. evidence-based X
-3. Prescriptive vs. suggestive X
-4. Rigid vs. flexible X
-5. Situationally specific vs. broadly applicable X
-6. Learned from authority vs. learned by experience X
-abstract vs. concrete X
-authority-based vs. experience-based X
-
-
+# Setup 
 ```{r}
 #Housekeeping
 rm(list = ls())
@@ -32,8 +18,24 @@ library(factoextra)
 library(ggplot2)
 
 ```
-# Check loss
 
+We collected some demographic data we did not end up using in our analyses, but which could be identifying due to the specific population we sampled from. Therefore we remove those columns from our participant data here (commented out):
+
+```{r}
+demo <- read_csv("../data/participants.csv")
+```
+
+```{r}
+# demo <- demo %>% 
+#   select(-demo_languages, -demo_age)
+```
+
+```{r}
+#write_csv(demo, "../data/participants.csv")
+```
+
+# Check loss
+We check the average loss of solutions as each dimensionality (1, 2, 3, 4, and 5 dimensions). We do this by estimating each embedding 10 times and then recording the final loss of the models. Lower loss indicate lower error and better fit to the data. We calculate 95% confidence intervals for each model. 
 ```{r}
 data_dir <- "../results/check/logs"
 
@@ -73,7 +75,6 @@ df_sum <- df %>%
   ungroup()
 ```
 
-
 ```{r}
 p_loss <- ggplot(df_sum, aes(x = dim, y = avg_loss)) +
   geom_errorbar(
@@ -95,20 +96,23 @@ p_loss <- ggplot(df_sum, aes(x = dim, y = avg_loss)) +
 
 p_loss
 ```
+
 ```{r}
 ggsave("../plots/dimensions_loss.pdf", plot = p_loss, width = 3, height = 2)
 ```
 
 #load in embeddings
 
+We estimated embedings at 5 dimentionalities (1, 2, 3, 4, and 5)
 ```{r}
-#load in embedding
+#load in embedding - these are the first embeddings run for each dimensionality
 em5 <- read_csv("../results/embedding_5d.csv")
 em4 <- read_csv("../results/embedding_4d.csv")
 em3 <- read_csv("../results/embedding_3d.csv")
 em2 <- read_csv("../results/embedding_2d.csv")
 em1 <- read_csv("../results/embedding_1d.csv")
 ```
+
 ```{r}
 #create color code
 
@@ -119,10 +123,13 @@ colors <-  tibble(
 ```
 
 #load in raw data
+
 ```{r}
 data <- read_csv('../data/trials.csv')
 ```
+
 #check how well each model predicts judgements
+We calculate the euclidean distance between each choice from the target per triplet. We define the model's "choice" on a given trial as the choice with the shorter euclidean distance from the target. We compare this against the actual choices participants made for eahc trial. 
 ```{r}
 add_embedding_distances <- function(data, em, prefix) {
 
@@ -155,6 +162,7 @@ add_embedding_distances <- function(data, em, prefix) {
   df
 }
 ```
+
 ```{r}
 data1 <- add_embedding_distances(data, em1, "em1")
 
@@ -305,6 +313,7 @@ prop_acc_filtered2 <- data_filtered %>%
 
 ```
 
+Validation trials were held out from the model training when estimating each embedding. We use these trials to estimate human agreement on trials and to provide a reference for each model's performance. Validation judgement were consistend across all participants.
 ```{r}
 data_val <- data_all %>% 
   filter(type == "validation")
@@ -415,7 +424,9 @@ prop_long <- prop_long %>%
 human  <- prop_acc_filtered %>% select(human)
 human <- human$human
 ```
+
 ## plot
+
 ```{r}
 p_agree <- ggplot(prop_long,
        aes(x = model,
@@ -448,12 +459,14 @@ p_agree <- ggplot(prop_long,
 
 p_agree
 ```
+
 ```{r}
 ggsave("../plots/embedding_pred.pdf", plot = p_agree, width = 3, height = 2)
 ```
 
 # 5 Dimension Embedding
 
+We do PCA on the highest dimension embedding to pair with out loss data to determine the final dimension solution to use for out space. 
 ```{r}
 #remove labels, so just embedding matrix
 em5_matrix <- em5 %>%
@@ -495,7 +508,6 @@ pca_df5 <- data.frame(
 )
 
 ```
-
 
 ```{r}
 # Scree plot
@@ -559,6 +571,7 @@ ggsave("../plots/PCA_reduction.pdf", plot = p5_variance, width = 3, height = 2)
 ```
 
 # 4 Dimension Embedding
+Based on the relative variance explained in each PC, the loss, and model agreement with human responses, we selected the 4 dimension solution. We do PCA on the 4D embedding to rotate the space for interpretable axes. 
 
 ```{r}
 #remove labels, so just embedding matrix
@@ -582,7 +595,6 @@ pca_scores4 <- as.data.frame(pca_result4$x)
 pca_scores4$word <- em4$word
 
 ```
-
 
 ```{r}
 write.csv(pca_scores4, "pca_4_dim.csv", row.names = FALSE)
@@ -612,7 +624,6 @@ pca_df4 <- data.frame(
 )
 
 ```
-
 
 ```{r}
 # Scree plot
@@ -669,6 +680,7 @@ p4_variance <- ggplot(explained_variance_df4,
 p4_variance
 
 ```
+
 ```{r}
 pca_scores4 <- pca_scores4 %>%
   left_join(colors, by = "word")
@@ -925,12 +937,13 @@ ggsave("../plots/dim4_pca_pc2_pc4.pdf", plot = p4_pc24, width = 3.5, height = 3.
 ggsave("../plots/dim4_pca_pc3_pc4.pdf", plot = p4_pc34, width = 3.5, height = 3.5)
 ```
 
-
-#Participnts and Timing
+#Participants and Timing
+During piloting we checked approximately how long the experiment took each participant to share in our recruitment message.
 
 ```{r}
 subj <- read_csv("../data/participants.csv")
 ```
+
 ```{r}
 timing <- subj
 ```
@@ -971,4 +984,3 @@ print(timing$duration)
 mean(as.numeric(timing$duration_min)[as.numeric(timing$duration_min) < 200],
      na.rm = TRUE)
 ```
-  

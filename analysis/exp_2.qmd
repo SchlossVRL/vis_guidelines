@@ -31,6 +31,16 @@ d <- read_csv("../data/scales/trials.csv")
 pca4 <- read_csv("pca_4_dim.csv")
 
 ```
+We collected some demographic data we did not end up using in our analyses, but which could be identifying due to the specific population we sampled from. Therefore we remove those columns from our participant data here (commented out):
+
+```{r}
+# demo <- demo %>% 
+#   select(-demo_languages)
+```
+
+```{r}
+#write_csv(demo, "../data/scales/participants.csv")
+```
 
 ```{r}
 cat("We have data from", nrow(demo), "participants\n")
@@ -69,7 +79,6 @@ d <- d %>%
     scale_id = factor(scale_id, levels = c("strictness", "assim_direct", "broadness", "theory_practical"))
   )
 ```
-
 
 ```{r}
 scales <- tibble(
@@ -115,7 +124,6 @@ d_sum <- d_sum %>%
 d_plot <- d_sum %>%
   mutate(word = reorder_within(word, avg_rating, scale_id))
 ```
-
 
 ```{r}
 d_plot <- d_plot %>% 
@@ -180,6 +188,7 @@ d_plot <- d_plot %>%
 # 
 # p_scales
 ```
+
 ```{r}
 p_scales <- ggplot(d_plot, aes(y = word, x = avg_rating)) +
   geom_vline(xintercept = 0.5, color = "grey80", linewidth = 0.25) +
@@ -234,7 +243,7 @@ p_scales
 ```
 
 ```{r}
-ggsave("../plots/scales.pdf", plot = p_scales, width = 5, height = 4)
+ggsave("../plots/scales.pdf", plot = p_scales, width = 6, height = 4.3)
 ```
 
 ```{r}
@@ -242,6 +251,7 @@ levels(d_plot$scale_id)
 ```
 
 # Participant distributions
+
 ```{r}
 ggplot(
   d,
@@ -374,6 +384,7 @@ p4 <- ggplot(dim4_corr_long,
 
 p4
 ```
+
 ```{r}
 ggsave("../plots/dim4_correlations.pdf", plot = p4, width = 3, height = 1)
 ```
